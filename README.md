@@ -17,60 +17,68 @@ do my job effectively. I want to understand what the next steps are in terms of 
 As a manager in the IS department: I want to be certain that the new employee is being offered the right equipment for their role and they have a good understanding of 
 the point of contact relevant to **their** new role should they have any issues. I want them to walk away from the experience knowing exactly what the next steps are.
 
-As a senior manager in the company: I want to be certain that my new employees are engaged with the company from the start and that they do not waste valuable 
+As a senior manager in the company: I want to be certain that my new employees are engaged with the company from the start, and that they do not waste valuable 
 time after actually starting in working through what they actually need to perform their role.
 
 
-<!-- This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
--->
+WIREFRAME LINKS TO ADD HERE
 
 ## Features
-<!-->
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
--->
 
-### Existing Features
+- Linear navigation, one step at a time using only "NEXT" or "BACK" to progress
+- Simple, quick, intuitive. Asks exactly what is needed only
+- Questions are based on either the department of the new employee or previous equipment choises made
+- Overview of choices needed to be made with links present to further details if needed
+- Simple pages, no information overload
 
-<!-- - Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
--->
 
 ### Features Left to Implement
 
-<!-- - Another feature idea
--->
+- Not in the scope of this project, but future plans would be to automate follow up emails on progress
+- Not in the scope of this project, but future plans would be to link this to inductions of all divisions of the company
 
 ## Technologies Used
 
-<!-- In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
--->
+- [JQuery](https://jquery.com) Javascript library
+- [Fontawesome](https://fontawesome.com/) for back & next arrows used through all pages
+- [Hover.css](https://ianlunn.github.io/Hover/) for back & forward button effects
+- [Google fonts](https://fonts.google.com/) for Baloo Thambo 2 font used through all pages
+- [Favicon.io](https://favicon.io/) to generate favicon
+- [Bootstrap](https://getbootstrap.com/) - for layout framework
+- [Gitpod](https://www.gitpod.io/) - IDE used to code
+- [GitHub](https://github.com/) - To host the repositories for this project and the live website preview
 
-- [JQuery](https://jquery.com)
-- [The Padwan Project](https://github.com/Eventyret/Padawan)
 
 ## Testing
 
-Please see [Testing](TESTING.md) for all my testing
+Please see [Testing](TESTING.md) for all testing
 
 ## Deployment
 
-<!--
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+To deploy this page to GitHub Pages from its [GitHub repository](xxxxxxxxxxxxxxxxxxxxxxxxxxxxx), the following steps were taken: 
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+1. From the menu items near the top of the page, select **Settings**.
+2. Scroll down to the **GitHub Pages** section.
+3. Under **Source** click the drop-down menu labelled **None** and select **Master Branch**
+4. On selecting Master Branch the page is automatically refreshed, the website is now deployed. 
+5. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
+ 
 
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+### How to run this project locally
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
--->
+To clone this project from GitHub:
 
-## Credits
+1. Under the repository name, click "Clone or download".
+2. In the Clone with HTTPs section, copy the clone URL for the repository. 
+3. In your local IDE open Git Bash.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type ```git clone```, and then paste the URL you copied in Step 3.
+```console
+git clone xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+6. Press Enter. Your local clone will be created.
+
+Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/articles/cloning-a-repository).
 
 ### Content
 
@@ -84,6 +92,8 @@ In addition, if it is not obvious, you should also describe how to run your code
 - The photos used in this site were obtained from ...
 -->
 
-### Acknowledgements
+### Credits & Acknowledgements
 
-- [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan)
+- [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate teplate
+- [Freepik.com](https://www.freepik.com/free-photos-vectors/background") - for background image, created by Starline
+- Richard Wells_lead for the README.md Deployment section
