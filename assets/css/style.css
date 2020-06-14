@@ -1,4 +1,13 @@
 body {
- background-image: url('assets/images/backgroundimage.jpg');
- background-color: #cccccc;
+ background: url('/assets/images/backgroundvector.png') no-repeat center center fixed;
+ background-size: cover;
 }
+
+.companylogo {
+    padding-top: 75px;
+}
+
+.islogo {
+    padding-top: 75px;
+}
+
