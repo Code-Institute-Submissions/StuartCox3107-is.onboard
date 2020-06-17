@@ -37,30 +37,37 @@
 			<div class="col-12 justify-content-center page1questions">
 				<input class="form-control form-control-lg" type="text" placeholder="What is your first name?">
             </div>
-			<div class="col-12 justify-content-center page1questions">
-				<input class="form-control form-control-lg" type="text" placeholder="Your family name?">
+				<div class="col-12 justify-content-center page1questions">
+					<input class="form-control form-control-lg" type="text" placeholder="Your family name?">
             </div>
-
-            <div class="col-12 justify-content-center employeenumbermain">
-                <p>
-                    How about your four digit employee number?
-                </p>
-            </div>
+					<div class="col-12 justify-content-center employeenumbermain">
+						<p>How about your four digit employee number?</p>
+					</div>
 					<!--#employeenumberinfo inserted for project use only to aid use. To remove on true live site-->
-			<div class="col-3 justify-content-center page1questions">
-				<input class="form-control form-control-lg employeenumber1" type="number" placeholder="?">
+					<div class="form-inline text-center">
+						<div class="col-3 justify-content-center page1questions">
+							<label for="label1">1st digit</label>
+							<input class="form-control form-control-lg employeenumber1" type="number" min="0" max="9" placeholder="?" aria-label="First digit of employee number">
+                        </div>
+							<div class="col-3 justify-content-center page1questions">
+								<label for="label2">2nd digit</label>
+								<input class="form-control form-control-lg employeenumber2" type="number" min="0" max="9" placeholder="?" aria-label="Second digit of employee number">
             </div>
-			<div class="col-3 justify-content-center page1questions">
-				<input class="form-control form-control-lg employeenumber2" type="number" placeholder="?">
+								<div class="col-3 justify-content-center page1questions">
+									<label for="label3">3rd digit</label>
+									<input class="form-control form-control-lg employeenumber3" type="number" min="0" max="9" placeholder="?" aria-label="Third digit of employee number">
             </div>
-			<div class="col-3 justify-content-center page1questions">
-				<input class="form-control form-control-lg employeenumber3" type="number" placeholder="?">
-            </div>
-			<div class="col-3 justify-content-center page1questions">
-	            <input class="form-control form-control-lg employeenumber4" type="number" placeholder="?">
+									<div class="col-3 justify-content-center page1questions">
+										<label for="label4">3rd digit</label>
+										<input class="form-control form-control-lg employeenumber4" type="number" min="0" max="9" placeholder="?" aria-label="Fourth digit of employee number">
             </div><br>
-			<small id="employeenumberadvice" class="form-text text-muted"><strong>You will find this on your welcome email. Call 0207 159 2598 or email enhelp@metatis.com if you don't have this number</strong></small><br><br>
-			<small id="employeenumberinfo" class="form-text text-danger"><strong>Project use only. For testing purposes, use a 4 digit number between 1001 and 5999, this first digit denotes your department and drives some following choices</stromg></small><br><br>
+										<div class="contactnumbertesting">
+											<small class="form-text text-muted"><strong>You will find this on your welcome email. 
+                Call 0207 159 2598 or email enhelp@metatis.com if you don't have this number</strong></small><br>
+											<small class="form-text text-danger"><strong>Project use only: For testing purposes, use a 4 digit number between 1001 and 5999, 
+                the first digit denotes your department and drives some following choices</stromg></small><br><br>
+            </div>
+										</div>
 		</section>
 
 	</div>
@@ -88,7 +95,7 @@
 			<div class="col-12 progressbar">
 				<div class="progress" style="height: 40px;">
 					<div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10"
-						aria-valuemin="0" aria-valuemax="100">PROGRESS
+						aria-valuemin="0" aria-valuemax="100"><span class= "progresstext">PROGRESS</span>
 					</div>
 				</div>
 			</div>
