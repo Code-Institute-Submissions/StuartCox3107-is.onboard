@@ -1,6 +1,8 @@
+/*general styling for all pages*/
 body {
  background: url('/assets/images/backgroundvector.png') no-repeat center center fixed;
  background-size: cover;
+ font-family: "Baloo Thambi 2", sans-serif; 
 }
 
 .companylogo {
@@ -10,4 +12,45 @@ body {
 .islogo {
     padding-top: 75px;
 }
+
+.btn {
+    background-color: rgb(148, 140, 139);
+}
+
+.navigation {
+    margin-bottom: 20px;
+}
+
+.progressbar {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: rgb(148, 140, 139);
+} 
+
+/* local styling page 1*/
+
+.page1questions {
+    margin-bottom: 15px;
+}
+
+.contactnumbertesting {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/* If the screen size is 900px wide or less, removes the word progress from progress bar */
+@media screen and (max-width: 900px) {
+  .progresstext {
+    display: none;
+  }
+
+
+
+
+
+
+
 
