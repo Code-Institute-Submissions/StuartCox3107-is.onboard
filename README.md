@@ -2,7 +2,7 @@
 
 
 <div align="center">
-<img src="" height="350" width="350">
+<img src="xxxxxxxxxxxx" height="350" width="350">
 </div>
 
 This is a site that is used to on-board new employees of a (fictional) company. It is specifically focussed on the Information Systems (IS) department, and the new employees 
@@ -79,12 +79,6 @@ git clone xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 6. Press Enter. Your local clone will be created.
 
 Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/articles/cloning-a-repository).
-
-### Content
-
-<!--
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
--->
 
 ### Media
 

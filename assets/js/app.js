@@ -1,7 +1,4 @@
 
-
-
-
 //jquery mouse over/leave to change the background color of the next & back buttons
 $(".btn").on("mouseover", function() {
   $(this).css("background-color", "#52796f");
