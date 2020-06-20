@@ -21,7 +21,7 @@ As a senior manager in the company: I want to be certain that my new employees a
 time after actually starting in working through what they actually need to perform their role.
 
 <!-->
-WIREFRAME LINKS TO ADD HERE
+WIREFRAME LINKS TO ADD HERE WHEN COMPLETE
 <--->
 
 ## Features
