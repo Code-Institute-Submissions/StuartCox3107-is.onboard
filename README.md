@@ -1,4 +1,4 @@
-# isonboard
+# is.onboard
 
 
 <div align="center">
@@ -27,7 +27,7 @@ WIREFRAME LINKS TO ADD HERE
 
 - Linear navigation, one step at a time using only "NEXT" or "BACK" to progress
 - Simple, quick, intuitive. Asks exactly what is needed only
-- Questions are based on either the department of the new employee or previous equipment choises made
+- Questions are based on either the department of the new employee or previous equipment choices made
 - Overview of choices needed to be made with links present to further details if needed
 - Simple pages, no information overload
 
