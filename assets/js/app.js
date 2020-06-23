@@ -5,9 +5,8 @@ $(".btn").on("mouseover", function() {
 });
 
 $(".btn").on("mouseleave", function() {
-  $(this).css("background-color", "rgb(148, 140, 139)");
+  $(this).css("background-color", "#566573");
 });
-
 
 //jquery mouse over/leave to change the background color of the progress bar
 $(".progress-bar").on("mouseover", function() {
@@ -15,6 +14,8 @@ $(".progress-bar").on("mouseover", function() {
 });
 
 $(".progress-bar").on("mouseleave", function() {
-  $(this).css("background-color", "rgb(148, 140, 139)");
+  $(this).css("background-color", "#566573");
 });
 
+//jquery to hide back button on page 1
+$(".page1 #backbtn").hide();
