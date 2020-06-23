@@ -30,7 +30,8 @@
             </div>
         </section>
     </main>
-
+    <!--page 1-->
+    <div class="page1">
     <!--introduction section text-->
     <div class="introductiontext font-weight-bold">
         Welcome to Metatis. This site will guide you through the processes and decisions you need to make in order to onboard with 
@@ -40,7 +41,7 @@
 
     <!--page 1 form-->
     <div class="container">
-        <section class="row">
+        <div class="row">
             <div class="col-12 justify-content-center page1questions">
                 <input class="form-control form-control-lg" type="text" placeholder="What is your first name?">
             </div>
@@ -50,12 +51,14 @@
             <div class="col-12 justify-content-center employeenumbermain">
                 <p>How about your four digit employee number?</p>
             </div>
-            <!--#employeenumberinfo inserted for project use only to aid use. To remove on true live site-->
+        </div>
+    </div>
+            
             <div class="form-inline text-center">
-                <div class="col-3 justify-content-center page1questions">
+               <div class="col-3 justify-content-center page1questions">
                     <label for="label1">1st digit</label>
                         <input class="form-control form-control-lg employeenumber1" type="number" min="0" max="9" placeholder="?" aria-label="First digit of employee number">
-                </div>
+                </div> 
                 <div class="col-3 justify-content-center page1questions">
                     <label for="label2">2nd digit</label>
                         <input class="form-control form-control-lg employeenumber2" type="number" min="0" max="9" placeholder="?" aria-label="Second digit of employee number">
@@ -68,6 +71,8 @@
                     <label for="label4">3rd digit</label>
                         <input class="form-control form-control-lg employeenumber4" type="number" min="0" max="9" placeholder="?" aria-label="Fourth digit of employee number">
                 </div><br>
+            </div>
+            
 
                 <div class="container">
                     <div class = "row">
@@ -75,27 +80,27 @@
                             <div class="contactnumbertesting">
                                 <small class="form-text text-muted text-center"><strong>You will find this on your welcome email. 
                                  Call 0207 159 2598 or email enhelp@metatis.com if you don't have this number</strong></small><br>
+                                    <!--the below is inserted for project use only to aid use-->
                                 <small class="form-text text-danger"><strong>Project use only: For testing purposes, use a 4 digit number between 1001 and 5999, 
                                 the first digit denotes your department and drives some following choices</strong></small><br><br>
                             </div>
                         </div>
                     </div>
                 </div>
-        </section>
-    </div>
+     
     <!--This section is for the back & forward arrow controls-->
-    <!--xxxxxxxxxxxxxxxxxxRemove target=_blank later, just in for now for testing-->
+
     
     <div class="container">
         <div class="row navigation justify-content-right">
             <div class="col-6">
                 <a href="https://www.google.com/" target="_blank" class="hvr-icon-back" aria-label="Back a page">
-                    <button type="button" class="btn btn-secondary btn-lg"><i class="fas fa-arrow-circle-left hvr-icon"></i>  BACK</button>
+                    <button type="button" class="btn btn-secondary btn-lg" id="backbtn"><i class="fas fa-arrow-circle-left hvr-icon"></i>  BACK</button>
                 </a>
             </div>
         
             <div class="col-6">
-                <a href="structure.html" target="_blank" class="hvr-icon-forward float-right" aria-label="Go forward a page">
+                <a href="structure.html" target="_blank" class="hvr-icon-forward float-right fwdbtn" aria-label="Go forward a page">
                     <button type="button" class="btn btn-secondary btn-lg">NEXT  <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
                 </a>
             </div>
