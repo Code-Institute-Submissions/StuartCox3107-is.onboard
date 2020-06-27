@@ -1,42 +1,100 @@
-# is.onboard
-
-
 <div align="center">
-<img src="xxxxxxxxxxxx" height="350" width="350">
+<img src="assets/images/isonboardlogo.png" height="350" width="350">
 </div>
 
-This is a site that is used to on-board new employees of a (fictional) company. It is specifically focussed on the Information Systems (IS) department, and the new employees 
-relationship with the IS function. It allows them to walk away from the experience with an understanding of how IS works for **them**, and what choices they have to make that are relevant to their role. 
+---
 
-## UX
+# is.onboard
 
-As a new employee: I want to walk away from this interaction with the feeling that the company and the IS department are professional and have provided me with 
-an online induction tailored towards **my** needs. I want the experience to be quick and simple and to give me all the information **I** need to make the relevant choices to 
-do my job effectively. I want to understand what the next steps are in terms of me starting my new role and how IS fits in with this.
+---
 
-As a manager in the IS department: I want to be certain that the new employee is being offered the right equipment for their role and they have a good understanding of 
-the point of contact relevant to **their** new role should they have any issues. I want them to walk away from the experience knowing exactly what the next steps are.
+## Aim of the site
 
-As a senior manager in the company: I want to be certain that my new employees are engaged with the company from the start, and that they do not waste valuable 
-time after actually starting in working through what they actually need to perform their role.
+This is a site that is used to on-board new employees of a (fictional) company. It is specifically focussed on the Information Systems (IS) department, and the new employee's 
+relationship and induction with the IS function. It allows them to walk away from the experience with an understanding of how IS works for **them**, and what equipment choices they have to make that are relevant to their role. 
+
+<!--Link to live site to add-->
+
+---
+
+## User stories
+
+"As a new employee: I want to walk away from this interaction with the feeling that the company and the IS department are professional and have provided me with 
+an online induction tailored towards **my** needs and the needs of my role. I want the experience to be quick and simple and to give me all the information **I** need to make the relevant choices to 
+do my job effectively. I want to understand what the next steps are in terms of me starting my new role and how IS fits in with this. I want to understand a bit more about the geographical
+location of the IS team and where this fits in with my geographical work location in case I need face to face support."
+
+"As a manager in the IS department: I want to be certain that the new employee is being offered the right equipment for their role but can make choices that tailor the choice to their own preferences. 
+I want to know that they have a good understanding of 
+the point of contact relevant to **their** new role should they have any issues. I want them to walk away from the experience knowing exactly what the next steps are."
+
+"As a senior manager in the company: I want to be certain that my new employees are engaged with the company from the start, and that they do not waste valuable 
+time after actually starting their roles in working through what equipment they actually need to perform their role. I want to be sure that they have choices available to them 
+that meet the needs of their role, their own personal preferences, and also within the boundaries of the purchasing cost restraints"
+
+---
+
+## Site features
+
+### Overall
+
+The site will be a single page site with 7 different views, the first view will gather the name and employee number of the new starter and the 
+views following this will change according to which department the employee will be working in or from previous choices made by them. If for example they work in the 
+marketing department they will be presented with the option of laptop A or laptop B, if they choose laptop B then they will be presented with the relevant sized laptop case options.
+Navigation will purely be through NEXT and BACK buttons.
+
+### View 1
+
+This will give a basic introduction of what the site will achieve, ask for their name and employee number. A next button only will also be present.
+
+### View 2
+
+This will tell them the generic structure of the IS management team and also the IS contacts specific to their department. A next button will also be present.
+
+### View 3
+
+This will give them a choice of laptops to choose from, specific to their new role. Next and back buttons will be present.
+
+### View 4
+
+This will take their laptop choice and present the relevant choices for a case, a mouse and a keyboard. Next and back buttons will be present.
+
+### View 5
+
+This will take their department and laptop choices and give options for a lock, a screen, mouse mat, a riser and a mouse. Next and back buttons will be present.
+
+### View 6
+
+Through the Google maps API, this will show them where they will be physically be located when they start work, and how this location relates to the wider IS team.
+
+### View 7
+
+This will tell them what the next steps are.
+
+---
+
+## UX & Wireframes
+
+Given the target users are new employees, the site needs to be professional in terms of style & look to convey the feeling of professionalism.
+The company would want to present itself as slick and professional, and the site should convey this. It should be very simple to use and need few instructions for use.
 
 
-## Links to wireframes
+- [View 1 desktop & tablet](assets/wireframes/p1desktoptablet.png) opens in same tab, press back to return
+- [View 1 mobile](assets/wireframes/p1mobile.png) opens in same tab, press back to return
+- [View 2 desktop & tablet](assets/wireframes/p2desktoptablet.png) opens in same tab, press back to return
+- [View 2 mobile](assets/wireframes/p2mobile.png) opens in same tab, press back to return
+- [View 3 desktop & tablet](assets/wireframes/p3desktoptablet.png) opens in same tab, press back to return
+- [View 3 mobile](assets/wireframes/p3mobile.png) opens in same tab, press back to return
+- [View 4 desktop & tablet](assets/wireframes/p4desktoptablet.png) opens in same tab, press back to return
+- [View 4 mobile](assets/wireframes/p4mobile.png) opens in same tab, press back to return
+- [View 5 desktop & tablet](assets/wireframes/p5desktoptablet.png) opens in same tab, press back to return
+- [View 5 mobile](assets/wireframes/p5mobile.png) opens in same tab, press back to return
+- [View 6 desktop & tablet](assets/wireframes/p6desktoptablet.png) opens in same tab, press back to return
+- [View 6 mobile](assets/wireframes/p6mobile.png) opens in same tab, press back to return
+- [View 7 desktop & tablet](assets/wireframes/p7desktoptablet.png) opens in same tab, press back to return
+- [View 7 mobile](assets/wireframes/p7mobile.png) opens in same tab, press back to return
 
-- [Page 1 desktop & tablet](assets/wireframes/p1desktoptablet.png) opens in same tab, press back to return
-- [Page 1 mobile](assets/wireframes/p1mobile.png) opens in same tab, press back to return
-- [Page 2 desktop & tablet](assets/wireframes/p2desktoptablet.png) opens in same tab, press back to return
-- [Page 2 mobile](assets/wireframes/p2mobile.png) opens in same tab, press back to return
-- [Page 3 desktop & tablet](assets/wireframes/p3desktoptablet.png) opens in same tab, press back to return
-- [Page 3 mobile](assets/wireframes/p3mobile.png) opens in same tab, press back to return
-- [Page 4 desktop & tablet](assets/wireframes/p4desktoptablet.png) opens in same tab, press back to return
-- [Page 4 mobile](assets/wireframes/p4mobile.png) opens in same tab, press back to return
-- [Page 5 desktop & tablet](assets/wireframes/p5desktoptablet.png) opens in same tab, press back to return
-- [Page 5 mobile](assets/wireframes/p5mobile.png) opens in same tab, press back to return
-- [Page 6 desktop & tablet](assets/wireframes/p6desktoptablet.png) opens in same tab, press back to return
-- [Page 6 mobile](assets/wireframes/p6mobile.png) opens in same tab, press back to return
-- [Page 7 desktop & tablet](assets/wireframes/p7desktoptablet.png) opens in same tab, press back to return
-- [Page 7 mobile](assets/wireframes/p7mobile.png) opens in same tab, press back to return
+---
 
 ## Features
 
@@ -46,14 +104,18 @@ time after actually starting in working through what they actually need to perfo
 - Overview of choices needed to be made with links present to further details if needed
 - Simple pages, no information overload
 
+---
 
 ### Features Left to Implement
 
 - Not in the scope of this project, but future plans would be to automate follow up emails on progress
 - Not in the scope of this project, but future plans would be to link this to inductions of all divisions of the company
 
+---
+
 ## Technologies Used
 
+- HTML, CSS & Javascript
 - [JQuery](https://jquery.com) Javascript library, opens in same tab, press back to return
 - [Fontawesome](https://fontawesome.com/) for back & next arrows used through all pages, opens in same tab, press back to return
 - [Hover.css](https://ianlunn.github.io/Hover/) for back & forward button effects, opens in same tab, press back to return
@@ -62,15 +124,21 @@ time after actually starting in working through what they actually need to perfo
 - [Bootstrap](https://getbootstrap.com/) - for layout framework, opens in same tab, press back to return
 - [Gitpod](https://www.gitpod.io/) - IDE used to code, opens in same tab, press back to return
 - [GitHub](https://github.com/) - To host the repositories for this project and the live website preview, opens in same tab, press back to return
+- [Balsamiq](https://balsamiq.com/) - used to design wireframes, opens in same tab, press back to return
 
+---
+
+<!-->
 
 ## Testing
 
-Please see [Testing](TESTING.md) for all testing
+-->
+
+---
 
 ## Deployment
 
-To deploy this page to GitHub Pages from its [GitHub repository](xxxxxxxxxxxxxxxxxxxxxxxxxxxxx), the following steps were taken: 
+To deploy this page to GitHub Pages from its [GitHub repository]<!--(xxxxxxxxxxxxxxxxxxxxxxxxxxxxx)-->, the following steps were taken: 
 
 1. From the menu items near the top of the page, select **Settings**.
 2. Scroll down to the **GitHub Pages** section.
@@ -95,15 +163,13 @@ git clone xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/articles/cloning-a-repository).
 
-### Media
-
-<!-->
-- The photos used in this site were obtained from ...
--->
+---
 
 ### Credits & Acknowledgements
 
-- [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate teplate
+- [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
 - [Freepik.com](https://www.freepik.com/free-photos-vectors/background") - for background image, created by Starline
 - Richard Wells_lead for the README.md Deployment section
 - Stack Overflow: assistance with code: In disabling manual entry for employee number
+
+---
