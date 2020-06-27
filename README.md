@@ -23,7 +23,7 @@ time after actually starting in working through what they actually need to perfo
 
 ## Links to wireframes
 
-<a href="assets/wireframes/p1desktoptablet.png" target="_blank">Page 1 desktop & tablet, opens in new tab</a>
+- [Page 1 desktop & tablet](assets/wireframes/p1desktoptablet.png) opens in same tab, press back to return
 
 ## Features
 
