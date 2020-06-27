@@ -24,6 +24,19 @@ time after actually starting in working through what they actually need to perfo
 ## Links to wireframes
 
 - [Page 1 desktop & tablet](assets/wireframes/p1desktoptablet.png) opens in same tab, press back to return
+- [Page 1 mobile](assets/wireframes/p1mobile.png) opens in same tab, press back to return
+- [Page 2 desktop & tablet](assets/wireframes/p2desktoptablet.png) opens in same tab, press back to return
+- [Page 2 mobile](assets/wireframes/p2mobile.png) opens in same tab, press back to return
+- [Page 3 desktop & tablet](assets/wireframes/p3desktoptablet.png) opens in same tab, press back to return
+- [Page 3 mobile](assets/wireframes/p3mobile.png) opens in same tab, press back to return
+- [Page 4 desktop & tablet](assets/wireframes/p4desktoptablet.png) opens in same tab, press back to return
+- [Page 4 mobile](assets/wireframes/p4mobile.png) opens in same tab, press back to return
+- [Page 5 desktop & tablet](assets/wireframes/p5desktoptablet.png) opens in same tab, press back to return
+- [Page 5 mobile](assets/wireframes/p5mobile.png) opens in same tab, press back to return
+- [Page 6 desktop & tablet](assets/wireframes/p6desktoptablet.png) opens in same tab, press back to return
+- [Page 6 mobile](assets/wireframes/p6mobile.png) opens in same tab, press back to return
+- [Page 7 desktop & tablet](assets/wireframes/p7desktoptablet.png) opens in same tab, press back to return
+- [Page 7 mobile](assets/wireframes/p7mobile.png) opens in same tab, press back to return
 
 ## Features
 
@@ -41,14 +54,14 @@ time after actually starting in working through what they actually need to perfo
 
 ## Technologies Used
 
-- [JQuery](https://jquery.com) Javascript library
-- [Fontawesome](https://fontawesome.com/) for back & next arrows used through all pages
-- [Hover.css](https://ianlunn.github.io/Hover/) for back & forward button effects
-- [Google fonts](https://fonts.google.com/) for Baloo Thambo 2 font used through all pages
-- [Favicon.io](https://favicon.io/) to generate favicon
-- [Bootstrap](https://getbootstrap.com/) - for layout framework
-- [Gitpod](https://www.gitpod.io/) - IDE used to code
-- [GitHub](https://github.com/) - To host the repositories for this project and the live website preview
+- [JQuery](https://jquery.com) Javascript library, opens in same tab, press back to return
+- [Fontawesome](https://fontawesome.com/) for back & next arrows used through all pages, opens in same tab, press back to return
+- [Hover.css](https://ianlunn.github.io/Hover/) for back & forward button effects, opens in same tab, press back to return
+- [Google fonts](https://fonts.google.com/) for Baloo Thambo 2 font used through all pages, opens in same tab, press back to return
+- [Favicon.io](https://favicon.io/) to generate favicon,opens in same tab, press back to return
+- [Bootstrap](https://getbootstrap.com/) - for layout framework, opens in same tab, press back to return
+- [Gitpod](https://www.gitpod.io/) - IDE used to code, opens in same tab, press back to return
+- [GitHub](https://github.com/) - To host the repositories for this project and the live website preview, opens in same tab, press back to return
 
 
 ## Testing
