@@ -20,9 +20,10 @@ the point of contact relevant to **their** new role should they have any issues.
 As a senior manager in the company: I want to be certain that my new employees are engaged with the company from the start, and that they do not waste valuable 
 time after actually starting in working through what they actually need to perform their role.
 
-<!-->
-WIREFRAME LINKS TO ADD HERE WHEN COMPLETE
-<--->
+
+## Links to wireframes
+
+<a href="assets/wireframes/p1desktoptablet.png" target="_blank">Page 1 desktop & tablet, opens in new tab</a>
 
 ## Features
 
@@ -92,3 +93,4 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate teplate
 - [Freepik.com](https://www.freepik.com/free-photos-vectors/background") - for background image, created by Starline
 - Richard Wells_lead for the README.md Deployment section
+- Stack Overflow: assistance with code: In disabling manual entry for employee number
