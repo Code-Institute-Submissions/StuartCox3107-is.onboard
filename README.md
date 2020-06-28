@@ -123,11 +123,13 @@ The company would want to present itself as slick and professional, and the site
 
 ---
 
-<!-->
 
-## Testing
 
--->
+### Javascript testing
+
+- Manually tested storage of form data by alerting information stored after onclick triggered
+
+
 
 ---
 
