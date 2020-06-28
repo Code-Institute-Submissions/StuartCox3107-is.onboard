@@ -35,7 +35,7 @@ function informationStore() {
     var firstName = document.getElementById("txtFirstName").value;
     var familyName = document.getElementById("txtFamilyName").value;
     var firstDigit = document.getElementById("txtFirstDigit").value;
-    alert ("Hi" + firstName + familyName + firstDigit + "Bye")
+    alert ("Hi " + firstName +" " + familyName + " " +firstDigit + " ,Bye!")
 }
 
 
