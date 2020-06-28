@@ -16,121 +16,105 @@
 </head>
 
 <body>
-    <!--This section is for the company and department logos-->
-    <!--xxxxxxxxxxxxxxxxCompany logo links to Google currently, change to correct link-->
-    <main class="container">
-        <section class="row">
-            <div class="col-sm-12 col-lg-6 companylogo">
-                <a href="https://www.google.com/" target="_blank">
-                    <img src="assets/images/companylogo.png" class="img-fluid mx-auto d-block" alt="Company logo" aria-label="Company homepage"/>
+	<!--This section is for the company and department logos-->
+	<!--Logos links to Google as the company is fictional-->
+	<main class="container">
+		<section class="row">
+			<div class="col-sm-12 col-lg-6 companylogo">
+				<a href="https://www.google.com/" target="_blank">
+					<img src="assets/images/companylogo.png" class="img-fluid mx-auto d-block" alt="Company logo" aria-label="Company homepage"/>
                 </a>
+			</div>
+			<div class="col-sm-12 col-lg-6 islogo">
+				<a href="https://www.google.com/" target="_blank">
+					<img src="assets/images/isonboardlogo.png" class="img-fluid mx-auto d-block" alt="IS division logo"/>
             </div>
-            <div class="col-sm-12 col-lg-6 islogo">
-                <img src="assets/images/isonboardlogo.png" class="img-fluid mx-auto d-block" alt="IS division logo"/>
-            </div>
-        </section>
-    </main>
-    <!--page 1-->
-    <div class="page1">
-    <!--introduction section text-->
-    <div class="introductiontext font-weight-bold">
-        Welcome to Metatis. This site will guide you through the processes and decisions you need to make in order to onboard with 
-        us in terms of the information solutions (IS) department.  You will walk away from here knowing what we do for you, who does it, what choices you have, and what will 
-        happen next in terms of your technology onboarding.
-    </div>
+		</section>
+	</main>
 
-    <!--page 1 form-->
-    <form class="form-inline text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 justify-content-center page1questions">
-                <input class="form-control form-control-lg" id="txtFirstName" type="text" placeholder="What is your first name?">
-            </div>
-            <div class="col-12 justify-content-center page1questions">
-                <input class="form-control form-control-lg" id="txtFamilyName" type="text" placeholder="Your family name?">
-            </div>
-            <div class="col-12 justify-content-center employeenumbermain">
-                <p>How about your four digit employee number?</p>
-            </div>
-            <!--the below is inserted for project use only to aid use-->
-            <small class="col-12 form-text text-danger text-center justify-content-center"><strong>(Project use only: For testing purposes, use a 4 digit number between 1001 and 5999, 
-                                the first digit denotes your department and drives some following choices)</strong></small><br><br>
-        </div>
-    </div>
-            
-               <div class="col-3 justify-content-center page1questions">
-                    <label for="label1">1st digit</label>
-                        <input class="form-control form-control-lg" id="txtFirstDigit" type="number" min="0" max="5" aria-label="First digit of employee number">
-                </div> 
-                <div class="col-3 justify-content-center page1questions">
-                    <label for="label2">2nd digit</label>
-                        <input class="form-control form-control-lg" type="number" min="0" max="5" aria-label="Second digit of employee number">
-                </div>
-                <div class="col-3 justify-content-center page1questions">
-                    <label for="label3">3rd digit</label>
-                        <input class="form-control form-control-lg" type="number" min="0" max="5" aria-label="Third digit of employee number">
-                </div>
-                <div class="col-3 justify-content-center page1questions">
-                    <label for="label4">4th digit</label>
-                        <input class="form-control form-control-lg" type="number" min="0" max="5" aria-label="Fourth digit of employee number"><br>
-                </div>
-          
+	<!--page 1-->
+	<div class="page1">
+		<!--introduction section text-->
+		<div class="introductiontext font-weight-bold">
+			Welcome to Metatis. This site will guide you through the processes and decisions you need to make in order
+			to onboard with
+			us in terms of the information solutions (IS) department. You will walk away from here knowing what we do
+			for you, who does it, what choices you have, and what will
+			happen next in terms of your technology onboarding.
+		</div>
 
-                <div class="container">
-                    <div class = "row">
-                        <div class= "col-12 contactnumbertesting">
-                            <small class="form-text text-muted text-center"><strong>You will find this on your welcome email. 
-                             Call 0207 159 2598 or email enhelp@metatis.com if you don't have this number</strong></small><br>
-                        </div>
+		<!--page 1 form-->
+		<form class="form-inline text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 justify-content-center page1questions">
+                        <input class="form-control form-control-lg" id="txtFirstName" type="text" placeholder="What is your first name?">
                     </div>
+                    <div class="col-12 justify-content-center page1questions">
+                        <input class="form-control form-control-lg" id="txtFamilyName" type="text" placeholder="Your family name?">
+                    </div>
+                    <div class="col-12 justify-content-center employeenumbermain">
+                        <p>How about your four digit employee number?</p>
+                    </div>
+                    <!--the below is inserted for project use only to aid use-->
+                    <small class="col-12 form-text text-danger text-center justify-content-center"><strong>(Project use only: For testing purposes, use a 4 digit number 
+                    between 1001 and 5999, the first digit denotes your department and drives some following choices)</strong></small><br><br>
                 </div>
-                <!--This section is for the NEXT button-->
+            </div>
+            <div class="col-3 justify-content-center page1questions">
+                <label for="label1">1st digit</label>
+                    <input class="form-control form-control-lg" id="txtFirstDigit" type="number" min="0" max="5" aria-label="First digit of employee number">
+            </div>
+            <div class="col-3 justify-content-center page1questions">
+                <label for="label2">2nd digit</label>
+                    <input class="form-control form-control-lg" type="number" min="0" max="5" aria-label="Second digit of employee number">
+            </div>
+            <div class="col-3 justify-content-center page1questions">
+                <label for="label3">3rd digit</label>
+                    <input class="form-control form-control-lg" type="number" min="0" max="5" aria-label="Third digit of employee number">
+            </div>
+            <div class="col-3 justify-content-center page1questions">
+                <label for="label4">4th digit</label>
+                    <input class="form-control form-control-lg" type="number" min="0" max="5" aria-label="Fourth digit of employee number"><br>
+                </div>
                 <div class="container">
                     <div class="row">
-                        <div class ="col-12">
-                            <button type="button" class="btn btn-secondary btn-lg" id="p1button" onclick="informationStore()">NEXT  <i class="fas fa-arrow-circle-right hvr-icon"></i></button></button>
-                        </div>
+                        <div class="col-12 contactnumbertesting">
+                        <small class="form-text text-muted text-center"><strong>You will find this on your welcome email. 
+                        Call 0207 159 2598 or email enhelp@metatis.com if you don't have this number</strong></small><br>
                     </div>
                 </div>
-         </form>
-    <!--This section is for the back & forward arrow controls
-
-    
-    <div class="container">
-        <div class="row navigation justify-content-right">
-            <div class="col-6">
-                <a href="https://www.google.com/" target="_blank" class="hvr-icon-back" aria-label="Back a page">
-                    <button type="button" class="btn btn-secondary btn-lg" id="backbtn"><i class="fas fa-arrow-circle-left hvr-icon"></i>  BACK</button>
-                </a>
             </div>
+            
+            <!--This section is for the NEXT button-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-secondary btn-lg" id="p1button" onclick="informationStore()">NEXT  
+                        <i class="fas fa-arrow-circle-right hvr-icon"></i></button></button>
+                    </div>
+                </div>
+            </div>
+        </form>
         
-            <div class="col-6">
-                <a href="structure.html" target="_blank" class="hvr-icon-forward float-right fwdbtn" aria-label="Go forward a page">
-                    <button type="button" class="btn btn-secondary btn-lg">NEXT  <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
-                </a>
-            </div>
-        </div>
-    </div>
-    -->
-
-    
-    <!--xxxxxxxxxxxxxxxxBe sure to change percentages to match correct amount-->
-    <div class="container">
-        <div class="row">
-            <div class="col-12 progressbar">
-                <div class="progress" style="height: 40px;">
-                    <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow ="10"
-                     aria-valuemin="0" aria-valuemax="100"><span class= "progresstext">PROGRESS</span>
+        <!--progress barBe sure to change percentages to match correct amount-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 progressbar">
+                    <div class="progress" style="height: 40px;">
+                        <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10"
+                        aria-valuemin="0" aria-valuemax="100"><span class= "progresstext">PROGRESS</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <!--scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="scripts/scripts.js"></script>
+
+		<!--scripts-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="scripts/scripts.js"></script>
 </body>
+
 </html>
