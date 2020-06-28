@@ -101,7 +101,7 @@ The company would want to present itself as slick and professional, and the site
 
 ---
 
-## Features Left to Implement
+## Features left to implement
 
 - Not in the scope of this project, but future plans would be to automate follow up emails on progress
 - Not in the scope of this project, but future plans would be to link this to inductions of all divisions of the company
@@ -160,7 +160,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ---
 
-### Credits & Acknowledgements
+### Credits & acknowledgements
 
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
 - [Freepik.com](https://www.freepik.com/free-photos-vectors/background") - for background image, created by Starline

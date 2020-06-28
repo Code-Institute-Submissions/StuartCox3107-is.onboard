@@ -1,5 +1,5 @@
 
-let informationStore;
+
 
 //jquery mouse over/leave to change the background color of the next & back buttons
 $(".btn").on("mouseover", function() {
@@ -28,8 +28,23 @@ $("[type='number']").keypress(function (evt) {
     evt.preventDefault();
 });
 
+var employeeOrder = [];
+
+//function to store information on input
 function informationStore() {
     var firstName = document.getElementById("txtFirstName").value;
-    var lastName = document.getElementById("txtFamilyName").value;
+    var familyName = document.getElementById("txtFamilyName").value;
+    var firstDigit = document.getElementById("txtFirstDigit").value;
+    alert ("Hi" + firstName + familyName + firstDigit + "Bye")
 }
+
+
+
+
+
+
+
+
+
+
 
