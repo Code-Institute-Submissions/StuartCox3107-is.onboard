@@ -34,14 +34,7 @@ that meet the needs of their role, their own personal preferences, and also with
 
 ---
 
-## Site features
-
-### Overall
-
-The site will be a single page site with 7 different views, the first view will gather the name and employee number of the new starter and the 
-views following this will change according to which department the employee will be working in or from previous choices made by them. If for example they work in the 
-marketing department they will be presented with the option of laptop A or laptop B, if they choose laptop B then they will be presented with the relevant sized laptop case options.
-Navigation will purely be through NEXT and BACK buttons.
+## Site features & wireframes
 
 ### View 1
 
@@ -71,32 +64,34 @@ Through the Google maps API, this will show them where they will be physically b
 
 This will tell them what the next steps are.
 
+### Wireframes
+
+- [View 1 desktop & tablet](wireframes/p1desktoptablet.png) opens in same tab, press back to return
+- [View 1 mobile](wireframes/p1mobile.png) opens in same tab, press back to return
+- [View 2 desktop & tablet](wireframes/p2desktoptablet.png) opens in same tab, press back to return
+- [View 2 mobile](wireframes/p2mobile.png) opens in same tab, press back to return
+- [View 3 desktop & tablet](wireframes/p3desktoptablet.png) opens in same tab, press back to return
+- [View 3 mobile](wireframes/p3mobile.png) opens in same tab, press back to return
+- [View 4 desktop & tablet](wireframes/p4desktoptablet.png) opens in same tab, press back to return
+- [View 4 mobile](wireframes/p4mobile.png) opens in same tab, press back to return
+- [View 5 desktop & tablet](wireframes/p5desktoptablet.png) opens in same tab, press back to return
+- [View 5 mobile](wireframes/p5mobile.png) opens in same tab, press back to return
+- [View 6 desktop & tablet](wireframes/p6desktoptablet.png) opens in same tab, press back to return
+- [View 6 mobile](wireframes/p6mobile.png) opens in same tab, press back to return
+- [View 7 desktop & tablet](wireframes/p7desktoptablet.png) opens in same tab, press back to return
+- [View 7 mobile](wireframes/p7mobile.png) opens in same tab, press back to return
+
 ---
 
-## UX & Wireframes
+## Theme & typography
+
+The site will be a single page site with 7 different views, the first view will gather the name and employee number of the new starter and the 
+views following this will change according to which department the employee will be working in or from previous choices made by them. If for example they work in the 
+marketing department they will be presented with the option of laptop A or laptop B, if they choose laptop B then they will be presented with the relevant sized laptop case options.
+Navigation will purely be through NEXT and BACK buttons. 
 
 Given the target users are new employees, the site needs to be professional in terms of style & look to convey the feeling of professionalism.
 The company would want to present itself as slick and professional, and the site should convey this. It should be very simple to use and need few instructions for use.
-
-
-- [View 1 desktop & tablet](assets/wireframes/p1desktoptablet.png) opens in same tab, press back to return
-- [View 1 mobile](assets/wireframes/p1mobile.png) opens in same tab, press back to return
-- [View 2 desktop & tablet](assets/wireframes/p2desktoptablet.png) opens in same tab, press back to return
-- [View 2 mobile](assets/wireframes/p2mobile.png) opens in same tab, press back to return
-- [View 3 desktop & tablet](assets/wireframes/p3desktoptablet.png) opens in same tab, press back to return
-- [View 3 mobile](assets/wireframes/p3mobile.png) opens in same tab, press back to return
-- [View 4 desktop & tablet](assets/wireframes/p4desktoptablet.png) opens in same tab, press back to return
-- [View 4 mobile](assets/wireframes/p4mobile.png) opens in same tab, press back to return
-- [View 5 desktop & tablet](assets/wireframes/p5desktoptablet.png) opens in same tab, press back to return
-- [View 5 mobile](assets/wireframes/p5mobile.png) opens in same tab, press back to return
-- [View 6 desktop & tablet](assets/wireframes/p6desktoptablet.png) opens in same tab, press back to return
-- [View 6 mobile](assets/wireframes/p6mobile.png) opens in same tab, press back to return
-- [View 7 desktop & tablet](assets/wireframes/p7desktoptablet.png) opens in same tab, press back to return
-- [View 7 mobile](assets/wireframes/p7mobile.png) opens in same tab, press back to return
-
----
-
-## Features
 
 - Linear navigation, one step at a time using only "NEXT" or "BACK" to progress
 - Simple, quick, intuitive. Asks exactly what is needed only
@@ -106,7 +101,7 @@ The company would want to present itself as slick and professional, and the site
 
 ---
 
-### Features Left to Implement
+## Features Left to Implement
 
 - Not in the scope of this project, but future plans would be to automate follow up emails on progress
 - Not in the scope of this project, but future plans would be to link this to inductions of all divisions of the company
@@ -157,7 +152,7 @@ To clone this project from GitHub:
 4. Change the current working directory to the location where you want the cloned directory to be made.
 5. Type ```git clone```, and then paste the URL you copied in Step 3.
 ```console
-git clone xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+git clone https://github.com/StuartCox3107/is.onboard.git
 ```
 6. Press Enter. Your local clone will be created.
 
