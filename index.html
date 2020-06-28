@@ -52,46 +52,48 @@
             <div class="col-12 justify-content-center employeenumbermain">
                 <p>How about your four digit employee number?</p>
             </div>
+            <!--the below is inserted for project use only to aid use-->
+            <small class="col-12 form-text text-danger text-center justify-content-center"><strong>(Project use only: For testing purposes, use a 4 digit number between 1001 and 5999, 
+                                the first digit denotes your department and drives some following choices)</strong></small><br><br>
         </div>
     </div>
             
-               <div class="col-3 justify-content-center page1questions" id="txtFirstDigit">
+               <div class="col-3 justify-content-center page1questions">
                     <label for="label1">1st digit</label>
-                        <input class="form-control form-control-lg employeenumber1" type="number" min="0" max="5" aria-label="First digit of employee number">
+                        <input class="form-control form-control-lg" id="txtFirstDigit" type="number" min="0" max="5" aria-label="First digit of employee number">
                 </div> 
                 <div class="col-3 justify-content-center page1questions">
                     <label for="label2">2nd digit</label>
-                        <input class="form-control form-control-lg employeenumber2" type="number" min="0" max="5" aria-label="Second digit of employee number">
+                        <input class="form-control form-control-lg" type="number" min="0" max="5" aria-label="Second digit of employee number">
                 </div>
                 <div class="col-3 justify-content-center page1questions">
                     <label for="label3">3rd digit</label>
-                        <input class="form-control form-control-lg employeenumber3" type="number" min="0" max="5" aria-label="Third digit of employee number">
+                        <input class="form-control form-control-lg" type="number" min="0" max="5" aria-label="Third digit of employee number">
                 </div>
                 <div class="col-3 justify-content-center page1questions">
                     <label for="label4">4th digit</label>
-                        <input class="form-control form-control-lg employeenumber4" type="number" min="0" max="5" aria-label="Fourth digit of employee number"><br>
+                        <input class="form-control form-control-lg" type="number" min="0" max="5" aria-label="Fourth digit of employee number"><br>
                 </div>
-                <div>
-                    <input type="button" id="p1button" value="NEXT" onclick="informationStore()">
-                </div>
-            </form>
-            
+          
 
                 <div class="container">
                     <div class = "row">
-                        <div class= "col-12">
-                            <div class="contactnumbertesting">
-                                <small class="form-text text-muted text-center"><strong>You will find this on your welcome email. 
-                                 Call 0207 159 2598 or email enhelp@metatis.com if you don't have this number</strong></small><br>
-                                    <!--the below is inserted for project use only to aid use-->
-                                <small class="form-text text-danger text-center"><strong>Project use only: For testing purposes, use a 4 digit number between 1001 and 5999, 
-                                the first digit denotes your department and drives some following choices</strong></small><br><br>
-                            </div>
+                        <div class= "col-12 contactnumbertesting">
+                            <small class="form-text text-muted text-center"><strong>You will find this on your welcome email. 
+                             Call 0207 159 2598 or email enhelp@metatis.com if you don't have this number</strong></small><br>
                         </div>
                     </div>
                 </div>
-     
-    <!--This section is for the back & forward arrow controls-->
+                <!--This section is for the NEXT button-->
+                <div class="container">
+                    <div class="row">
+                        <div class ="col-12">
+                            <button type="button" class="btn btn-secondary btn-lg" id="p1button" onclick="informationStore()">NEXT  <i class="fas fa-arrow-circle-right hvr-icon"></i></button></button>
+                        </div>
+                    </div>
+                </div>
+         </form>
+    <!--This section is for the back & forward arrow controls
 
     
     <div class="container">
@@ -109,6 +111,8 @@
             </div>
         </div>
     </div>
+    -->
+
     
     <!--xxxxxxxxxxxxxxxxBe sure to change percentages to match correct amount-->
     <div class="container">
