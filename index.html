@@ -43,10 +43,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12 justify-content-center page1questions">
-                <input class="form-control form-control-lg" type="text" placeholder="What is your first name?">
+                <input class="form-control form-control-lg" id="txtFirstName" type="text" placeholder="What is your first name?">
             </div>
             <div class="col-12 justify-content-center page1questions">
-                <input class="form-control form-control-lg" type="text" placeholder="Your family name?">
+                <input class="form-control form-control-lg" id="txtFamilyName" type="text" placeholder="Your family name?">
             </div>
             <div class="col-12 justify-content-center employeenumbermain">
                 <p>How about your four digit employee number?</p>
@@ -54,24 +54,24 @@
         </div>
     </div>
             
-            <div class="form-inline text-center">
-               <div class="col-3 justify-content-center page1questions">
+            <form class="form-inline text-center">
+               <div class="col-3 justify-content-center page1questions" id="firstDigit">
                     <label for="label1">1st digit</label>
-                        <input class="form-control form-control-lg employeenumber1" type="number" min="0" max="9" placeholder="?" aria-label="First digit of employee number">
+                        <input class="form-control form-control-lg employeenumber1" type="number" min="0" max="5" aria-label="First digit of employee number">
                 </div> 
                 <div class="col-3 justify-content-center page1questions">
                     <label for="label2">2nd digit</label>
-                        <input class="form-control form-control-lg employeenumber2" type="number" min="0" max="9" placeholder="?" aria-label="Second digit of employee number">
+                        <input class="form-control form-control-lg employeenumber2" type="number" min="0" max="5" aria-label="Second digit of employee number">
                 </div>
                 <div class="col-3 justify-content-center page1questions">
                     <label for="label3">3rd digit</label>
-                        <input class="form-control form-control-lg employeenumber3" type="number" min="0" max="9" placeholder="?" aria-label="Third digit of employee number">
+                        <input class="form-control form-control-lg employeenumber3" type="number" min="0" max="5" aria-label="Third digit of employee number">
                 </div>
                 <div class="col-3 justify-content-center page1questions">
                     <label for="label4">3rd digit</label>
-                        <input class="form-control form-control-lg employeenumber4" type="number" min="0" max="9" placeholder="?" aria-label="Fourth digit of employee number">
-                </div><br>
-            </div>
+                        <input class="form-control form-control-lg employeenumber4" type="number" min="0" max="5" aria-label="Fourth digit of employee number"><br>
+                </div>
+            </form>
             
 
                 <div class="container">
@@ -81,7 +81,7 @@
                                 <small class="form-text text-muted text-center"><strong>You will find this on your welcome email. 
                                  Call 0207 159 2598 or email enhelp@metatis.com if you don't have this number</strong></small><br>
                                     <!--the below is inserted for project use only to aid use-->
-                                <small class="form-text text-danger"><strong>Project use only: For testing purposes, use a 4 digit number between 1001 and 5999, 
+                                <small class="form-text text-danger text-center"><strong>Project use only: For testing purposes, use a 4 digit number between 1001 and 5999, 
                                 the first digit denotes your department and drives some following choices</strong></small><br><br>
                             </div>
                         </div>
@@ -101,7 +101,7 @@
         
             <div class="col-6">
                 <a href="structure.html" target="_blank" class="hvr-icon-forward float-right fwdbtn" aria-label="Go forward a page">
-                    <button type="button" class="btn btn-secondary btn-lg">NEXT  <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
+                    <button onclick="informationStore()" type="button" class="btn btn-secondary btn-lg">NEXT  <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
                 </a>
             </div>
         </div>

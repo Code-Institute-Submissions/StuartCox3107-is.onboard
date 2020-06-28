@@ -1,4 +1,6 @@
 
+let informationStore;
+
 //jquery mouse over/leave to change the background color of the next & back buttons
 $(".btn").on("mouseover", function() {
   $(this).css("background-color", "#52796f");
@@ -19,3 +21,15 @@ $(".progress-bar").on("mouseleave", function() {
 
 //jquery to hide back button on page 1
 $(".page1 #backbtn").hide();
+
+
+//jquery to disable manual entry of numbers to page 1 employee number. Code taken from stack overflow research code
+$("[type='number']").keypress(function (evt) {
+    evt.preventDefault();
+});
+
+function informationStore() {
+    var firstName = document.getElementById("txtFirstName").value;
+    var lastName = document.getElementById("txtFamilyName").value;
+}
+
