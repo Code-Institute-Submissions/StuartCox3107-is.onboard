@@ -28,6 +28,7 @@
 			<div class="col-sm-12 col-lg-6 islogo">
 				<a href="https://www.google.com/" target="_blank">
 					<img src="assets/images/isonboardlogo.png" class="img-fluid mx-auto d-block" alt="IS division logo"/>
+                </a>
             </div>
 		</section>
 	</main>
@@ -47,20 +48,22 @@
 		<form class="form-inline text-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 justify-content-center page1questions">
+                    <div class="col-12 page1questions">
                         <input class="form-control form-control-lg" id="txtFirstName" type="text" placeholder="What is your first name?">
                     </div>
-                    <div class="col-12 justify-content-center page1questions">
+                    <div class="col-12 page1questions">
                         <input class="form-control form-control-lg" id="txtFamilyName" type="text" placeholder="Your family name?">
                     </div>
-                    <div class="col-12 justify-content-center employeenumbermain">
+                    <div class="col-12 employeenumbermain">
                         <p>How about your four digit employee number?</p>
                     </div>
                     <!--the below is inserted for project use only to aid use-->
+                    <div>
                     <small class="col-12 form-text text-danger text-center justify-content-center"><strong>(Project use only: For testing purposes, use a 4 digit number 
                     between 1001 and 5999, the first digit denotes your department and drives some following choices)</strong></small><br><br>
+                    </div>
                 </div>
-            </div>
+                <div class="row">
             <div class="col-3 justify-content-center page1questions">
                 <label for="label1">1st digit</label>
                     <input class="form-control form-control-lg" id="txtFirstDigit" type="number" min="0" max="5" aria-label="First digit of employee number">
@@ -76,7 +79,8 @@
             <div class="col-3 justify-content-center page1questions">
                 <label for="label4">4th digit</label>
                     <input class="form-control form-control-lg" type="number" min="0" max="5" aria-label="Fourth digit of employee number"><br>
-                </div>
+            </div>
+            </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-12 contactnumbertesting">
