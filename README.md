@@ -167,6 +167,5 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
 - [Freepik.com](https://www.freepik.com/free-photos-vectors/background") - for background image, created by Starline
 - Richard Wells_lead for the README.md Deployment section
-- Stack Overflow: assistance with code: In disabling manual entry for employee number
 
 ---
