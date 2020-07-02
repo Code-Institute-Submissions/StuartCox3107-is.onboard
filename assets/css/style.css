@@ -1,6 +1,6 @@
 /*general styling for all pages*/
 body {
- background: url('/assets/images/backgroundvector.png') no-repeat center center fixed;
+ background: url('/assets/images/background4.png') no-repeat center center fixed;
  background-size: cover;
  font-family: "Baloo Thambi 2", sans-serif; 
 }
@@ -11,6 +11,10 @@ body {
 
 .islogo {
     padding-top: 75px;
+}
+
+.welcomelogo {
+    padding-top: 25px;
 }
 
 .btn {

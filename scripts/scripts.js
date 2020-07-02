@@ -26,6 +26,7 @@ function informationStore() {
 }
 
 //jquery validation plugin function to validate staff id number input
+
 $(function()
 {
     $("#p1form").validate(
@@ -53,7 +54,7 @@ $(function()
             range:[0,9]
           }
         }
-      });	
+       });	
 });
 
 
