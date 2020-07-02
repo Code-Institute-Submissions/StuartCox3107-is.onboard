@@ -108,9 +108,10 @@ The company would want to present itself as slick and professional, and the site
 
 ---
 
-## Technologies Used
+## Technologies Used & credits
 
 - HTML, CSS & Javascript
+- [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
 - [JQuery](https://jquery.com) Javascript library, opens in same tab, press back to return
 - [jQuery Validation Plugin](https://jqueryvalidation.org/) - Form validation plugin
 - [Fontawesome](https://fontawesome.com/) for back & next arrows used through all pages, opens in same tab, press back to return
@@ -121,6 +122,9 @@ The company would want to present itself as slick and professional, and the site
 - [Gitpod](https://www.gitpod.io/) - IDE used to code, opens in same tab, press back to return
 - [GitHub](https://github.com/) - To host the repositories for this project and the live website preview, opens in same tab, press back to return
 - [Balsamiq](https://balsamiq.com/) - used to design wireframes, opens in same tab, press back to return
+- [https://background-generator.com/] - used to generate background vector
+- [https://undraw.co/illustrations] - used for cartoon images on site
+- Richard Wells_lead for the README.md Deployment section
 
 ---
 
@@ -166,7 +170,6 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 ### Credits & acknowledgements
 
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
-- [Freepik.com](https://www.freepik.com/free-photos-vectors/background") - for background image, created by Starline
 - Richard Wells_lead for the README.md Deployment section
 
 ---
