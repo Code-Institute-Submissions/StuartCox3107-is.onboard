@@ -57,6 +57,12 @@ $(function()
        });	
 });
 
+$("#p1button").click(function() {
+  $(".page1").hide("");
+});
+
+
+
 
 
 
