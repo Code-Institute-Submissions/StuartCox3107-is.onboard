@@ -1,6 +1,6 @@
 /*general styling for all pages*/
 body {
- background: url('/assets/images/background4.png') no-repeat center center fixed;
+ background-image: url('/assets/images/background4.png') no-repeat center center fixed;
  background-size: cover;
  font-family: "Baloo Thambi 2", sans-serif; 
 }
@@ -54,6 +54,22 @@ body {
     background-color: #566573;
     color: white;
     margin-bottom: 20px;
+}
+
+/*local styling page 2*/
+
+.p2 {
+    color: #566573;
+}
+
+.p2intro {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card-img-top {
+    max-width: 40%;
+    height: auto;
 }
 
 
