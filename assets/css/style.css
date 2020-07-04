@@ -78,9 +78,15 @@ body {
     margin-bottom: 20px;
 }
 
+.card-img-top {
+    max-width: 40%;
+    height: auto;
+    padding-top: 10px;
+}
+
 /*local styling page 2*/
 
-.p2 {
+.page2 {
     color: #566573;
     font-size: 1.8rem;
 }

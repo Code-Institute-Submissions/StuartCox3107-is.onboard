@@ -32,6 +32,8 @@ the point of contact relevant to **their** new role should they have any issues.
 time after actually starting their roles in working through what equipment they actually need to perform their role. I want to be sure that they have choices available to them 
 that meet the needs of their role, their own personal preferences, and also within the boundaries of the purchasing cost restraints"
 
+"As a supply chain manager: I want to be confident that all new starters are receiving products that are from our nominated suppliers"
+
 ---
 
 ## Site features & wireframes
