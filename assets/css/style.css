@@ -33,6 +33,28 @@ body {
     background-color: #566573;
 } 
 
+/*the below 3 sections were generated to style the wavy banner using the shape divider app site*/
+.custom-shape-divider-top-1593866364 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1593866364 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 206px;
+}
+
+.custom-shape-divider-top-1593866364 .shape-fill {
+    fill: #DCE6E3;
+}
+
+
 /* local styling page 1*/
 
 .introductiontext {
@@ -63,6 +85,10 @@ body {
     font-size: 1.8rem;
 }
 
+.genericstructure {
+    border-bottom: 2px solid #566573;
+}
+
 .p2intro {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -74,6 +100,7 @@ body {
 .card-img-top {
     max-width: 40%;
     height: auto;
+    padding-top: 10px;
 }
 
 
