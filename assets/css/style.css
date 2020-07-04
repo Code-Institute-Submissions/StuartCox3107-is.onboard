@@ -39,6 +39,17 @@ body {
     padding-top: 10px;
 }
 
+.card {
+    margin-top: 30px;
+}
+
+.card-img-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /*the below 3 sections were generated to style the wavy banner using the shape divider app site*/
 .custom-shape-divider-top-1593866364 {
     position: absolute;
