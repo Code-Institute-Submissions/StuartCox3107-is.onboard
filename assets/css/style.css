@@ -1,6 +1,6 @@
 /*general styling for all pages*/
 body {
- background-image: url('/assets/images/background4.png') no-repeat center center fixed;
+ background: url('../images/background4.png') no-repeat center center fixed;
  background-size: cover;
  font-family: "Baloo Thambi 2", sans-serif; 
 }
