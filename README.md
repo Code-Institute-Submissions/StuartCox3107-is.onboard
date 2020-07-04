@@ -125,6 +125,7 @@ The company would want to present itself as slick and professional, and the site
 - [https://background-generator.com/] - used to generate background vector
 - [https://undraw.co/illustrations] - used for cartoon images on site
 - Richard Wells_lead for the README.md Deployment section
+- [https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1299805] from Pixabay
 
 ---
 
