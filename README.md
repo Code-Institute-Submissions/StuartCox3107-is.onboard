@@ -113,19 +113,20 @@ The company would want to present itself as slick and professional, and the site
 - HTML, CSS & Javascript
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
 - [JQuery](https://jquery.com) Javascript library, opens in same tab, press back to return
-- [jQuery Validation Plugin](https://jqueryvalidation.org/) - Form validation plugin
+- [jQuery Validation Plugin](https://jqueryvalidation.org/) for form validation plugin
 - [Fontawesome](https://fontawesome.com/) for back & next arrows used through all pages, opens in same tab, press back to return
 - [Hover.css](https://ianlunn.github.io/Hover/) for back & forward button effects, opens in same tab, press back to return
 - [Google fonts](https://fonts.google.com/) for Baloo Thambo 2 font used through all pages, opens in same tab, press back to return
 - [Favicon.io](https://favicon.io/) to generate favicon,opens in same tab, press back to return
-- [Bootstrap](https://getbootstrap.com/) - for layout framework, opens in same tab, press back to return
-- [Gitpod](https://www.gitpod.io/) - IDE used to code, opens in same tab, press back to return
-- [GitHub](https://github.com/) - To host the repositories for this project and the live website preview, opens in same tab, press back to return
-- [Balsamiq](https://balsamiq.com/) - used to design wireframes, opens in same tab, press back to return
-- [https://background-generator.com/] - used to generate background vector
-- [https://undraw.co/illustrations] - used for cartoon images on site
+- [Bootstrap](https://getbootstrap.com/)  for layout framework, opens in same tab, press back to return
+- [Gitpod](https://www.gitpod.io/)  IDE used to code, opens in same tab, press back to return
+- [GitHub](https://github.com/)  To host the repositories for this project and the live website preview, opens in same tab, press back to return
+- [Balsamiq](https://balsamiq.com/)  used to design wireframes, opens in same tab, press back to return
+- [https://background-generator.com/]  used to generate background vector
+- [https://undraw.co/illustrations]  used for cartoon images on site
 - Richard Wells_lead for the README.md Deployment section
-- [https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1299805] from Pixabay
+- [https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1299805] backgound vector from Pixabay
+- [https://www.shapedivider.app/] used to generate the site wavy shape divider
 
 ---
 
