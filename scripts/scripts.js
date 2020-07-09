@@ -22,6 +22,7 @@ function informationStore() {
     var firstName = document.getElementById("txtFirstName").value;
     var familyName = document.getElementById("txtFamilyName").value;
     var firstDigit = document.getElementById("txtFirstDigit").value;
+//below line for testing only, to be removed
     alert ("Hi " + firstName +" " + familyName + " " +firstDigit + " ,Bye!")
 }
 
