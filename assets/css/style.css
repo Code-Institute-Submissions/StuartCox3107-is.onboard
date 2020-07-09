@@ -3,6 +3,7 @@ body {
  background: url('../images/background4.png') no-repeat center center fixed;
  background-size: cover;
  font-family: "Baloo Thambi 2", sans-serif; 
+ color: #566573;
 }
 
 .companylogo {
@@ -49,6 +50,26 @@ body {
     margin-right: auto;
 }
 
+.introtext {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 15px 25px 15px 25px;
+}
+
+.secondarytext {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.nextbutton {
+    background-color: #566573;
+    color: white;
+    margin-bottom: 20px;
+}
+
 
 /*the below 3 sections were generated to style the wavy banner using the shape divider app site*/
 .custom-shape-divider-top-1593866364 {
@@ -76,7 +97,6 @@ body {
 .introductiontext {
     text-align: center;
     margin: 15px 25px 15px 25px;
-    color: #566573;
 }
 
 .page1questions {
@@ -94,24 +114,14 @@ body {
     margin-bottom: 20px;
 }
 
-
 /*local styling page 2*/
 
 .page2 {
-    color: #566573;
     font-size: 1.8rem;
 }
 
 .genericstructure {
     border-bottom: 2px solid #566573;
-}
-
-.p2intro {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    margin: 15px 25px 15px 25px;
-    color: #566573;
 }
 
 
