@@ -74,46 +74,57 @@
                     </div>
                 </div>
                 <div class="row">
-            <div class="col-3 justify-content-center page1questions">
-                <label for="label1">1st digit</label>
-                    <input class="form-control form-control-lg" id="txtFirstDigit" type="number" min="0" max="5" aria-label="First digit of employee number" name="label1">
+                    <div class="col-3 justify-content-center page1questions">
+                        <label for="label1">1st digit</label>
+                        <input class="form-control form-control-lg" id="txtFirstDigit" type="number" min="0" max="5" aria-label="First digit of employee number" name="label1">
+                    </div>
+                    <div class="col-3 justify-content-center page1questions">
+                        <label for="label2">2nd digit</label>
+                        <input class="form-control form-control-lg" type="number" min="0" max="9" aria-label="Second digit of employee number" name="label2">
+                    </div>
+                    <div class="col-3 justify-content-center page1questions">
+                        <label for="label3">3rd digit</label>
+                        <input class="form-control form-control-lg" type="number" min="0" max="9" aria-label="Third digit of employee number" name="label3">
+                    </div>
+                    <div class="col-3 justify-content-center page1questions">
+                        <label for="label4">4th digit</label>
+                        <input class="form-control form-control-lg" type="number" min="0" max="9" aria-label="Fourth digit of employee number" name="label4"><br>
+                    </div>
+                </div>
             </div>
-            <div class="col-3 justify-content-center page1questions">
-                <label for="label2">2nd digit</label>
-                    <input class="form-control form-control-lg" type="number" min="0" max="9" aria-label="Second digit of employee number" name="label2">
-            </div>
-            <div class="col-3 justify-content-center page1questions">
-                <label for="label3">3rd digit</label>
-                    <input class="form-control form-control-lg" type="number" min="0" max="9" aria-label="Third digit of employee number" name="label3">
-            </div>
-            <div class="col-3 justify-content-center page1questions">
-                <label for="label4">4th digit</label>
-                    <input class="form-control form-control-lg" type="number" min="0" max="9" aria-label="Fourth digit of employee number" name="label4"><br>
-            </div>
-            </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 contactnumbertesting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 contactnumbertesting">
                         <small class="form-text text-muted text-center"><strong>You will find this on your welcome email. 
                         Call 0207 159 2598 or email enhelp@metatis.com if you don't have this number</strong></small><br>
                     </div>
                 </div>
             </div>
-
-            START OF PAGE 2 - HOLDER TEXT ONLY
-
-
-            <!--page 2-->
-            <!--middle logo-->
-            <div class="page2">
-			<div class="col-sm-12 col-lg-4 structurelogo">
-				<a href="https://www.google.com/" target="_blank">
-					<img src="assets/images/structure.png" class="img-fluid mx-auto d-block" alt="Structure logo"/>
-                </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-secondary btn-lg" class="nextbutton" onclick="informationStore();">NEXT  
+                        <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
+                    </div>
+                </div>
             </div>
-
-            <!--bootstrap cards for generic management structure relevant to all joiners-->
-            <div class="p2intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 progressbar">
+                        <div class="progress" style="height: 40px;">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100"><span class= "progresstext">PROGRESS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--page 2-->
+    <!--bootstrap cards for generic management structure relevant to all joiners-->
+    START OF PAGE 2 - HOLDER TEXT ONLY
+        <div class="page2">
+            <div class="introtext">
                 The IS high level Managers are
             </div>
             <div class="container genericstructure">
@@ -148,124 +159,122 @@
                             <p class="card-text font-weight-bold">Andrew Chan</p>
                             <p>As you will be in the Marketing department, Andrew will be your contact. You can call him on 07917 581 000 or 
                             email a.chan@metatis.com</p>
-                        <!--employees from department #2-->
-                        <div class="card-body employeecode2">
-                            <p class="card-text font-weight-bold">Emma Barton</p>
-                            <p>As you will be in the Sales department, Emma will be your contact. You can call her on 07917 581 001 or 
-                            email e.barton@metatis.com</p>
-                        </div>
-                        <!--employees from department #3-->
-                        <div class="card-body employeecode3">
-                            <p class="card-text font-weight-bold">Deborah Aswari</p>
-                            <p>As you will be in the Central Services department, Deborah will be your contact. You can call her on 07917 581 002 or 
-                            email d.aswari@metatis.com</p>
-                        </div>
-                        <!--employees from department #4-->
-                        <div class="card-body employeecode4">
-                            <p class="card-text font-weight-bold">Nick Desai</p>
-                            <p>As you will be in the Central Services department, Nick will be your contact. You can call him on 07917 581 003 or 
-                            email n.desai@metatis.com</p>
-                        </div>
-                        <!--employees from department #5-->
-                        <div class="card-body employeecode5">
-                            <p class="card-text font-weight-bold">Heather Garcia</p>
-                            <p>As you will be joining us in the Project department, Heather will be your contact. You can call her on 07917 581 004 or 
-                            email h.garcia@metatis.com</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-secondary btn-lg" class="nextbutton" onclick="informationStore();">NEXT  
+                        <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
+                    </div>
+                </div>
             </div>
-
-            START OF PAGE 3 - HOLDER TEXT ONLY
-
-            <!--page 3-->
-            <!--middle logo-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 progressbar">
+                        <div class="progress" style="height: 40px;">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100"><span class= "progresstext">PROGRESS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--page 3-->
+        START OF PAGE 3 - HOLDER TEXT ONLY
         <div class="page3">
-            <div class="col-sm-12 col-lg-4 laptoplogo">
-				<a href="https://www.google.com/" target="_blank">
-					<img src="assets/images/laptop.png" class="img-fluid mx-auto d-block" alt="Laptop logo"/>
-                </a>
-            </div>
             <!--bootstrap cards for laptop choice relating to employees department-->
-            <div class="p3intro">
+            <div class="introtext">
                 Now choose your laptop
             </div><br>
             <div>
-                <p>As you work in the xxxxxxxxx department you will want a machine that xxxxxxxxxx, both of these options will suit your needs</p>
+                <p class="secondarytext">As you work in the xxxxxxxxx department you will want a machine that xxxxxxxxxx, both of these options will suit your needs</p>
             </div>
             <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="card">
                         <img src="assets/images/laptopimage.png" class="card-img-top" alt="picture of laptop">
-                            <div class="card-body">
-                                <h5 class="card-title">Dell Precision 3540</h5>
-                                <p class="card-text">15.6" i7 laptop</p>
-                            </div>
-                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">16GB Memory</li>
-                                <li class="list-group-item">512 GB SSD</li>
-                                <li class="list-group-item">Windows 10 Pro</li>
-                                </ul>
-                            <div class="card-body">
-                                <a href="https://www.dell.com/en-uk/work/shop/workstations/precision-3540-mobile-workstation/spd/precision-15-3540-laptop" target="_blank" class="card-link">Want to know more?</a>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">
-                                            <input type="radio" aria-label="radio button for choosing dell 3540">
-                                        </div class=>
+                        <div class="card-body">
+                            <h5 class="card-title">Dell Precision 3540</h5>
+                            <p class="card-text">15.6" i7 laptop</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">16GB Memory</li>
+                            <li class="list-group-item">512 GB SSD</li>
+                            <li class="list-group-item">Windows 10 Pro</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="https://www.dell.com/en-uk/work/shop/workstations/precision-3540-mobile-workstation/spd/precision-15-3540-laptop" target="_blank" class="card-link">Want to know more?</a>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" aria-label="radio button for choosing dell 3540">
+                                    </div class=>
                                         Choose me
-                                    </div>
                                 </div>
                             </div>
-                    </div>
-                    
+                        </div>
+                    </div>                    
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="card">
                         <img src="assets/images/laptopimage.png" class="card-img-top" alt="picture of laptop">
-                            <div class="card-body">
-                                <h5 class="card-title">HP ZBook 9850</h5>
-                                <p class="card-text">17.3" i7 laptop</p>
-                            </div>
-                                <ul class="list-group list-group-flush">
+                        <div class="card-body">
+                            <h5 class="card-title">HP ZBook 9850</h5>
+                            <p class="card-text">17.3" i7 laptop</p>
+                        </div>
+                            <ul class="list-group list-group-flush">
                                 <li class="list-group-item">32GB memory</li>
                                 <li class="list-group-item">512 GB SSD</li>
                                 <li class="list-group-item">Windows 10 Pro</li>
-                                </ul>
-                            <div class="card-body">
-                                <a href="https://store.hp.com/UKStore/Merch/Product.aspx?id=6TV06EA&opt=ABU&sel=NTB" target="_blank" class="card-link">Want to know more?</a>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">
-                                            <input type="radio" aria-label="radio button for choosing dell 3540">
-                                        </div>
-                                        Choose me
+                            </ul>
+                        <div class="card-body">
+                            <a href="https://store.hp.com/UKStore/Merch/Product.aspx?id=6TV06EA&opt=ABU&sel=NTB" target="_blank" class="card-link">Want to know more?</a>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="radio" aria-label="radio button for choosing dell 3540">
                                     </div>
+                                        Choose me
                                 </div>
                             </div>
-                    </div>
-                    
+                        </div>
+                    </div>                   
                 </div>
-                </div>                 
-        </div>
-
-        START OF PAGE 4 - HOLDER TEXT ONLY
-            
-            <!--page 4-->
-            <!--middle logo-->
-            <div class="page4">
-            <div class="col-sm-12 col-lg-4 caselogo">
-				<a href="https://www.google.com/" target="_blank">
-					<img src="assets/images/case.png" class="img-fluid mx-auto d-block" alt="case logo"/>
-                </a>
+            </div>                 
             </div>
-            <div class="p4intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-secondary btn-lg" class="nextbutton" onclick="informationStore();">NEXT  
+                        <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 progressbar">
+                        <div class="progress" style="height: 40px;">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100"><span class= "progresstext">PROGRESS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <!--page 4-->
+        START OF PAGE 4 - HOLDER TEXT ONLY
+        <div class="page4">
+            <div class="introtext">
                 Now it's time to choose your bag
             </div></br>
             <div>
-                <p>As you chose a laptop with a xxxxxxxxxxx screen, both of these options will suit your needs</p>
+                <p class="secondarytext">As you chose a laptop with a xxxxxxxxxxx screen, both of these options will suit your needs</p>
             </div>
             <div class="container">
             <div class="row">
@@ -276,11 +285,11 @@
                                 <h5 class="card-title">Belkin backpack case</h5>
                                 <p class="card-text">Perfect for laptops up to 17.5"</p>
                             </div>
-                                <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Soft lining</li>
                                 <li class="list-group-item">Adjustable straps</li>
                                 <li class="list-group-item">Slim & highly portable</li>
-                                </ul>
+                            </ul>
                             <div class="card-body">
                                 <a href="https://www.belkin.com/uk/p/P-F8N159/" target="_blank" class="card-link">Want to know more?</a>
                                 <div class="input-group">
@@ -292,8 +301,7 @@
                                     </div>
                                 </div>
                             </div>
-                    </div>
-                    
+                    </div>                   
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="card">
@@ -318,110 +326,114 @@
                                     </div>
                                 </div>
                             </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
-                </div> 
+            </div> 
             </div>
-            
-            START OF PAGE 5 - HOLDER TEXT ONLY
-            
-            <!--page 5-->
-            <!--middle logo-->
-            <div class="page5">
-                <div class="col-sm-12 col-lg-4 screenlogo">
-				        <a href="https://www.google.com/" target="_blank">
-					<img src="assets/images/screen.png" class="img-fluid mx-auto d-block" alt="Screen logo"/>
-                    </a>
-                </div>
-                <div class="p5intro">
-                How about a screen for when you are at the office?
-            </div></br>
-            <div>
-                <p>At Metatis, we feel screen size is simply a matter of preference, everyone gets to choose what works for them. Both of these are great options</p>
-            </div>
-            <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="card">
-                        <img src="assets/images/screenimage.jpg" class="card-img-top" alt="picture of screen1">
-                            <div class="card-body">
-                                <h5 class="card-title">HP 27"</h5>
-                                <p class="card-text">Ultraslim</p>
-                            </div>
-                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Full HD</li>
-                                <li class="list-group-item">Anti glare</li>
-                                <li class="list-group-item">Micro edge display</li>
-                                </ul>
-                            <div class="card-body">
-                                <a href="https://store.hp.com/UKStore/Merch/Product.aspx?id=3KS64AA&opt=ABU&sel=MTO" target="_blank" class="card-link">Want to know more?</a>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">
-                                            <input type="radio" aria-label="radio button for choosing 27" screen choice>
-                                        </div>
-                                        Choose me
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="picture of laptop case">
-                            <div class="card-body">
-                                <h5 class="card-title">Belkin shoulder strap case</h5>
-                                <p class="card-text">Perfect for laptops up to 17.5"</p>
-                            </div>
-                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Harder case</li>
-                                <li class="list-group-item">Adjustable straps</li>
-                                <li class="list-group-item">Heavier duty case for more protection</li>
-                                </ul>
-                            <div class="card-body">
-                                <a href="https://www.belkin.com/uk/p/P-F8N205/" target="_blank" class="card-link">Want to know more?</a>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">
-                                            <input type="radio" aria-label="radio button for choosing Belkin shoulder strap case">
-                                        </div>
-                                        Choose me
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    
-                </div>
-                </div> 
-
-            </div>
-
-
-
-            <!--This section is for the NEXT button-->
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <button type="submit" class="btn btn-secondary btn-lg" id="p1button" onclick="informationStore();">NEXT  
+                        <button type="submit" class="btn btn-secondary btn-lg" class="nextbutton" onclick="informationStore();">NEXT  
                         <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
                     </div>
                 </div>
-        </form>
-        
-        <!--progress bar NOTE.......be sure to change percentages to match correct amount-->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 progressbar">
-                    <div class="progress" style="height: 40px;">
-                        <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
-                        aria-valuemin="0" aria-valuemax="100"><span class= "progresstext">PROGRESS</span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 progressbar">
+                        <div class="progress" style="height: 40px;">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100"><span class= "progresstext">PROGRESS</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+            
+        <!--page 5-->
+        START OF PAGE 5 - HOLDER TEXT ONLY
+            <!--middle logo-->
+            <div class="page5">
+                <div class="introtext">
+                    How about a screen for when you are at the office?
+                </div></br>
+                <div>
+                <p class="secondarytext">At Metatis, we feel screen size is simply a matter of preference, everyone gets to choose what works for them. Both of these are great options</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <img src="assets/images/screenimage.jpg" class="card-img-top" alt="picture of screen1">
+                                <div class="card-body">
+                                    <h5 class="card-title">HP 27"</h5>
+                                    <p class="card-text">Ultraslim</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Full HD</li>
+                                    <li class="list-group-item">Anti glare</li>
+                                    <li class="list-group-item">Micro edge display</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="https://store.hp.com/UKStore/Merch/Product.aspx?id=3KS64AA&opt=ABU&sel=MTO" target="_blank" class="card-link">Want to know more?</a>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <input type="radio" aria-label="radio button for choosing 27" screen choice>
+                                            </div>
+                                            Choose me
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <img src="..." class="card-img-top" alt="picture of laptop case">
+                                <div class="card-body">
+                                    <h5 class="card-title">Belkin shoulder strap case</h5>
+                                    <p class="card-text">Perfect for laptops up to 17.5"</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Harder case</li>
+                                    <li class="list-group-item">Adjustable straps</li>
+                                    <li class="list-group-item">Heavier duty case for more protection</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="https://www.belkin.com/uk/p/P-F8N205/" target="_blank" class="card-link">Want to know more?</a>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                    <input type="radio" aria-label="radio button for choosing Belkin shoulder strap case">
+                                                </div>
+                                                 Choose me
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-secondary btn-lg" class="nextbutton" onclick="informationStore();">NEXT  
+                        <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 progressbar">
+                        <div class="progress" style="height: 40px;">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100"><span class= "progresstext">PROGRESS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+      
 
 		<!--scripts-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
