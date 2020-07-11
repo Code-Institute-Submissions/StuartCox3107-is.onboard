@@ -6,16 +6,8 @@ body {
  color: #566573;
 }
 
-.companylogo {
+.logos {
     padding-top: 75px;
-}
-
-.islogo {
-    padding-top: 75px;
-}
-
-.welcomelogo {
-    padding-top: 25px;
 }
 
 .btn {
@@ -62,12 +54,20 @@ body {
 .secondarytext {
     font-size: 2rem;
     text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin: 15px 25px 15px 25px;
 }
 
 .nextbutton {
     background-color: #566573;
     color: white;
-    margin-bottom: 20px;
+}
+
+.nextbtndiv {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 
@@ -94,10 +94,6 @@ body {
 
 /* local styling page 1*/
 
-.introductiontext {
-    text-align: center;
-    margin: 15px 25px 15px 25px;
-}
 
 .page1questions {
     margin-bottom: 15px;
@@ -108,17 +104,10 @@ body {
     margin-right: 15px;
 }
 
-#p1button {
-    background-color: #566573;
-    color: white;
-    margin-bottom: 20px;
-}
+
 
 /*local styling page 2*/
 
-.page2 {
-    font-size: 1.8rem;
-}
 
 .genericstructure {
     border-bottom: 2px solid #566573;
