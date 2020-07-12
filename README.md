@@ -1,4 +1,8 @@
 <div align="center">
+<img src="assets/images/multidevicemockup.png" width="350">
+</div>
+
+<div align="center">
 <img src="assets/images/isonboardlogo.png" height="350" width="350">
 </div>
 
