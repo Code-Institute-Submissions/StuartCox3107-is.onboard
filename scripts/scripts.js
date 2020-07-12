@@ -64,7 +64,7 @@ $('#txtFourthDigit').on('input', function() {
 $(handles.button1).on('click', function(){
   if(staffnumber.length===4){
     if(1<=staffnumber[0]&& staffnumber[0]<=5){
-      
+     
       //after all checks passed and staff number & name stored, hides page 1 and displays relevant page 2
       hideElement(handles.page1);
       showElement(handles.page2);
@@ -81,5 +81,6 @@ $(handles.button1).on('click', function(){
   }
   });
 
-  console.log(staffnumber);
-  
+
+//test to check whether staffnumber variable is being stored
+alert(staffnumber);
