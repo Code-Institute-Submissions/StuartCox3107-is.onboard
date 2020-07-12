@@ -84,3 +84,58 @@ $(handles.button1).on('click', function(){
 
 //test to check whether staffnumber variable is being stored
 alert(staffnumber);
+
+function display() {
+  const dep;      
+  const contactFname;
+  const contactLname;
+  const contactPhone;
+  switch (usernumber[0]) {
+    case 1:
+      dep = "IS";
+      contactFname = "Andrew";
+      contactLname = "Chan";
+      contactPhone = "001";
+      break;
+    case 2:
+        dep = "Marketing";
+        contactFname = "Emma";
+        contactLname = "Harding";
+        contactPhone = "002";
+        break;
+    case 3:
+        dep = "Facilities";
+        contactFname = "Simon";
+        contactLname = "Anand";
+        contactPhone = "003";
+        break;
+    case 4:
+        dep = "Central Services";
+        contactFname = "Laura";
+        contactLname = "Kim";
+        contactPhone = "004";
+        break;
+    case 5:
+        dep = "Finance";
+        contactFname = "Paul";
+        contactLname = "Garcia";
+        contactPhone = "005";
+        break;   
+    default:
+      break;
+  }
+  let pName = document.createElement('p');
+  pName.textContent = contact;
+  pName.classList.add('font-weight-bold');
+
+  let pDetails = document.createElement('p');
+  pDetails.textContent = `As you will be in the ${dep} department, ${contactFname} will be your contact. You can call ${contactFname} 
+  on 07917 581 , ${contactPhone}, or email, ${contactFname}.${contactLname}@metatis.com`;
+
+  let cardText = document.querySelector('.card-text');
+
+  cardText.appendChild(pName);
+  cardText.appendChild(pDetails);
+
+  document.querySelector()
+}
