@@ -76,19 +76,19 @@
                 <div class="row">
                     <div class="col-3 justify-content-center page1questions">
                         <label for="label1">1st digit</label>
-                        <input class="form-control form-control-lg" id="txtFirstDigit" type="number" min="0" max="5" aria-label="First digit of employee number" name="label1">
+                        <input class="form-control form-control-lg" id="txtFirstDigit" type="number" min="1" max="5" aria-label="First digit of employee number" name="label1">
                     </div>
                     <div class="col-3 justify-content-center page1questions">
                         <label for="label2">2nd digit</label>
-                        <input class="form-control form-control-lg" type="number" min="0" max="9" aria-label="Second digit of employee number" name="label2">
+                        <input class="form-control form-control-lg" id="txtSecondDigit" type="number" min="0" max="9" aria-label="Second digit of employee number" name="label2">
                     </div>
                     <div class="col-3 justify-content-center page1questions">
                         <label for="label3">3rd digit</label>
-                        <input class="form-control form-control-lg" type="number" min="0" max="9" aria-label="Third digit of employee number" name="label3">
+                        <input class="form-control form-control-lg" id="txtThirdDigit" type="number" min="0" max="9" aria-label="Third digit of employee number" name="label3">
                     </div>
                     <div class="col-3 justify-content-center page1questions">
                         <label for="label4">4th digit</label>
-                        <input class="form-control form-control-lg" type="number" min="0" max="9" aria-label="Fourth digit of employee number" name="label4"><br>
+                        <input class="form-control form-control-lg" id="txtFourthDigit" type="number" min="0" max="9" aria-label="Fourth digit of employee number" name="label4"><br>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
             <div class="container">
                 <div class="row nextbtndiv">
                     <div class="col-12">
-                        <button type="submit" class="btn btn-secondary btn-lg" class="nextbutton" onclick="informationStore();">NEXT  
+                        <button type="submit" class="btn btn-secondary btn-lg" class="nextbutton button1">NEXT  
                         <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
                     </div>
                 </div>
@@ -122,7 +122,6 @@
     </div>
     <!--page 2-->
     <!--bootstrap cards for generic management structure relevant to all joiners-->
-    START OF PAGE 2 - HOLDER TEXT ONLY
         <div class="page2">
             <div class="introtext">
                 You need to know who to go to for help, the three people below are the leaders of the IS Team and your main contact is listed below
@@ -388,7 +387,7 @@
                         </div>
                         <div class="col-12 col-lg-6">
                             <div class="card">
-                                <img src="..." class="card-img-top" alt="picture of laptop case">
+                                <img src="assets/images/screenimage.jpg" class="card-img-top" alt="picture of laptop case">
                                 <div class="card-body">
                                     <h5 class="card-title">Belkin shoulder strap case</h5>
                                     <p class="card-text">Perfect for laptops up to 17.5"</p>
@@ -494,12 +493,11 @@
         </div>
       
 
-		<!--scripts-->
+		<!--script sources-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 		<script src="scripts/scripts.js"></script>
-        <script src="scripts/jquery.validate.min.js"></script>
 </body>
 
 </html>

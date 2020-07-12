@@ -17,61 +17,69 @@ $(".progress-bar").on("mouseleave", function() {
   $(this).css("background-color", "#566573");
 });
 
-//function to store p1 information on input
-function informationStore() {
-    var firstName = document.getElementById("txtFirstName").value;
-    var familyName = document.getElementById("txtFamilyName").value;
-    var firstDigit = document.getElementById("txtFirstDigit").value;
-//below line for testing only, to be removed
-    alert ("Hi " + firstName +" " + familyName + " " +firstDigit + " ,Bye!")
+//function to allow for removing & showing page elements from display
+function showElement(element){
+  element.style.visibility = 'block';
 }
 
-//jquery validation plugin function to validate staff id number input
+function hideElement(element){
+  element.style.visibility = 'hidden';
+}
 
-$(function()
-{
-    $("#p1form").validate(
-      {
-        rules: 
-        {
-          label1: 
-          {
-            required: true,
-            range:[1,5]
-          },
-          label2: 
-          {
-            required: true,
-            range:[0,9]
-          },
-          label3:
-          {
-            required: true,
-            range:[0,9]  
-          },
-          label4:
-          {
-            required: true,
-            range:[0,9]
-          }
-        }
-       });	
+// global array of staff number entered & names
+let staffnumber = [];
+let userfirstname = '';
+let userlastname = '';
+
+const handles = {};
+
+
+//The below checks that all 4 employee numbers entered are a number and pushes the number entered into the staffnumber variable
+$('#txtFirstDigit').on('input', function() {
+  let n1 = document.querySelector('#txtFirstDigit').value;
+  if(jQuery.type(n1) === "number"){
+    staffnumber.push(int(n1));
+  }
+});
+$('#txtSecondDigit').on('input', function() {
+  let n2 = document.querySelector('#txtSecondDigit').value;
+  if(jQuery.type(n2) === "number"){
+    staffnumber.push(int(n2));
+  }
+});
+$('#txtThirdDigit').on('input', function() {
+  let n3 = document.querySelector('#txtThirdDigit').value;
+  if(jQuery.type(n3) === "number"){
+    staffnumber.push(int(n3));
+  }
+});
+$('#txtFourthDigit').on('input', function() {
+  let n4 = document.querySelector('#txtFourthDigit').value;
+  if(jQuery.type(n4) === "number"){
+    staffnumber.push(int(n4));
+  }
 });
 
+//checks that the staffnumber variable is 4 digits long and the first digit is between 1 and 5
+$(handles.button1).on('click', function(){
+  if(staffnumber.length===4){
+    if(1<=staffnumber[0]&& staffnumber[0]<=5){
+      
+      //after all checks passed and staff number & name stored, hides page 1 and displays relevant page 2
+      hideElement(handles.page1);
+      showElement(handles.page2);
 
+      display();
+    }
+    else{
+      // first number out of range
+      console.log("1st digit not valid")
+    }
+    }else{
+    // print error, they should fill it
+    print("Please enter a number")
+  }
+  });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  console.log(staffnumber);
+  
