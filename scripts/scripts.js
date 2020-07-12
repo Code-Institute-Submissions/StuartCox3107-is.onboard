@@ -60,7 +60,10 @@ $('#txtFourthDigit').on('input', function() {
   }
 });
 
-//checks that the staffnumber variable is 4 digits long and the first digit is between 1 and 5
+//test to check whether staffnumber variable is being stored
+console.log(staffnumber);
+
+//onclick to check that the staffnumber variable is 4 digits long and the first digit is between 1 and 5
 $(handles.button1).on('click', function(){
   if(staffnumber.length===4){
     if(1<=staffnumber[0]&& staffnumber[0]<=5){
@@ -82,9 +85,8 @@ $(handles.button1).on('click', function(){
   });
 
 
-//test to check whether staffnumber variable is being stored
-alert(staffnumber);
 
+/*the below will take the first digit of the staff number and use it to populate page 2 with the correct contact person
 function display() {
   const dep;      
   const contactFname;
@@ -95,31 +97,31 @@ function display() {
       dep = "IS";
       contactFname = "Andrew";
       contactLname = "Chan";
-      contactPhone = "001";
+      contactPhone = "1";
       break;
     case 2:
         dep = "Marketing";
         contactFname = "Emma";
         contactLname = "Harding";
-        contactPhone = "002";
+        contactPhone = "2";
         break;
     case 3:
         dep = "Facilities";
         contactFname = "Simon";
         contactLname = "Anand";
-        contactPhone = "003";
+        contactPhone = "3";
         break;
     case 4:
         dep = "Central Services";
         contactFname = "Laura";
         contactLname = "Kim";
-        contactPhone = "004";
+        contactPhone = "4";
         break;
     case 5:
         dep = "Finance";
         contactFname = "Paul";
         contactLname = "Garcia";
-        contactPhone = "005";
+        contactPhone = "5";
         break;   
     default:
       break;
@@ -130,7 +132,7 @@ function display() {
 
   let pDetails = document.createElement('p');
   pDetails.textContent = `As you will be in the ${dep} department, ${contactFname} will be your contact. You can call ${contactFname} 
-  on 07917 581 , ${contactPhone}, or email, ${contactFname}.${contactLname}@metatis.com`;
+  on 020 7581 100${contactPhone}, or email, ${contactFname}.${contactLname}@metatis.com`;
 
   let cardText = document.querySelector('.card-text');
 
@@ -139,3 +141,4 @@ function display() {
 
   document.querySelector()
 }
+*/
