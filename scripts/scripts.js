@@ -32,7 +32,6 @@ $(".progress-bar").on("mouseleave", function() {
   $(this).css("background-color", "#566573");
 });
 
-
 //the below pushes the number entered into the staffnumber variable
 $('#txtFirstDigit').on('input', function() {
   staffnumber.push(parseInt(this.value, 10));
@@ -47,17 +46,18 @@ $('#txtFourthDigit').on('input', function () {
   staffnumber.push(parseInt(this.value, 10));
 });
 
-//the below stores the names
+//onclick to store the names
 $(".button1").on('click', function() {
     userfirstname=(txtFirstName.value);
     userlastname=(txtFamilyName.value);
     console.log(`Name: ${userfirstname} ${userlastname}`);
-});
+ });
+
 
 
 //onclick to check that the staffnumber variable is 4 digits long and the first digit is between 1 and 5
 $(".button1").on('click', function() {
-    //testing of recording of staff number and number of staff number digits
+    //testing of recording of name, staff number and number of staff number digits
     console.log(`staffnumber array is ${staffnumber} and its length is ${staffnumber.length}`);
 
   if(staffnumber.length===4){
@@ -66,24 +66,13 @@ $(".button1").on('click', function() {
     //after all checks passed and staff number & name stored, hides page 1 and displays relevant page 2
     $(".page1").hide();
     $(".page2").show();
-
-    }
-    else{
-      // first number out of range
-      alert("1st digit not valid")
-    }
+    }   
     }else{
-    // print error, they should fill it
-    alert("Staff number was empty")
+      alert("Please enter a valid employee number. Employee numbers are four digits long and the first digit is between 1 and 5. you will have received this on your welcome email")
   }
   });
 
-
-
-
-
-
-/*the below will take the first digit of the staff number and use it to populate page two w the correct contact person
+/*the below will take the first digit of the staff number and use it to populate page two with the correct contact person
 function display() {
   const dep;      
   const contactFname;
