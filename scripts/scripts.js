@@ -1,6 +1,7 @@
 
 "use strict";
 
+//this makes the opening page show view 1 only and hides all other views
 $(".page2").hide();
 $(".page3").hide();
 $(".page4").hide();
@@ -31,7 +32,8 @@ $(".progress-bar").on("mouseleave", function() {
   $(this).css("background-color", "#566573");
 });
 
-//The below pushes the number entered into the staffnumber variable
+
+//the below pushes the number entered into the staffnumber variable
 $('#txtFirstDigit').on('input', function() {
   staffnumber.push(parseInt(this.value, 10));
 });
@@ -43,6 +45,13 @@ $('#txtThirdDigit').on('input', function () {
 });
 $('#txtFourthDigit').on('input', function () {
   staffnumber.push(parseInt(this.value, 10));
+});
+
+//the below stores the names
+$(".button1").on('click', function() {
+    userfirstname=(txtFirstName.value);
+    userlastname=(txtFamilyName.value);
+    console.log(`Name: ${userfirstname} ${userlastname}`);
 });
 
 
@@ -73,7 +82,8 @@ $(".button1").on('click', function() {
 
 
 
-/*the below will take the first digit of the staff number and use it to populate page 2 with the correct contact person
+
+/*the below will take the first digit of the staff number and use it to populate page two w the correct contact person
 function display() {
   const dep;      
   const contactFname;
@@ -114,7 +124,7 @@ function display() {
       break;
   }
   let pName = document.createElement('p');
-  pName.textContent = contact;
+  pName.textContent = contactFname;
   pName.classList.add('font-weight-bold');
 
   let pDetails = document.createElement('p');
