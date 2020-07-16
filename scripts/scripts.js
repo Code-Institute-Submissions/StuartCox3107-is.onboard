@@ -81,7 +81,7 @@ $(".button1").on('click', function () {
     alert("Please enter a valid employee number. Employee numbers are four digits long and all numbers are between 1 and 5. you will have received this on your welcome email")
   }
 });
-
+// function to change the contact details on page 2 to the relevant IS contact according to the 1st digit of the staff number
 function display() {
   let dep;
   let contactFname;
@@ -122,10 +122,12 @@ function display() {
       alert('error in displaying the text');
       break;
   }
+  //full name of the person IS contact
   let pName = document.createElement('p');
   pName.textContent = contactFname + " " + contactLname;
   pName.classList.add('font-weight-bold');
 
+  //Details & contact of the relevant contact person
   let pDetails = document.createElement('p');
   pDetails.textContent = `As you will be in the ${dep} department, ${contactFname} will be your contact. You can call ${contactFname} 
   on 020 7581 100${contactPhone}, or email, ${contactFname}.${contactLname}@metatis.com`;
@@ -135,5 +137,11 @@ function display() {
 
   parent.appendChild(pName);
   parent.appendChild(pDetails);
-
 }
+
+//function to move from page 2 to page 3
+$(".button2").on('click', function () {
+    $(".page2").hide();
+    $(".page3").show();
+    display();
+});
