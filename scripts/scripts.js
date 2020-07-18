@@ -143,5 +143,107 @@ function display() {
 $(".button2").on('click', function () {
     $(".page2").hide();
     $(".page3").show();
-    display();
+    //call the display2 function
+    display2();
 });
+
+//the below will take the first digit of the staff number and use it to populate page 3 with the correct introduction and laptop choices
+
+function display2() {
+    let departmentName;
+    let departmentSpec;
+    let laptop1;
+    let laptop1Detail1;
+    let laptop1Detail2;
+    let laptop1Detail3;
+    let laptop1Detail4;
+    let laptop2;
+    let laptop2Detail1;
+    let laptop2Detail2;
+    let laptop2Detail3;
+    let laptop2Detail4;
+    switch (staffnumber[0]) {
+        case 1:
+            departmentName = "IS";
+            departmentSpec = " is lighting fast";
+            laptop1 = "Dell Precision 3540";
+            laptop1Detail1 = "15.6 inch screen, i7 processor";
+            laptop1Detail2 = "16 GB Memory";
+            laptop1Detail3 = "512 GB SSD";
+            laptop1Detail4 = "windows 10 Pro";
+            laptop2 = "HP ZBook 9850";
+            laptop2Detail1 = "17.3 inch screen, i7 processor";
+            laptop2Detail2 = "32 GB Memory";
+            laptop2Detail3 = "512 GB SSD";
+            laptop2Detail4 = "windows 10 Pro";
+            break;
+            case 2:
+            departmentName = "Marketing";
+            departmentSpec = " is reasonably quick and has great graphics";
+            laptop1 = "Dell Precision 3540";
+            laptop1Detail1 = "15.6 inch screen, i7 processor";
+            laptop1Detail2 = "16 GB Memory";
+            laptop1Detail3 = "512 GB SSD";
+            laptop1Detail4 = "windows 10 Pro";
+            laptop2 = "HP ZBook 9850";
+            laptop2Detail1 = "17.3 inch screen, i7 processor";
+            laptop2Detail2 = "32 GB Memory";
+            laptop2Detail3 = "512 GB SSD";
+            laptop2Detail4 = "windows 10 Pro";
+            break;
+            case 3:
+            departmentName = "Facilities";
+            departmentSpec = " is portable and robust";
+            laptop1 = "Dell Precision 3540";
+            laptop1Detail1 = "15.6 inch screen, i7 processor";
+            laptop1Detail2 = "16 GB Memory";
+            laptop1Detail3 = "512 GB SSD";
+            laptop1Detail4 = "windows 10 Pro";
+            laptop2 = "HP ZBook 9850";
+            laptop2Detail1 = "17.3 inch screen, i7 processor";
+            laptop2Detail2 = "32 GB Memory";
+            laptop2Detail3 = "512 GB SSD";
+            laptop2Detail4 = "windows 10 Pro";
+            break;
+            case 4:
+            departmentName = "Central Services";
+            departmentSpec = " is great for multi-tasking";
+            laptop1 = "Dell Precision 3540";
+            laptop1Detail1 = "15.6 inch screen, i7 processor";
+            laptop1Detail2 = "16 GB Memory";
+            laptop1Detail3 = "512 GB SSD";
+            laptop1Detail4 = "windows 10 Pro";
+            laptop2 = "HP ZBook 9850";
+            laptop2Detail1 = "17.3 inch screen, i7 processor";
+            laptop2Detail2 = "32 GB Memory";
+            laptop2Detail3 = "512 GB SSD";
+            laptop2Detail4 = "windows 10 Pro";
+            break;
+            case 5:
+            departmentName = "Finance";
+            departmentSpec = " can cope with lots of data";
+            laptop1 = "Dell Precision 3540";
+            laptop1Detail1 = "15.6 inch screen, i7 processor";
+            laptop1Detail2 = "16 GB Memory";
+            laptop1Detail3 = "512 GB SSD";
+            laptop1Detail4 = "windows 10 Pro";
+            laptop2 = "HP ZBook 9850";
+            laptop2Detail1 = "17.3 inch screen, i7 processor";
+            laptop2Detail2 = "32 GB Memory";
+            laptop2Detail3 = "512 GB SSD";
+            laptop2Detail4 = "windows 10 Pro";
+            break;
+        default:
+            alert("error in employee department");
+            break;
+    }
+let introText = document.createElement("p");
+introText.textContent = `As you work in the ${departmentName} department, you will want a machine that ${departmentSpec}, either of these machines 
+    will be fantastic for you.`;
+
+let parent2 = document.querySelector("#p3intro");
+parent2.textContent = "";
+
+parent2.appendChild(introText);
+};
+
