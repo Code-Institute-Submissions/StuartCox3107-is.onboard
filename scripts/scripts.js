@@ -254,30 +254,92 @@ function display2() {
 let introText = document.createElement("p");
 introText.textContent = `As you work in the ${departmentName} department, you will want a machine that ${departmentSpec}, either of these options
     will be fantastic for you.`;
-
 let parent2 = document.querySelector("#p3intro");
 parent2.textContent = "";
-
 parent2.appendChild(introText);
-};
 
-//adds relevant laptop name
-let laptop1Text = document.createElement("p");
-laptop1Text.textContent = `Model: ${laptopType1}`;
-
+//adds relevant laptop name for first card
+let laptop1Text = document.createElement("h5");
+laptop1Text.textContent = laptopType1;
 let parent3 = document.querySelector("#laptop1name");
 parent3.textContent = "";
-
 parent3.appendChild(laptop1Text);
 
 //adds relevant detail 1
 let laptop1Text2 = document.createElement("p");
 laptop1Text2.textContent = laptop1Detail1;
-
 let parent4 = document.querySelector("#laptop1feat1");
 parent4.textContent = "";
-
 parent4.appendChild(laptop1Text2);
+
+//adds relevant detail 2
+let laptop1Text3 = document.createElement("p");
+laptop1Text3.textContent = laptop1Detail2;
+let parent5 = document.querySelector("#laptop1feat2");
+parent5.textContent = "";
+parent5.appendChild(laptop1Text3);
+
+//adds relevant detail 3
+let laptop1Text4 = document.createElement("p");
+laptop1Text4.textContent = laptop1Detail3;
+let parent6 = document.querySelector("#laptop1feat3");
+parent6.textContent = "";
+parent6.appendChild(laptop1Text4);
+
+//adds relevant detail 4
+let laptop1Text5 = document.createElement("p");
+laptop1Text5.textContent = laptop1Detail4;
+let parent7 = document.querySelector("#laptop1feat4");
+parent7.textContent = "";
+parent7.appendChild(laptop1Text5);
+
+//adds relevant laptop name for second card
+let laptop2Text = document.createElement("h5");
+laptop2Text.textContent = laptopType2;
+let parent8 = document.querySelector("#laptop2name");
+parent8.textContent = "";
+parent8.appendChild(laptop2Text);
+
+//adds relevant detail 1
+let laptop2Text2 = document.createElement("p");
+laptop2Text2.textContent = laptop2Detail1;
+let parent9 = document.querySelector("#laptop2feat1");
+parent9.textContent = "";
+parent9.appendChild(laptop2Text2);
+
+//adds relevant detail 2
+let laptop2Text3 = document.createElement("p");
+laptop2Text3.textContent = laptop2Detail2;
+let parent10 = document.querySelector("#laptop2feat2");
+parent10.textContent = "";
+parent10.appendChild(laptop1Text3);
+
+//adds relevant detail 3
+let laptop2Text4 = document.createElement("p");
+laptop2Text4.textContent = laptop2Detail3;
+let parent11 = document.querySelector("#laptop2feat3");
+parent11.textContent = "";
+parent11.appendChild(laptop1Text4);
+
+//adds relevant detail 4
+let laptop2Text5 = document.createElement("p");
+laptop2Text5.textContent = laptop2Detail4;
+let parent12 = document.querySelector("#laptop2feat4");
+parent12.textContent = "";
+parent12.appendChild(laptop2Text5);
+};
+
+
+
+//records the value of the laptop chosen, code taken from TutorialRepublic.com
+$(document).ready(function(){
+        $("input[type='button']").click(function(){
+        	var radioValue = $("input[name='laptopchoice']:checked").val();
+            if(radioValue){
+                console.log("Computer chosen: " + radioValue);
+            }
+        });
+    });
 
 //function to move from page 3 to page 4
 $(".button3").on('click', function () {
@@ -286,4 +348,7 @@ $(".button3").on('click', function () {
     //call the display3 function
     display3();
 });
+
+
+//page 4 case choices- driven by laptop size chosen
 

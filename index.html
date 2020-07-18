@@ -219,7 +219,7 @@
                         <img id="laptop1_img" src="assets/images/laptopimage.png" class="card-img-top" alt="picture of laptop">
                         <div class="card-body">
                             <!--laptop features to populate card text from scripts.js, depending on department-->
-                            <p class="card-title" id="laptop1name"></p>
+                            <h5 class="card-title" id="laptop1name"></h5>
                             <p class="card-text" id="laptop1feat1"></p>
                         </div>
                         <ul class="list-group list-group-flush">
@@ -233,7 +233,7 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
-                                        <input type="radio" aria-label="radio button for choosing dell 3540">
+                                        <input type="radio" name="laptopchoice" aria-label="radio button for choosing dell 3540" value="Choice1" required>
                                     </div>
                                     Choose me
                                 </div>
@@ -259,7 +259,7 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
-                                        <input type="radio" aria-label="radio button for choosing dell 3540">
+                                        <input type="radio" name="laptopchoice" aria-label="radio button for choosing dell 3540" value="Choice2" required>
                                     </div>
                                     Choose me
                                 </div>
@@ -314,8 +314,6 @@
                             <li class="list-group-item">Slim & highly portable</li>
                         </ul>
                         <div class="card-body">
-                            <a href="https://www.belkin.com/uk/p/P-F8N159/" target="_blank" class="card-link">Want to
-                                know more?</a>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
@@ -332,7 +330,8 @@
                         <img src="assets/images/belkin2.png" class="card-img-top" alt="picture of laptop case">
                         <div class="card-body">
                             <h5 class="card-title">Belkin shoulder strap case</h5>
-                            <p class="card-text">Perfect for laptops up to 17.5"</p>
+                            <!--scripts.js will insert the relevant sized laptop chosen-->
+                            <p class="card-text" id="laptopcasetext"></p>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Harder case</li>
@@ -340,8 +339,6 @@
                             <li class="list-group-item">Heavier duty case for more protection</li>
                         </ul>
                         <div class="card-body">
-                            <a href="https://www.belkin.com/uk/p/P-F8N205/" target="_blank" class="card-link">Want to
-                                know more?</a>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
