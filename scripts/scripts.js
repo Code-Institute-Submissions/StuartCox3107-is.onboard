@@ -252,7 +252,7 @@ function display2() {
 
 //adds department name and department requirements spec to into text
 let introText = document.createElement("p");
-introText.textContent = `As you work in the ${departmentName} department, you will want a machine that ${departmentSpec}, either of these options
+introText.textContent = `As you will work in the ${departmentName} department, you will want a machine that ${departmentSpec}, either of these options
     will be fantastic for you.`;
 let parent2 = document.querySelector("#p3intro");
 parent2.textContent = "";
@@ -352,3 +352,27 @@ $(".button3").on('click', function () {
 
 //page 4 case choices- driven by laptop size chosen
 
+function display3() {
+    let bagSize;
+    if (laptopType1 || laptopType2 == "Dell Precision 3540" || "Acer ConceptD 7 Pro" || "Acer ConceptD 5" || "Asus ZenBook Pro 15" || "Lenovo ThinkPad P1") {
+        bagSize = "15 inch";
+    }    else if (laptopType1 || laptopType2 == "HP ZBook 9850" || "Dell XPS 17" || "Dell Precision 7740") {
+        bagSize = "17 inch";
+    }   else {
+        bagSize = "13 inch";
+    }    
+}
+
+let BagIntroText = document.createElement("p");
+BagIntroText.textContent = `As you chose a ${bagSize} laptop, please choose one of these two options.`;
+let parent13 = document.querySelector("#laptopintro");
+parent13.textContent = "";
+parent13.appendChild(BagintroText);
+
+//function to move from page 4 to page 5
+$(".button4").on('click', function () {
+    $(".page4").hide();
+    $(".page5").show();
+    //call the display3 function
+    display4();
+});
