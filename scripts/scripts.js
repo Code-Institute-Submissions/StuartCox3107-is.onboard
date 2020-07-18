@@ -265,10 +265,19 @@ parent2.appendChild(introText);
 let laptop1Text = document.createElement("p");
 laptop1Text.textContent = `Model: ${laptopType1}`;
 
-let parent3 = document.querySelector("laptop1name");
+let parent3 = document.querySelector("#laptop1name");
 parent3.textContent = "";
 
 parent3.appendChild(laptop1Text);
+
+//adds relevant detail 1
+let laptop1Text2 = document.createElement("p");
+laptop1Text2.textContent = laptop1Detail1;
+
+let parent4 = document.querySelector("#laptop1feat1");
+parent4.textContent = "";
+
+parent4.appendChild(laptop1Text2);
 
 //function to move from page 3 to page 4
 $(".button3").on('click', function () {
