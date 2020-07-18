@@ -152,13 +152,13 @@ $(".button2").on('click', function () {
 function display2() {
     let departmentName;
     let departmentSpec;
-    let laptop1;
+    let laptopType1;
     let laptop1Detail1;
     let laptop1Detail2;
     let laptop1Detail3;
     let laptop1Detail4;
     let laptop1Link;
-    let laptop2;
+    let laptopType2;
     let laptop2Detail1;
     let laptop2Detail2;
     let laptop2Detail3;
@@ -168,13 +168,13 @@ function display2() {
         case 1:
             departmentName = "IS";
             departmentSpec = " is lighting fast";
-            laptop1 = "Dell Precision 3540";
+            laptopType1 = "Dell Precision 3540";
             laptop1Detail1 = "15.6 inch screen, i7 processor";
             laptop1Detail2 = "16 GB Memory";
             laptop1Detail3 = "512 GB SSD";
             laptop1Detail4 = "Windows 10 Pro";
             laptop1Link = "https://www.dell.com/en-uk/work/shop/workstations/precision-3540-mobile-workstation/spd/precision-15-3540-laptop";
-            laptop2 = "HP ZBook 9850";
+            laptopType2 = "HP ZBook 9850";
             laptop2Detail1 = "17.3 inch screen, i7 processor";
             laptop2Detail2 = "32 GB Memory";
             laptop2Detail3 = "512 GB SSD";
@@ -184,13 +184,13 @@ function display2() {
             case 2:
             departmentName = "Marketing";
             departmentSpec = " is reasonably quick and has great graphics";
-            laptop1 = "MacBook Air";
+            laptopType1 = "MacBook Air";
             laptop1Detail1 = "13.3 inch screen, i5 processor";
             laptop1Detail2 = "8 GB Memory";
-            laptop1Detail3 = "512 GB SSD";
+            laptop1Detail3 = "256 GB SSD";
             laptop1Detail4 = "Space grey casing";
             laptop1Link = "https://www.apple.com/uk/shop/buy-mac/macbook-air/space-grey-1.1ghz-quad-core-core-i5-processor-with-turbo-boost-up-to-3.5ghz-512gb#";
-            laptop2 = "Acer ConceptD 7 Pro";
+            laptopType2 = "Acer ConceptD 7 Pro";
             laptop2Detail1 = "15.6 inch screen, i7 processor";
             laptop2Detail2 = "32 GB Memory";
             laptop2Detail3 = "512 GB SSD";
@@ -200,13 +200,13 @@ function display2() {
             case 3:
             departmentName = "Facilities";
             departmentSpec = " is portable and robust";
-            laptop1 = "Acer ConceptD 5";
+            laptopType1 = "Acer ConceptD 5";
             laptop1Detail1 = "15.6 inch screen, i7 processor";
             laptop1Detail2 = "16 GB Memory";
             laptop1Detail3 = "512 GB SSD";
             laptop1Detail4 = "Windows 10 Pro";
             laptop1Link = "https://uk-store.acer.com/conceptd-5-laptop-cn515-71-black";
-            laptop2 = "Dell XPS 17";
+            laptopType2 = "Dell XPS 17";
             laptop2Detail1 = "17 inch screen, i7 processor";
             laptop2Detail2 = "32 GB Memory";
             laptop2Detail3 = "256 GB SSD";
@@ -216,13 +216,13 @@ function display2() {
             case 4:
             departmentName = "Central Services";
             departmentSpec = " is great for multi-tasking";
-            laptop1 = "Asus ZenBook Pro 15";
+            laptopType1 = "Asus ZenBook Pro 15";
             laptop1Detail1 = "15.6 inch screen, i9 processor";
             laptop1Detail2 = "16 GB Memory";
             laptop1Detail3 = "512 GB SSD";
             laptop1Detail4 = "Touchscreen";
             laptop1Link = "https://www.asus.com/uk/Laptops/ASUS-ZenBook-Pro-15-UX580GD/";
-            laptop2 = "HP Elite dragonfly";
+            laptopType2 = "HP Elite dragonfly";
             laptop2Detail1 = "13.3 inch screen, i7 processor";
             laptop2Detail2 = "32 GB Memory";
             laptop2Detail3 = "512 GB SSD";
@@ -232,30 +232,28 @@ function display2() {
             case 5:
             departmentName = "Finance";
             departmentSpec = " can cope with lots of data";
-            laptop1 = "Lenovo ThinkPad P1";
+            laptopType1 = "Lenovo ThinkPad P1";
             laptop1Detail1 = "15.6 inch screen, i9 processor";
             laptop1Detail2 = "16 GB Memory";
             laptop1Detail3 = "512 GB SSD";
             laptop1Detail4 = "Windows 10 Pro";
             laptop1Link = "https://www.lenovo.com/gb/en/laptops/thinkpad/p-series/P1-Gen-2/p/22WS2WPP102";
-            laptop2 = "Dell Precision 7740";
+            laptopType2 = "Dell Precision 7740";
             laptop2Detail1 = "17.3 inch screen, i7 processor";
             laptop2Detail2 = "32 GB Memory";
             laptop2Detail3 = "512 GB SSD";
-            laptop2Detail4 = "windows 10 Pro";
+            laptop2Detail4 = "Windows 10 Pro";
             laptop2Link = "https://www.dell.com/en-uk/work/shop/laptops/precision-7740-mobile-workstation/spd/precision-17-7740-laptop/n002p7740emea";
             break;
         default:
             alert("error in employee department");
             break;
     }
+
+//adds department name and department requirements spec to into text
 let introText = document.createElement("p");
-introText.textContent = `As you work in the ${departmentName} department, you will want a machine that ${departmentSpec}, either of these machines 
+introText.textContent = `As you work in the ${departmentName} department, you will want a machine that ${departmentSpec}, either of these options
     will be fantastic for you.`;
-
-let laptop1text = document.createElement("h5");
-laptop1text.textContent = laptop1;
-
 
 let parent2 = document.querySelector("#p3intro");
 parent2.textContent = "";
@@ -263,11 +261,20 @@ parent2.textContent = "";
 parent2.appendChild(introText);
 };
 
+//adds relevant laptop name
+let laptop1Text = document.createElement("p");
+laptop1Text.textContent = `Model: ${laptopType1}`;
+
+let parent3 = document.querySelector("laptop1name");
+parent3.textContent = "";
+
+parent3.appendChild(laptop1Text);
+
 //function to move from page 3 to page 4
 $(".button3").on('click', function () {
     $(".page3").hide();
     $(".page4").show();
-    //call the display2 function
+    //call the display3 function
     display3();
 });
 
