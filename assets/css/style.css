@@ -70,6 +70,11 @@ body {
     text-align: center;
 }
 
+li {
+    list-style-type: none;
+}
+}
+
 
 /*the below 3 sections were generated to style the wavy banner using the shape divider app site*/
 .custom-shape-divider-top-1593866364 {
