@@ -330,16 +330,19 @@ parent12.appendChild(laptop2Text5);
 };
 
 
+function recordLaptop() {  
+            if(document.getElementById('choice1').checked) { 
+                    document.getElementById("choice1").value 
+            } 
+            else if(document.getElementById('choice2').checked) { 
+                    document.getElementById("choice2").value   
+            } 
+            else { 
+                alert("Please choose a laptop"); 
+            } 
+        console.log(recordLaptop);
+        } 
 
-//records the value of the laptop chosen, code taken from TutorialRepublic.com
-$(document).ready(function(){
-        $("input[type='button']").click(function(){
-        	var radioValue = $("input[name='laptopchoice']:checked").val();
-            if(radioValue){
-                console.log("Computer chosen: " + radioValue);
-            }
-        });
-    });
 
 //function to move from page 3 to page 4
 $(".button3").on('click', function () {
