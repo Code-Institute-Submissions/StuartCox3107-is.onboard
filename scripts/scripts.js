@@ -342,23 +342,21 @@ parent12.textContent = "";
 parent12.appendChild(laptop2Text5);
 };
 
-/*meant to record laptop chosen
-function recordLaptop() {  
-            if(document.getElementById('choice1').checked) { 
-                    document.getElementById("choice1").value 
-            } 
-            else if(document.getElementById('choice2').checked) { 
-                    document.getElementById("choice2").value   
-            } 
-            else { 
-                alert("Please choose a laptop"); 
-            } 
-        console.log(recordLaptop);
-        }; 
-*/
+//function to record laptop chosen, alerts if no choice made
+function recordLaptop() {
+  if (document.getElementById('choice1').checked) {
+    console.log('Choice 1 was selected');
+    return 1;
+  } else if (document.getElementById('choice2').checked) {
+    console.log('Choice 2 was selected');
+    return 2;
+  } else {
+    alert("Please make a choice, unless you want to use pen & paper!");
+    return 0;
+  }
+}
 
-
-//function to move from page 3 to page 4
+//function to move from page 3 to page 4 as long as choice made
 $(".button3").on('click', function () {
   if (recordLaptop()) {
     // user has selected something
@@ -366,47 +364,54 @@ $(".button3").on('click', function () {
     $(".page4").show();
     //call the display3 function
     display3();
-  } else {
-    // user has yet to make a choice
-    alert("Please make a choice, otherwise you will be using pen & paper!")
   }
 });
 
-
-//page 4 case choices- driven by laptop size chosen
-//header referring to laptop size chosen
-let BagIntroText = document.createElement("p");
-BagIntroText.textContent = `As you chose a ${bagSize} laptop, please choose one of these two options.`;
-let parent13 = document.querySelector("#laptopintro");
-parent13.textContent = "";
-parent13.appendChild(BagintroText);
-
-//function to show correct bag for the laptop size
+//function to allocate a value to bagSize depending on the laptop chosen
 function display3() {
     let bagSize = "";
-    let laptopType1, laptoptype2;
-    if (laptopType1 || laptopType2 === "Dell Precision 3540" || "Acer ConceptD 7 Pro" || "Acer ConceptD 5" || "Asus ZenBook Pro 15" || "Lenovo ThinkPad P1") {
+    if (laptopType1 || laptopType2 == "Dell Precision 3540" || "Acer ConceptD 7 Pro" || "Acer ConceptD 5" || "Asus ZenBook Pro 15" || "Lenovo ThinkPad P1") {
         bagSize = "15 inch";
-    }    else if (laptopType1 || laptopType2 === "HP ZBook 9850" || "Dell XPS 17" || "Dell Precision 7740") {
+    }    else if (laptopType1 || laptopType2 == "HP ZBook 9850" || "Dell XPS 17" || "Dell Precision 7740") {
         bagSize = "17 inch";
     }   else {
         bagSize = "13 inch";
     }    
-};
+}
 
+
+//page 4, header referring to laptop size chosen, card pictures and features unchanged
+let bagIntroText = document.createElement("p");
+bagIntroText.textContent = `As you chose a ${bagSize} laptop, please choose one of these two options.`;
+let parent13 = document.querySelector('#laptopintro');
+parent13.textContent = "";
+parent13.appendChild(bagIntroText);
+
+//function to record bag chosen, recorded as bagchoice1 or bagchoice2, alerts if no choice made
+function recordBag() {
+  if (document.getElementById('bagchoice1').checked) {
+    console.log('Bag choice 1 was selected');
+    return 1;
+  } else if (document.getElementById('bagchoice2').checked) {
+    console.log('Bag choice 2 was selected');
+    return 2;
+  } else {
+    alert("Please make a choice, unless you want to use a carrier bag!");
+    return 0;
+  }
+}
 
 //function to move from page 4 to page 5
-$(".btn4").on('click', function () {
+$(".button4").on('click', function () {
+  if (recordBag()) {
+    // user has selected something
     $(".page4").hide();
     $(".page5").show();
-    //call the display4 function
-    display4();
+  }
 });
 
-function display4 () {
 let screenIntroText = document.createElement("p");
 screenIntroText.textContent = `As you will work in the ${departmentName} department, you will want a screen that allows you to see crystal clear colour, we can recommend either of these.`;
 let parent2 = document.querySelector("#screenintro");
 parent2.textContent = "";
 parent2.appendChild(screenIntroText);
-};
