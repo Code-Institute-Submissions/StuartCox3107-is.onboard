@@ -82,8 +82,8 @@ $(".button1").on('click', function () {
   }
 });
 // function to change the contact details on page 2 to the relevant IS contact according to the 1st digit of the staff number
+let dep;
 function display() {
-  let dep;
   let contactFname;
   let contactLname;
   let contactPhone;
@@ -149,19 +149,19 @@ $(".button2").on('click', function () {
 
 //the below will take the first digit of the staff number and use it to populate page 3 with the correct introduction and laptop choices
 let departmentName;
-    let departmentSpec;
-    let laptopType1;
-    let laptop1Detail1;
-    let laptop1Detail2;
-    let laptop1Detail3;
-    let laptop1Detail4;
-    let laptop1Link;
-    let laptopType2;
-    let laptop2Detail1;
-    let laptop2Detail2;
-    let laptop2Detail3;
-    let laptop2Detail4;
-    let laptop2Link;
+let departmentSpec;
+let laptopType1;
+let laptop1Detail1;
+let laptop1Detail2;
+let laptop1Detail3;
+let laptop1Detail4;
+let laptop1Link;
+let laptopType2;
+let laptop2Detail1;
+let laptop2Detail2;
+let laptop2Detail3;
+let laptop2Detail4;
+let laptop2Link;
 function display2() {
         switch (staffnumber[0]) {
         case 1:
@@ -358,7 +358,7 @@ function recordLaptop() {
 //function to move from page 3 to page 4 as long as choice made
 $(".button3").on('click', function () {
   if (recordLaptop()) {
-    // user has selected something
+    //user has selected something
     $(".page3").hide();
     $(".page4").show();
     //call the display3 function
@@ -375,7 +375,8 @@ function display3() {
         bagSize = "17 inch";
     }   else {
         bagSize = "13 inch";
-    }    
+    }
+    console.log(bagSize);
 }
 
 
@@ -410,7 +411,7 @@ $(".button4").on('click', function () {
 });
 
 let screenIntroText = document.createElement("p");
-screenIntroText.textContent = `As you will work in the ${departmentName} department, you will want a screen that allows you to see crystal clear colour, we can recommend either of these.`;
+screenIntroText.textContent = `As you will work in the ${dep} department, you will want a screen that allows you to see crystal clear colour, we can recommend either of these.`;
 let parent2 = document.querySelector("#screenintro");
 parent2.textContent = "";
 parent2.appendChild(screenIntroText);
