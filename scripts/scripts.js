@@ -293,6 +293,19 @@ let parent7 = document.querySelector("#laptop1feat4");
 parent7.textContent = "";
 parent7.appendChild(laptop1Text5);
 
+/*meant to use an if else to link to the a "want to know more" href element and use the correct href
+let laptopLink = document.createElement("a");
+laptopLink.a = laptop1Link;
+if (laptopType1 === "Dell Precision 3540") {
+    let link1 = document.querySelector("#laptop1link");
+    link1.appendChild(laptopLink);
+}
+else {
+    alert("Choose department 1 for testing");
+}
+*/
+
+
 //adds relevant laptop name for second card
 let laptop2Text = document.createElement("h5");
 laptop2Text.textContent = laptopType2;
@@ -329,7 +342,7 @@ parent12.textContent = "";
 parent12.appendChild(laptop2Text5);
 };
 
-
+/*meant to record laptop chosen
 function recordLaptop() {  
             if(document.getElementById('choice1').checked) { 
                     document.getElementById("choice1").value 
@@ -341,41 +354,59 @@ function recordLaptop() {
                 alert("Please choose a laptop"); 
             } 
         console.log(recordLaptop);
-        } 
+        }; 
+*/
 
 
 //function to move from page 3 to page 4
 $(".button3").on('click', function () {
+  if (recordLaptop()) {
+    // user has selected something
     $(".page3").hide();
     $(".page4").show();
     //call the display3 function
     display3();
+  } else {
+    // user has yet to make a choice
+    alert("Please make a choice, otherwise you will be using pen & paper!")
+  }
 });
 
 
 //page 4 case choices- driven by laptop size chosen
-
-function display3() {
-    let bagSize;
-    if (laptopType1 || laptopType2 == "Dell Precision 3540" || "Acer ConceptD 7 Pro" || "Acer ConceptD 5" || "Asus ZenBook Pro 15" || "Lenovo ThinkPad P1") {
-        bagSize = "15 inch";
-    }    else if (laptopType1 || laptopType2 == "HP ZBook 9850" || "Dell XPS 17" || "Dell Precision 7740") {
-        bagSize = "17 inch";
-    }   else {
-        bagSize = "13 inch";
-    }    
-}
-
+//header referring to laptop size chosen
 let BagIntroText = document.createElement("p");
 BagIntroText.textContent = `As you chose a ${bagSize} laptop, please choose one of these two options.`;
 let parent13 = document.querySelector("#laptopintro");
 parent13.textContent = "";
 parent13.appendChild(BagintroText);
 
+//function to show correct bag for the laptop size
+function display3() {
+    let bagSize = "";
+    let laptopType1, laptoptype2;
+    if (laptopType1 || laptopType2 === "Dell Precision 3540" || "Acer ConceptD 7 Pro" || "Acer ConceptD 5" || "Asus ZenBook Pro 15" || "Lenovo ThinkPad P1") {
+        bagSize = "15 inch";
+    }    else if (laptopType1 || laptopType2 === "HP ZBook 9850" || "Dell XPS 17" || "Dell Precision 7740") {
+        bagSize = "17 inch";
+    }   else {
+        bagSize = "13 inch";
+    }    
+};
+
+
 //function to move from page 4 to page 5
-$(".button4").on('click', function () {
+$(".btn4").on('click', function () {
     $(".page4").hide();
     $(".page5").show();
-    //call the display3 function
+    //call the display4 function
     display4();
 });
+
+function display4 () {
+let screenIntroText = document.createElement("p");
+screenIntroText.textContent = `As you will work in the ${departmentName} department, you will want a screen that allows you to see crystal clear colour, we can recommend either of these.`;
+let parent2 = document.querySelector("#screenintro");
+parent2.textContent = "";
+parent2.appendChild(screenIntroText);
+};
