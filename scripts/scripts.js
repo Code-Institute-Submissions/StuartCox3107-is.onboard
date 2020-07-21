@@ -78,7 +78,7 @@ $(".button1").on('click', function () {
     display();
   //or if input doesn't pass test  
     } else {
-    alert("Please enter a valid employee number. Employee numbers are four digits long and all numbers are between 1 and 5. you will have received this on your welcome email")
+    alert("Please enter a valid employee number. Employee numbers are four digits long and all numbers are between 1 and 5. you will have received this on your welcome email");
   }
 });
 // function to change the contact details on page 2 to the relevant IS contact according to the 1st digit of the staff number
@@ -148,9 +148,7 @@ $(".button2").on('click', function () {
 });
 
 //the below will take the first digit of the staff number and use it to populate page 3 with the correct introduction and laptop choices
-
-function display2() {
-    let departmentName;
+let departmentName;
     let departmentSpec;
     let laptopType1;
     let laptop1Detail1;
@@ -164,7 +162,8 @@ function display2() {
     let laptop2Detail3;
     let laptop2Detail4;
     let laptop2Link;
-    switch (staffnumber[0]) {
+function display2() {
+        switch (staffnumber[0]) {
         case 1:
             departmentName = "IS";
             departmentSpec = " is lighting fast";
@@ -368,8 +367,8 @@ $(".button3").on('click', function () {
 });
 
 //function to allocate a value to bagSize depending on the laptop chosen
+let bagSize = "";
 function display3() {
-    let bagSize = "";
     if (laptopType1 || laptopType2 == "Dell Precision 3540" || "Acer ConceptD 7 Pro" || "Acer ConceptD 5" || "Asus ZenBook Pro 15" || "Lenovo ThinkPad P1") {
         bagSize = "15 inch";
     }    else if (laptopType1 || laptopType2 == "HP ZBook 9850" || "Dell XPS 17" || "Dell Precision 7740") {
