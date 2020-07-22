@@ -404,7 +404,7 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
-                                        <input type="radio" aria-label='radio button for choosing 27" screen choice'>
+                                        <input type="radio" aria-label='radio button for choosing 27" screen choice' value="screenchoice1" id="screenchoice1" required>
                                     </div>
                                     Choose me
                                 </div>
@@ -431,7 +431,7 @@
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
                                         <input type="radio"
-                                            aria-label="radio button for choosing Dell screen">
+                                            aria-label="radio button for choosing Dell screen" value="screenchoice2" id="screenchoice2" required>
                                     </div>
                                     Choose me
                                 </div>
@@ -471,6 +471,8 @@
             <p class="secondarytext">At Metatis, we have offices all over London, see below for where your workplace
                 will be in relation to our other teams</p>
         </div>
+        <!--div to hold google maps api-->
+        <div id="map"></div>
         <div class="container">
             <div class="row nextbtndiv">
                 <div class="col-12">
@@ -492,7 +494,7 @@
         </div>
     </div>
     <!--page 7-->
-    <div class="page6">
+    <div class="page7">
         <div class="introtext">
             That's it, all done for now
         </div><br>
@@ -525,6 +527,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0JiOlqCHbdyvwc5lczs3PnC8bTNFfMgM&callback=initMap"></script>
     <script src="scripts/scripts.js"></script>
 </body>
 
