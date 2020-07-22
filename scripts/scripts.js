@@ -344,10 +344,10 @@ parent12.appendChild(laptop2Text5);
 //function to record laptop chosen, alerts if no choice made
 function recordLaptop() {
   if (document.getElementById('choice1').checked) {
-    console.log('Choice 1 was selected');
+    console.log('Laptop choice 1 was selected');
     return 1;
   } else if (document.getElementById('choice2').checked) {
-    console.log('Choice 2 was selected');
+    console.log('Laptop choice 2 was selected');
     return 2;
   } else {
     alert("Please make a choice, unless you want to use pen & paper!");
@@ -376,7 +376,7 @@ function display3() {
     }   else {
         bagSize = "13 inch";
     }
-    console.log(bagSize);
+    console.log("You need a " + bagSize + " bag");
 }
 
 
@@ -412,6 +412,63 @@ $(".button4").on('click', function () {
 
 let screenIntroText = document.createElement("p");
 screenIntroText.textContent = `As you will work in the ${dep} department, you will want a screen that allows you to see crystal clear colour, we can recommend either of these.`;
-let parent2 = document.querySelector("#screenintro");
-parent2.textContent = "";
-parent2.appendChild(screenIntroText);
+let parent14 = document.querySelector("#screenintro");
+parent14.textContent = "";
+parent14.appendChild(screenIntroText);
+
+//function to record screen chosen, recorded as screenchoice1 or screenchoice2, alerts if no choice made
+function recordScreen() {
+  if (document.getElementById('screenchoice1').checked) {
+    console.log('Screen choice 1 was selected');
+    return 1;
+  } else if (document.getElementById('screenchoice2').checked) {
+    console.log('Screen choice 2 was selected');
+    return 2;
+  } else {
+    alert("Please make a choice, or you will have your insy winsy laptop screen only!");
+    return 0;
+  }
+}
+
+//function to move from page 5 to page 6
+$(".button5").on('click', function () {
+  if (recordScreen()) {
+    // user has selected something
+    $(".page5").hide();
+    $(".page6").show();
+  }
+});
+
+   function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: {lat: -28.024, lng: 140.887}
+        });
+
+        // Create an array of alphabetical characters used to label the markers.
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var locations = [
+        {lat: -31.563910, lng: 147.154312},
+        {lat: -33.718234, lng: 150.363181},
+        {lat: -33.727111, lng: 150.371124},
+        {lat: -33.848588, lng: 151.209834},
+        {lat: -33.851702, lng: 151.216968}
+      ]
+    
