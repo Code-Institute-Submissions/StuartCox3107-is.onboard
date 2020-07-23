@@ -8,7 +8,6 @@ $(document).ready(function () {
   $(".page4").hide();
   $(".page5").hide();
   $(".page6").hide();
-  $(".page7").hide();
 });
 
 // global variables declared of staff number entered & names etc
@@ -83,8 +82,8 @@ $(".button1").on('click', function () {
 });
 // function to change the contact details on page 2 to the relevant IS contact according to the 1st digit of the staff number
 let dep;
+let contactFname;
 function display() {
-  let contactFname;
   let contactLname;
   let contactPhone;
   switch (staffnumber[0]) {
@@ -130,7 +129,7 @@ function display() {
   //Details & contact of the relevant contact person
   let pDetails = document.createElement('p');
   pDetails.textContent = `As you will be in the ${dep} department, ${contactFname} will be your contact. You can call ${contactFname} 
-  on 020 7581 100${contactPhone}, or email, ${contactFname}.${contactLname}@metatis.com`;
+  on 020 7581 100${contactPhone}, or email ${contactFname}.${contactLname}@metatis.com`;
 
   let parent = document.querySelector('#employeecode1');
   parent.textContent = "";
@@ -248,7 +247,6 @@ function display2() {
             alert("error in employee department");
             break;
     }
-
 //adds department name and department requirements spec to into text
 let introText = document.createElement("p");
 introText.textContent = `As you will work in the ${departmentName} department, you will want a machine that ${departmentSpec}, either of these options
@@ -324,14 +322,14 @@ let laptop2Text3 = document.createElement("p");
 laptop2Text3.textContent = laptop2Detail2;
 let parent10 = document.querySelector("#laptop2feat2");
 parent10.textContent = "";
-parent10.appendChild(laptop1Text3);
+parent10.appendChild(laptop2Text3);
 
 //adds relevant detail 3
 let laptop2Text4 = document.createElement("p");
 laptop2Text4.textContent = laptop2Detail3;
 let parent11 = document.querySelector("#laptop2feat3");
 parent11.textContent = "";
-parent11.appendChild(laptop1Text4);
+parent11.appendChild(laptop2Text4);
 
 //adds relevant detail 4
 let laptop2Text5 = document.createElement("p");
@@ -438,37 +436,16 @@ $(".button5").on('click', function () {
     $(".page6").show();
   }
 });
+  
+let finalIntroText = document.createElement("p");
+finalIntroText.textContent = `You have made all the choices you need to make to integrate smoothly into the ${dep} department, 
+    by the time you start, your ${laptopType1} will be onsite, and your IS contact, ${contactFname} will walk through the setup with you, and make sure you are comfortable. 
+     ${contactFname} will also be the person to speak to with any IS issues moving forward. Again, welcome to Metatis and we trust that your career with us will be fruitful!`;
+let parent15 = document.querySelector(".secondarytextfinal");
+parent15.textContent = "";
+parent15.appendChild(finalIntroText);
 
-   function initMap() {
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 3,
-          center: {lat: -28.024, lng: 140.887}
-        });
-
-        // Create an array of alphabetical characters used to label the markers.
-        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-        // Add some markers to the map.
-        // Note: The code uses the JavaScript Array.prototype.map() method to
-        // create an array of markers based on a given "locations" array.
-        // The map() method here has nothing to do with the Google Maps API.
-        var markers = locations.map(function(location, i) {
-          return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-          });
-        });
-
-        // Add a marker clusterer to manage the markers.
-        var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-      }
-      var locations = [
-        {lat: -31.563910, lng: 147.154312},
-        {lat: -33.718234, lng: 150.363181},
-        {lat: -33.727111, lng: 150.371124},
-        {lat: -33.848588, lng: 151.209834},
-        {lat: -33.851702, lng: 151.216968}
-      ]
-    
+//function to move from finish. Goes to google but in live version would go to company website
+$(".button7").on('click', function () {
+    window.location.replace("http://www.google.com");
+});
