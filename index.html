@@ -141,7 +141,7 @@
     <!--bootstrap cards for generic management structure relevant to all joiners-->
     <div class="page2">
         <div class="introtext">
-            You need to know who to go to for help, the three people below are the leaders of the IS Team, and your main
+            You need to know who to go to for help, the three people below are the leaders of the IS Team, and your personal
             contact is listed below these guys
         </div>
         <div class="container genericstructure">
@@ -465,41 +465,10 @@
     <!--page 6-->
     <div class="page6">
         <div class="introtext">
-            Where will you be based?
-        </div><br>
-        <div>
-            <p class="secondarytext">At Metatis, we have offices all over London, see below for where your workplace
-                will be in relation to our other teams</p>
-        </div>
-        <!--div to hold google maps api-->
-        <div id="map"></div>
-        <div class="container">
-            <div class="row nextbtndiv">
-                <div class="col-12">
-                    <button type="submit" class="btn btn-secondary btn-lg nextbutton button6">NEXT
-                        <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 progressbar">
-                    <div class="progress" style="height: 40px;">
-                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
-                            aria-valuemin="0" aria-valuemax="100"><span class="progresstext">PROGRESS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--page 7-->
-    <div class="page7">
-        <div class="introtext">
             That's it, all done for now
         </div><br>
         <div>
-            <p class="secondarytext">Holder text</p>
+            <p class="secondarytext secondarytextfinal"></p>
         </div>
         <div class="container">
             <div class="row nextbtndiv">
@@ -508,6 +477,15 @@
                         <i class="fas fa-arrow-circle-right hvr-icon"></i></button>
                 </div>
             </div>
+        </div>
+        <div>
+            <p id = "projectfinishdisclaimer">
+                <small class = "text-danger text-center">
+                    <strong>
+                        For the project, clicking the finish button goes to Google. On a live site this would go to the company site.
+                    </strong>
+                </small>
+            </p>
         </div>
         <div class="container">
             <div class="row">
@@ -527,8 +505,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0JiOlqCHbdyvwc5lczs3PnC8bTNFfMgM&callback=initMap"></script>
     <script src="scripts/scripts.js"></script>
 </body>
 
