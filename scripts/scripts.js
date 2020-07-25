@@ -358,6 +358,42 @@ function recordLaptop() {
   }
 }
 
+/*
+let laptopScreenSize = "";
+
+function display3() {
+if (laptopType1 == "Dell Precision 3540" || laptopType1 ==  "Acer ConceptD 7 Pro" || laptopType1 == "Acer ConceptD 5" || laptopType1 == "Asus ZenBook Pro 15" || laptopType1 == "Lenovo ThinkPad P1"
+  || laptopType2 == "Dell Precision 3540" || laptopType2 == "Acer ConceptD 7 Pro" || laptopType2 == "Acer ConceptD 5" || laptopType2 == "Asus ZenBook Pro 15" || laptopType2 == "Lenovo ThinkPad P1") {
+    laptopScreenSize = "15 inch";
+  } else if (laptopType1 == "HP ZBook 9850" || laptopType1 == "Dell XPS 17" || laptopType1 == "Dell Precision 7740" ||
+   laptopType2 == "HP ZBook 9850" || laptopType2 == "Dell XPS 17" || laptopType2 == "Dell Precision 7740") {
+       laptopScreenSize = "17 inch";
+  }  else {
+           laptopScreenSize = "13 inch";
+    }
+       console.log("You need a " + laptopScreenSize + " bag");
+   }
+*/
+
+
+
+let laptopScreenSize = "";
+let fifteenInchModels = ["Dell Precision 3540", "Acer ConceptD 7 Pro", "Acer ConceptD 5", "Asus ZenBook Pro 15", "Lenovo ThinkPad P1"];
+let seventeenInchModels = ["HP ZBook 9850", "Dell XPS 17", "Dell Precision 7740"];
+
+function display3(){
+if (fifteenInchModels.includes(laptopType1) || fifteenInchModels.includes(laptopType2)) {
+    laptopScreenSize = "15 inch";
+}   else if (seventeenInchModels.includes(laptopType1) || seventeenInchModels.includes(laptopType2)) {
+    laptopScreenSize = "17 inch";
+}   else {
+    laptopScreenSize = "13 inch";
+}
+console.log("You need a " + laptopScreenSize + " bag");
+}
+
+
+/*
 //function to allocate a value to laptopScreenSize depending on the laptop chosen
 let laptopScreenSize = "";
 function display3() {
@@ -370,6 +406,7 @@ function display3() {
     }
     console.log("You need a " + laptopScreenSize + " bag");
 }
+*/
 
 //function to move from page 3 to page 4 as long as choice made
 $(".button3").on('click', function () {
@@ -379,15 +416,14 @@ $(".button3").on('click', function () {
     display3();
     $(".page3").hide();
     $(".page4").show();
+
+    let bagIntroText = document.createElement("p");
+    bagIntroText.textContent = `As you chose a ${laptopScreenSize} laptop, please choose one of these two options.`;
+    let parent13 = document.querySelector('#laptopintro');
+    parent13.textContent = "";
+    parent13.appendChild(bagIntroText);
   }
 });
-
-//page 4, header referring to laptop size chosen, card pictures and features unchanged
-let bagIntroText = document.createElement("p");
-bagIntroText.textContent = `As you chose a ${laptopScreenSize} laptop, please choose one of these two options.`;
-let parent13 = document.querySelector('#laptopintro');
-parent13.textContent = "";
-parent13.appendChild(bagIntroText);
 
 
 //function to record bag chosen, recorded as bagchoice1 or bagchoice2, alerts if no choice made
@@ -410,15 +446,14 @@ $(".button4").on('click', function () {
     // user has selected something
     $(".page4").hide();
     $(".page5").show();
+    let screenIntroText = document.createElement("p");
+    screenIntroText.textContent = `As you will work in the ${dep} department, you will want a screen that allows you to see crystal clear colour, we can recommend either of these.`;
+    let parent14 = document.querySelector("#screenintro");
+    parent14.textContent = "";
+    parent14.appendChild(screenIntroText);
   }
 });
 
-
-let screenIntroText = document.createElement("p");
-screenIntroText.textContent = `As you will work in the ${dep} department, you will want a screen that allows you to see crystal clear colour, we can recommend either of these.`;
-let parent14 = document.querySelector("#screenintro");
-parent14.textContent = "";
-parent14.appendChild(screenIntroText);
 
 //function to record screen chosen, recorded as screenchoice1 or screenchoice2, alerts if no choice made
 function recordScreen() {
@@ -440,23 +475,21 @@ $(".button5").on('click', function () {
     // user has selected something
     $(".page5").hide();
     $(".page6").show();
+    let finalIntroText = document.createElement("p");
+        finalIntroText.textContent = `You have made all the choices you need to make to integrate smoothly into the ${dep} department, 
+        by the time you start, your ${laptopType1} will be onsite, and your IS contact, ${contactFname} will walk through the setup with you, and make sure you are comfortable. 
+        ${contactFname} will also be the person to speak to with any IS issues moving forward. Again, welcome to Metatis and we trust that your career with us will be fruitful!`;
+        let parent15 = document.querySelector(".secondarytextfinal");
+        parent15.textContent = "";
+        parent15.appendChild(finalIntroText);
+
+        console.log ("Name: " + userfirstname + " " + userlastname + "Employee number: " + staffnumber + ", " + "Department: " + dep + ", " + 
+        "Laptop chosen: " + recordLaptop + ", " + "Bag chosen: " + recordBag + ", " + "Screen chosen: " + recordScreen);
   }
 });
  
-/*
-let finalIntroText = document.createElement("p");
-finalIntroText.textContent = `You have made all the choices you need to make to integrate smoothly into the ${dep} department, 
-    by the time you start, your ${laptopType1} will be onsite, and your IS contact, ${contactFname} will walk through the setup with you, and make sure you are comfortable. 
-     ${contactFname} will also be the person to speak to with any IS issues moving forward. Again, welcome to Metatis and we trust that your career with us will be fruitful!`;
-let parent15 = document.querySelector(".secondarytextfinal");
-parent15.textContent = "";
-parent15.appendChild(finalIntroText);
-
-console.log ("Name: " + userfirstname + " " + userlastname + "Employee number: " + staffnumber + ", " + "Department: " + dep + ", " + 
-    "Laptop chosen: " + recordLaptop + ", " + "Bag chosen: " + recordBag + ", " + "Screen chosen: " + recordScreen);
-
 //function to move from finish. Goes to google but in live version would go to company website
 $(".button7").on('click', function () {
     window.location.replace("http://www.google.com");
 });
-*/
+
