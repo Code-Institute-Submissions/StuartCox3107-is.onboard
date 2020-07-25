@@ -342,49 +342,32 @@ parent12.appendChild(laptop2Text5);
 };
 
 
+//function designed to record laptop chosen, choice1 is the id of one of 2 check boxes in 2 html bootstrap cards 
+//this works and assigns the correct value (laptopType1) to the chosenLaptop variable, idea is that user choses 1 of 2 
+let chosenLaptop = "";
 
-
-//function to record laptop chosen, alerts if no choice made
 function recordLaptop() {
   if (document.getElementById('choice1').checked) {
-    console.log('Laptop choice 1 was selected');
-    return 1;
-  } else if (document.getElementById('choice2').checked) {
-    console.log('Laptop choice 2 was selected');
-    return 2;
+    chosenLaptop = laptopType1;
   } else {
-    alert("Please make a choice, unless you want to use pen & paper!");
-    return 0;
+    chosenLaptop = laptopType2;
   }
+  console.log (chosenLaptop);
 }
 
-/*
-let laptopScreenSize = "";
-
-function display3() {
-if (laptopType1 == "Dell Precision 3540" || laptopType1 ==  "Acer ConceptD 7 Pro" || laptopType1 == "Acer ConceptD 5" || laptopType1 == "Asus ZenBook Pro 15" || laptopType1 == "Lenovo ThinkPad P1"
-  || laptopType2 == "Dell Precision 3540" || laptopType2 == "Acer ConceptD 7 Pro" || laptopType2 == "Acer ConceptD 5" || laptopType2 == "Asus ZenBook Pro 15" || laptopType2 == "Lenovo ThinkPad P1") {
-    laptopScreenSize = "15 inch";
-  } else if (laptopType1 == "HP ZBook 9850" || laptopType1 == "Dell XPS 17" || laptopType1 == "Dell Precision 7740" ||
-   laptopType2 == "HP ZBook 9850" || laptopType2 == "Dell XPS 17" || laptopType2 == "Dell Precision 7740") {
-       laptopScreenSize = "17 inch";
-  }  else {
-           laptopScreenSize = "13 inch";
-    }
-       console.log("You need a " + laptopScreenSize + " bag");
-   }
-*/
-
-
+//function designed to allocate a string value to the laptopScreenSize variable, depending on the value of the 
+//chosenLaptop variable
 
 let laptopScreenSize = "";
-let fifteenInchModels = ["Dell Precision 3540", "Acer ConceptD 7 Pro", "Acer ConceptD 5", "Asus ZenBook Pro 15", "Lenovo ThinkPad P1"];
-let seventeenInchModels = ["HP ZBook 9850", "Dell XPS 17", "Dell Precision 7740"];
+let fifteenInchModels = "";
+let seventeenInchModels = "";
 
-function display3(){
-if (fifteenInchModels.includes(laptopType1) || fifteenInchModels.includes(laptopType2)) {
+function display3 () {
+fifteenInchModels = ["Dell Precision 3540", "Acer ConceptD 7 Pro", "Acer ConceptD 5", "Asus ZenBook Pro 15", "Lenovo ThinkPad P1"];
+seventeenInchModels = ["HP ZBook 9850", "Dell XPS 17", "Dell Precision 7740"];
+if (fifteenInchModels.includes(chosenLaptop)) {
     laptopScreenSize = "15 inch";
-}   else if (seventeenInchModels.includes(laptopType1) || seventeenInchModels.includes(laptopType2)) {
+}   else if (seventeenInchModels.includes(chosenLaptop)) {
     laptopScreenSize = "17 inch";
 }   else {
     laptopScreenSize = "13 inch";
@@ -392,30 +375,15 @@ if (fifteenInchModels.includes(laptopType1) || fifteenInchModels.includes(laptop
 console.log("You need a " + laptopScreenSize + " bag");
 }
 
-
-/*
-//function to allocate a value to laptopScreenSize depending on the laptop chosen
-let laptopScreenSize = "";
-function display3() {
-    if (laptopType1 || laptopType2 == "Dell Precision 3540" || "Acer ConceptD 7 Pro" || "Acer ConceptD 5" || "Asus ZenBook Pro 15" || "Lenovo ThinkPad P1") {
-        laptopScreenSize = "15 inch";
-    }    else if (laptopType1 || laptopType2 == "HP ZBook 9850" || "Dell XPS 17" || "Dell Precision 7740") {
-        laptopScreenSize = "17 inch";
-    }   else {
-        laptopScreenSize = "13 inch";
-    }
-    console.log("You need a " + laptopScreenSize + " bag");
-}
-*/
-
-//function to move from page 3 to page 4 as long as choice made
+//function to move from page 3 to page 4 as long as choice made. This is what I can't figure out, the onclick is console logging the correct
+//chosenLaptop value from the recordLaptop function but the hide/show doesn't work and the page remains as it is
 $(".button3").on('click', function () {
   if (recordLaptop()) {
     //user has selected something
     //call the display3 function and show the next page
-    display3();
     $(".page3").hide();
     $(".page4").show();
+    display3();
 
     let bagIntroText = document.createElement("p");
     bagIntroText.textContent = `As you chose a ${laptopScreenSize} laptop, please choose one of these two options.`;
