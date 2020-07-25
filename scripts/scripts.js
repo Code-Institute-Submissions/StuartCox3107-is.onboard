@@ -80,6 +80,7 @@ $(".button1").on('click', function () {
     alert("Please enter a valid employee number. Employee numbers are four digits long and all numbers are between 1 and 5. you will have received this on your welcome email");
   }
 });
+
 // function to change the contact details on page 2 to the relevant IS contact according to the 1st digit of the staff number
 let dep;
 let contactFname;
@@ -247,6 +248,7 @@ function display2() {
             alert("error in employee department");
             break;
     }
+
 //adds department name and department requirements spec to into text
 let introText = document.createElement("p");
 introText.textContent = `As you will work in the ${departmentName} department, you will want a machine that ${departmentSpec}, either of these options
@@ -339,6 +341,9 @@ parent12.textContent = "";
 parent12.appendChild(laptop2Text5);
 };
 
+
+
+
 //function to record laptop chosen, alerts if no choice made
 function recordLaptop() {
   if (document.getElementById('choice1').checked) {
@@ -353,37 +358,37 @@ function recordLaptop() {
   }
 }
 
+//function to allocate a value to laptopScreenSize depending on the laptop chosen
+let laptopScreenSize = "";
+function display3() {
+    if (laptopType1 || laptopType2 == "Dell Precision 3540" || "Acer ConceptD 7 Pro" || "Acer ConceptD 5" || "Asus ZenBook Pro 15" || "Lenovo ThinkPad P1") {
+        laptopScreenSize = "15 inch";
+    }    else if (laptopType1 || laptopType2 == "HP ZBook 9850" || "Dell XPS 17" || "Dell Precision 7740") {
+        laptopScreenSize = "17 inch";
+    }   else {
+        laptopScreenSize = "13 inch";
+    }
+    console.log("You need a " + laptopScreenSize + " bag");
+}
+
 //function to move from page 3 to page 4 as long as choice made
 $(".button3").on('click', function () {
   if (recordLaptop()) {
     //user has selected something
+    //call the display3 function and show the next page
+    display3();
     $(".page3").hide();
     $(".page4").show();
-    //call the display3 function
-    display3();
   }
 });
 
-//function to allocate a value to bagSize depending on the laptop chosen
-let bagSize = "";
-function display3() {
-    if (laptopType1 || laptopType2 == "Dell Precision 3540" || "Acer ConceptD 7 Pro" || "Acer ConceptD 5" || "Asus ZenBook Pro 15" || "Lenovo ThinkPad P1") {
-        bagSize = "15 inch";
-    }    else if (laptopType1 || laptopType2 == "HP ZBook 9850" || "Dell XPS 17" || "Dell Precision 7740") {
-        bagSize = "17 inch";
-    }   else {
-        bagSize = "13 inch";
-    }
-    console.log("You need a " + bagSize + " bag");
-}
-
-
 //page 4, header referring to laptop size chosen, card pictures and features unchanged
 let bagIntroText = document.createElement("p");
-bagIntroText.textContent = `As you chose a ${bagSize} laptop, please choose one of these two options.`;
+bagIntroText.textContent = `As you chose a ${laptopScreenSize} laptop, please choose one of these two options.`;
 let parent13 = document.querySelector('#laptopintro');
 parent13.textContent = "";
 parent13.appendChild(bagIntroText);
+
 
 //function to record bag chosen, recorded as bagchoice1 or bagchoice2, alerts if no choice made
 function recordBag() {
@@ -407,6 +412,7 @@ $(".button4").on('click', function () {
     $(".page5").show();
   }
 });
+
 
 let screenIntroText = document.createElement("p");
 screenIntroText.textContent = `As you will work in the ${dep} department, you will want a screen that allows you to see crystal clear colour, we can recommend either of these.`;
@@ -436,7 +442,8 @@ $(".button5").on('click', function () {
     $(".page6").show();
   }
 });
-  
+ 
+/*
 let finalIntroText = document.createElement("p");
 finalIntroText.textContent = `You have made all the choices you need to make to integrate smoothly into the ${dep} department, 
     by the time you start, your ${laptopType1} will be onsite, and your IS contact, ${contactFname} will walk through the setup with you, and make sure you are comfortable. 
@@ -445,7 +452,11 @@ let parent15 = document.querySelector(".secondarytextfinal");
 parent15.textContent = "";
 parent15.appendChild(finalIntroText);
 
+console.log ("Name: " + userfirstname + " " + userlastname + "Employee number: " + staffnumber + ", " + "Department: " + dep + ", " + 
+    "Laptop chosen: " + recordLaptop + ", " + "Bag chosen: " + recordBag + ", " + "Screen chosen: " + recordScreen);
+
 //function to move from finish. Goes to google but in live version would go to company website
 $(".button7").on('click', function () {
     window.location.replace("http://www.google.com");
 });
+*/
