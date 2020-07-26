@@ -114,7 +114,6 @@ The company would want to present itself as slick and professional, and the site
 
 - HTML, CSS & Javascript
 - [JQuery](https://jquery.com) Javascript library, opens in same tab, press back to return
-- [jQuery Validation Plugin](https://jqueryvalidation.org/) for form validation plugin
 - [Fontawesome](https://fontawesome.com/) for back & next arrows used through all pages, opens in same tab, press back to return
 - [Hover.css](https://ianlunn.github.io/Hover/) for back & forward button effects, opens in same tab, press back to return
 - [Google fonts](https://fonts.google.com/) for Baloo Thambo 2 font used through all pages, opens in same tab, press back to return
@@ -135,6 +134,7 @@ The company would want to present itself as slick and professional, and the site
 ### Javascript testing
 
 - Manually tested storage of form data by alerting information stored after onclick triggered
+- 
 
 
 
