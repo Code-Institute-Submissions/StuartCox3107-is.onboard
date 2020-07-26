@@ -355,16 +355,14 @@ function recordLaptop() {
   console.log (chosenLaptop);
 }
 
-//function designed to allocate a string value to the laptopScreenSize variable, depending on the value of the 
+//function designed to allocate value to the laptopScreenSize variable, depending on the value of the 
 //chosenLaptop variable
 
 let laptopScreenSize = "";
-let fifteenInchModels = "";
-let seventeenInchModels = "";
+let fifteenInchModels = ["Dell Precision 3540", "Acer ConceptD 7 Pro", "Acer ConceptD 5", "Asus ZenBook Pro 15", "Lenovo ThinkPad P1"];
+let seventeenInchModels = ["HP ZBook 9850", "Dell XPS 17", "Dell Precision 7740"];
 
 function display3 () {
-fifteenInchModels = ["Dell Precision 3540", "Acer ConceptD 7 Pro", "Acer ConceptD 5", "Asus ZenBook Pro 15", "Lenovo ThinkPad P1"];
-seventeenInchModels = ["HP ZBook 9850", "Dell XPS 17", "Dell Precision 7740"];
 if (fifteenInchModels.includes(chosenLaptop)) {
     laptopScreenSize = "15 inch";
 }   else if (seventeenInchModels.includes(chosenLaptop)) {
