@@ -352,8 +352,10 @@ let chosenLaptop = "";
 function recordLaptop() {
   if (document.getElementById('choice1').checked) {
     chosenLaptop = laptopType1;
+    return 1;
   } else {
     chosenLaptop = laptopType2;
+    return 2;
   }
   console.log (chosenLaptop);
 }
