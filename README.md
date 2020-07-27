@@ -107,6 +107,7 @@ The company would want to present itself as slick and professional, and the site
 
 - Not in the scope of this project, but future plans would be to automate follow up emails on progress
 - Not in the scope of this project, but future plans would be to link this to inductions of all divisions of the company
+- All relevant choices will be stored at the final page in variables. On a live site these would be sent as an email to the IS team, but in this case are console logged
 
 ---
 
@@ -131,10 +132,40 @@ The company would want to present itself as slick and professional, and the site
 
 ## Testing
 
-### Javascript testing
+### General
 
-- Manually tested storage of form data by alerting information stored after onclick triggered
-- 
+All views tested for various devices using Chrome Developer tools: Moto G4, Galaxy S5, Pixel 2, Pixel 2XL, iPhone 5 SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro, Galaxy Fold, Surface Duo
+
+Live site tested on Chrome, IE, Firefox, Edge
+
+### HTML
+
+- Code ran through [W3C HTML markup validation service](https://validator.w3.org/#validate_by_uri) opens in same tab, press back to return. Three alerts advising either empty 
+h elements or advising whether an h element shuold be used. None appropriate in this case.
+
+### CSS
+
+- Code ran through [W3S CSS markup validation service](https://jigsaw.w3.org/css-validator/) opens in same tab, press back to return. 
+
+### Javascript
+
+### Page 1
+
+- Manually tested number inputs to check that letters and only whole numbers between 1 and 5 are accepted
+- Console log prints the staff number digits, and that the length is 4 digits long 
+
+### Page 2
+
+- Manually tested to check that all variations of the first digit of the staff number display the correct contact person, number and emails
+
+### Page 3
+
+- Manually tested to check that each of the 5 possible employee departments display the correct introduction text
+- Manually tested to check that each of the 5 possible employee departments display the correct laptop choices and features
+- Console log prints the name of the laptop chosen is recorded in the variable
+- Manually checked to ensure that one (not zero or 2) laptops can be chosen in order to move to the next view
+
+### Page 4 
 
 
 
