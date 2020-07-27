@@ -292,15 +292,19 @@ let parent7 = document.querySelector("#laptop1feat4");
 parent7.textContent = "";
 parent7.appendChild(laptop1Text5);
 
+
 /*meant to use an if else to link to the a "want to know more" href element and use the correct href
-let laptopLink = document.createElement("a");
-laptopLink.a = laptop1Link;
-if (laptopType1 === "Dell Precision 3540") {
-    let link1 = document.querySelector("#laptop1link");
-    link1.appendChild(laptopLink);
-}
-else {
-    alert("Choose department 1 for testing");
+
+function linkToLaptop() {
+    let laptopLink = document.createElement("a");
+    laptopLink.a = laptop1Link;
+    if (laptopType1 == "Dell Precision 3540") {
+        let link1 = document.querySelector("#laptop1link");
+        link1.appendChild(laptopLink);
+    }
+    else {
+        alert("Choose department 1 for testing");
+    }
 }
 */
 
@@ -342,8 +346,7 @@ parent12.appendChild(laptop2Text5);
 };
 
 
-//function designed to record laptop chosen, choice1 is the id of one of 2 check boxes in 2 html bootstrap cards 
-//this works and assigns the correct value (laptopType1) to the chosenLaptop variable, idea is that user choses 1 of 2 
+//function to record laptop chosen
 let chosenLaptop = "";
 
 function recordLaptop() {
@@ -355,8 +358,7 @@ function recordLaptop() {
   console.log (chosenLaptop);
 }
 
-//function designed to allocate value to the laptopScreenSize variable, depending on the value of the 
-//chosenLaptop variable
+//function to allocate value to the laptopScreenSize variable
 
 let laptopScreenSize = "";
 let fifteenInchModels = ["Dell Precision 3540", "Acer ConceptD 7 Pro", "Acer ConceptD 5", "Asus ZenBook Pro 15", "Lenovo ThinkPad P1"];
@@ -373,8 +375,7 @@ if (fifteenInchModels.includes(chosenLaptop)) {
 console.log("You need a " + laptopScreenSize + " bag");
 }
 
-//function to move from page 3 to page 4 as long as choice made. This is what I can't figure out, the onclick is console logging the correct
-//chosenLaptop value from the recordLaptop function but the hide/show doesn't work and the page remains as it is
+//function to move from page 3 to page 4 as long as choice has been made
 $(".button3").on('click', function () {
   if (recordLaptop()) {
     //user has selected something
