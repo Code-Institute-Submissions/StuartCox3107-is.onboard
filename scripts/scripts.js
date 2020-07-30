@@ -326,11 +326,11 @@ function display2() {
     let parent12 = document.querySelector("#laptop2feat4");
     parent12.textContent = "";
     parent12.appendChild(laptop2Text5);
-};
 
     // adds relevant link
     const link2 = document.querySelector('#laptop2link');
     link2.setAttribute('href', laptop2Link);
+};
 
 // function to move from page 2 to page 3
 $(".button2").on('click', function () {
@@ -347,9 +347,12 @@ function recordLaptop() {
     if (document.getElementById('choice1').checked) {
         chosenLaptop = laptopType1;
         return 1;
-    } else {
+    } else if (document.getElementById('choice2').checked) {
         chosenLaptop = laptopType2;
         return 2;
+    } else {
+        alert("You REALLY REALLY REALLy want to choose a laptop in this job, pen & paper just wont cut it!");
+        return 0;
     }
 }
 
