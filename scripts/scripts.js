@@ -288,12 +288,10 @@ function display2() {
     parent7.textContent = "";
     parent7.appendChild(laptop1Text5);
 
-    // adds relevant link
-    let laptop1Click = document.createElement("a");
-    laptop1Click.textContent = laptop1Link;
-    let link1 = document.querySelector("#laptop1link");
-    link1.appendChild(laptop1Click);
-
+      // adds relevant link
+  const link1 = document.querySelector('#laptop1link');
+  //in order to set the destination of a link
+  link1.setAttribute('href', laptop1Link);
 
     // adds relevant laptop name for second card
     let laptop2Text = document.createElement("h5");
