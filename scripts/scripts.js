@@ -222,7 +222,7 @@ function display2() {
             laptop2Detail2 = "32 GB Memory";
             laptop2Detail3 = "512 GB SSD";
             laptop2Detail4 = "Windows 10 Pro";
-            laptop2Link = "https://store.hp.com/UKStore/Merch/Product.aspx?id=8MK77EA&opt=ABU&sel=NTB";
+            laptop2Link = "https://store.hp.com/UKStore/Merch/Offer.aspx?p=b-hp-elite-dragonfly-convertible";
             break;
         case 5: departmentName = "Finance";
             departmentSpec = " can cope with lots of data";
@@ -288,10 +288,9 @@ function display2() {
     parent7.textContent = "";
     parent7.appendChild(laptop1Text5);
 
-      // adds relevant link
-  const link1 = document.querySelector('#laptop1link');
-  //in order to set the destination of a link
-  link1.setAttribute('href', laptop1Link);
+    // adds relevant link
+    const link1 = document.querySelector('#laptop1link');
+    link1.setAttribute('href', laptop1Link);
 
     // adds relevant laptop name for second card
     let laptop2Text = document.createElement("h5");
@@ -328,6 +327,10 @@ function display2() {
     parent12.textContent = "";
     parent12.appendChild(laptop2Text5);
 };
+
+    // adds relevant link
+    const link2 = document.querySelector('#laptop2link');
+    link2.setAttribute('href', laptop2Link);
 
 // function to move from page 2 to page 3
 $(".button2").on('click', function () {
@@ -383,7 +386,8 @@ $(".button3").on('click', function () {
         display3();
 
         let bagIntroText = document.createElement("p");
-        bagIntroText.textContent = `As you chose a ${laptopScreenSize} laptop, please choose one of these two options.`;
+        bagIntroText.textContent = `As you chose a ${laptopScreenSize} laptop, please choose one of these two options. 
+        We find this purely a matter of preference so just choose away!`;
         let parent13 = document.querySelector('#laptopintro');
         parent13.textContent = "";
         parent13.appendChild(bagIntroText);
@@ -397,11 +401,11 @@ let bagChosen;
 function recordBag() {
     if (document.getElementById('bagchoice1').checked) {
         console.log('Bag choice 1 was selected');
-        bagChosen = "Soft bag";
+        bagChosen = "soft bag";
         return 1;
     } else if (document.getElementById('bagchoice2').checked) {
         console.log('Bag choice 2 was selected');
-        bagChosen = "Hard bag";
+        bagChosen = "hard bag";
         return 2;
     } else {
         alert("Please make a choice, unless you want to use a carrier bag!");
@@ -416,7 +420,7 @@ $(".button4").on('click', function () {
         $(".page4").hide();
         $(".page5").show();
         let screenIntroText = document.createElement("p");
-        screenIntroText.textContent = `As you will work in the ${dep} department, you will want a screen ${departmentScreenSpec}, we can recommend either of these.`;
+        screenIntroText.textContent = `Great, you chose a ${bagChosen} and we will get that ordered. As you will work in the ${dep} department, you will want a screen ${departmentScreenSpec}, we can recommend either of these.`;
         let parent14 = document.querySelector("#screenintro");
         parent14.textContent = "";
         parent14.appendChild(screenIntroText);
