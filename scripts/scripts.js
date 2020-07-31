@@ -283,7 +283,7 @@ function display2() {
 
     // adds relevant detail 4
     let laptop1Text5 = document.createElement("p");
-    laptop1Text5.onClick = laptop1Detail4;
+    laptop1Text5.textContent = laptop1Detail4;
     let parent7 = document.querySelector("#laptop1feat4");
     parent7.textContent = "";
     parent7.appendChild(laptop1Text5);
