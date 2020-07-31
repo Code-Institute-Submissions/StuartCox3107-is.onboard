@@ -124,8 +124,7 @@ The company would want to present itself as slick and professional, and the site
 - [GitHub](https://github.com/)  To host the repositories for this project and the live website preview, opens in same tab, press back to return
 - [Balsamiq](https://balsamiq.com/)  used to design wireframes, opens in same tab, press back to return
 - [https://background-generator.com/]  used to generate background vector
-- [https://undraw.co/illustrations]  used for cartoon images on site
-- [https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1299805] backgound vector from Pixabay
+- [https://undraw.co/illustrations]  used for cartoon image on site
 - [https://www.shapedivider.app/] used to generate the site wavy shape divider
 
 ---
@@ -140,12 +139,11 @@ Live site tested on Chrome, IE, Firefox, Edge
 
 ### HTML
 
-- Code ran through [W3C HTML markup validation service](https://validator.w3.org/#validate_by_uri) opens in same tab, press back to return. Three alerts advising either empty 
-h elements or advising whether an h element shuold be used. None appropriate in this case.
+- Code ran through [W3C HTML markup validation service](https://validator.w3.org/#validate_by_uri) opens in same tab, press back to return. Passed with no errors or warnings.
 
 ### CSS
 
-- Code ran through [W3S CSS markup validation service](https://jigsaw.w3.org/css-validator/) opens in same tab, press back to return. 
+- Code ran through [W3S CSS markup validation service](https://jigsaw.w3.org/css-validator/) opens in same tab, press back to return. Passed with no errors or warnings.
 
 ### Javascript
 
@@ -162,11 +160,25 @@ h elements or advising whether an h element shuold be used. None appropriate in 
 
 - Manually tested to check that each of the 5 possible employee departments display the correct introduction text
 - Manually tested to check that each of the 5 possible employee departments display the correct laptop choices and features
-- Console log prints the name of the laptop chosen is recorded in the variable
 - Manually checked to ensure that one (not zero or 2) laptops can be chosen in order to move to the next view
+- Console log prints the laptop choice selected
+- Manually tested to check that all laptop links work
 
 ### Page 4 
 
+- Manually tested with all latop possibilities that the correct text is displayed
+- Console log prints the bag choice selected
+
+### Page 5
+
+- Manually tested screen "Want to know more" links
+- Manually tested all department, laptop and bag previous choices display the correct text
+- Console log prints bag choice made
+
+### Page 6
+
+- Console log prints all choices made to ensure that the appropriate variables are still stored
+- Manually tested to ensure that all previous choices display the correct final page text
 
 
 ---
