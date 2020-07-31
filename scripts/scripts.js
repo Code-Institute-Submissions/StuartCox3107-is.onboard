@@ -351,7 +351,7 @@ function recordLaptop() {
         chosenLaptop = laptopType2;
         return 2;
     } else {
-        alert("You REALLY REALLY REALLy want to choose a laptop in this job, pen & paper just wont cut it!");
+        alert("You REALLY REALLY REALLY want to choose a laptop in this job, pen & paper just wont cut it!");
         return 0;
     }
 }
@@ -382,8 +382,8 @@ function display3() {
 // function to move from page 3 to page 4 as long as choice has been made
 $(".button3").on('click', function () {
     if (recordLaptop()) {
-        // user has selected something
-        // call the display3 function and show the next page
+        //if user has selected something
+        //call the display3 function and show the next page
         $(".page3").hide();
         $(".page4").show();
         display3();
