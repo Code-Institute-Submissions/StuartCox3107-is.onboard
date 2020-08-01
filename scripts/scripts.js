@@ -59,7 +59,6 @@ function checkStaffNumber() {
     for (let index = 0; index < 4; index++) {
         const num = staffnumber[index];
         if (! validNumbers.includes(num)) {
-            console.log(num + " not valid");
             return false;
         }
     }
@@ -69,7 +68,7 @@ function checkStaffNumber() {
 // function to change the contact details on page 2 to the relevant IS contact according to the 1st digit of the staff number
 let dep;
 let contactFname;
-function display() {
+function displayContactPage() {
     let contactLname;
     let contactPhone;
     switch (staffnumber[0]) {
@@ -130,7 +129,7 @@ $(".button1").on("click", function () {
         $(".page1").hide();
         $(".page2").show();
         // call the display function
-        display();
+        displayContactPage();
         // or if input doesn't pass test
     } else {
         alert("Please enter a valid employee number. Employee numbers are four digits long and all numbers are between 1 and 5. you will have received this on your welcome email");
@@ -153,7 +152,7 @@ let laptop2Detail2;
 let laptop2Detail3;
 let laptop2Detail4;
 let laptop2Link;
-function display2() {
+function displayLaptopPage() {
     switch (staffnumber[0]) {
         case 1: departmentName = "IS";
             departmentSpec = " is lighting fast";
@@ -332,7 +331,7 @@ $(".button2").on("click", function () {
     $(".page2").hide();
     $(".page3").show();
     // call the display2 function
-    display2();
+    displayLaptopPage();
 });
 
 // function to record laptop chosen
@@ -363,7 +362,7 @@ let fifteenInchModels = [
 ];
 let seventeenInchModels = ["HP ZBook 9850", "Dell XPS 17", "Dell Precision 7740"];
 
-function display3() {
+function displayBagPage() {
     if (fifteenInchModels.includes(chosenLaptop)) {
         laptopScreenSize = "15 inch";
     } else if (seventeenInchModels.includes(chosenLaptop)) {
@@ -380,7 +379,7 @@ $(".button3").on("click", function () {
         //call the display3 function and show the next page
         $(".page3").hide();
         $(".page4").show();
-        display3();
+        displayBagPage();
 
         let bagIntroText = document.createElement("p");
         bagIntroText.textContent = `As you chose a ${laptopScreenSize} laptop, please choose one of these two options. 
@@ -454,5 +453,10 @@ $(".button5").on("click", function () {
 
         console.log("Name: " + userfirstname + " " + userlastname + ", Employee number: " + staffnumber + ", " + "Department: " + dep + ", " + "Laptop chosen: " + chosenLaptop + ", " + "Bag chosen: " + bagChosen + ", " + "Screen chosen: " + screenChosen);
     }
+});
+
+// function to alert that on a real site it would display the company site
+$(".button7").on('click', function () {
+    alert("On a live site for a real company at this point, the page would have the company website open in the same window");
 });
 
