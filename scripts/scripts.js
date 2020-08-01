@@ -1,4 +1,5 @@
 "use strict";
+/*jshint esversion: 6 */
 
 // this makes the opening page show view 1 only and hides all other views once the page loads
 $(document).ready(function () {
@@ -11,8 +12,8 @@ $(document).ready(function () {
 
 // global variables declared of staff number entered & names etc
 let staffnumber = [];
-let userfirstname = '';
-let userlastname = '';
+let userfirstname = "";
+let userlastname = "";
 
 // jquery mouse over/leave to change the background color of the next button
 $(".btn").on("mouseover", function () {
@@ -33,16 +34,16 @@ $(".progress-bar").on("mouseleave", function () {
 });
 
 // the below pushes the number entered into the staffnumber variable, accepts decimals
-$('#txtFirstDigit').on('input', function () {
+$("#txtFirstDigit").on("input", function () {
     staffnumber[0] = parseFloat(this.value, 10);
 });
-$('#txtSecondDigit').on('input', function () {
+$("#txtSecondDigit").on("input", function () {
     staffnumber[1] = parseFloat(this.value, 10);
 });
-$('#txtThirdDigit').on('input', function () {
+$("#txtThirdDigit").on("input", function () {
     staffnumber[2] = parseFloat(this.value, 10);
 });
-$('#txtFourthDigit').on('input', function () {
+$("#txtFourthDigit").on("input", function () {
     staffnumber[3] = parseFloat(this.value, 10);
 });
 
@@ -98,20 +99,20 @@ function display() {
             contactPhone = "5";
             break;
         default:
-            alert('error in displaying the text');
+            alert("error in displaying the text");
             break;
     }
     // full name of the person IS contact
-    let pName = document.createElement('p');
+    let pName = document.createElement("p");
     pName.textContent = contactFname + " " + contactLname;
-    pName.classList.add('font-weight-bold');
+    pName.classList.add("font-weight-bold");
 
     // details & contact of the relevant contact person
-    let pDetails = document.createElement('p');
+    let pDetails = document.createElement("p");
     pDetails.textContent = `As you will be in the ${dep} department, ${contactFname} will be your contact. You can call ${contactFname} 
   on 020 7581 100${contactPhone}, or email ${contactFname}.${contactLname}@metatis.com`;
 
-    let parent = document.querySelector('#employeecode1');
+    let parent = document.querySelector("#employeecode1");
     parent.textContent = "";
 
     parent.appendChild(pName);
@@ -120,16 +121,10 @@ function display() {
 
 // function for the submit button to allow for transition to page 2 and display page 2 information
 //next button moves to page 3
-$(".button1").on('click', function () {
+$(".button1").on("click", function () {
     // onclick to store the names
     userfirstname = txtFirstName.value;
     userlastname = txtFamilyName.value;
-    // testing of name storage
-    console.log(`Name: ${userfirstname} ${userlastname}`);
-    // testing of recording of staff number and number of staff number digits
-    console.log(`staffnumber is ${staffnumber} and its length is ${
-        staffnumber.length
-    }`);
     // if input passes test
     if (checkStaffNumber() === true) {
         $(".page1").hide();
@@ -289,8 +284,8 @@ function display2() {
     parent7.appendChild(laptop1Text5);
 
     // adds relevant link
-    const link1 = document.querySelector('#laptop1link');
-    link1.setAttribute('href', laptop1Link);
+    const link1 = document.querySelector("#laptop1link");
+    link1.setAttribute("href", laptop1Link);
 
     // adds relevant laptop name for second card
     let laptop2Text = document.createElement("h5");
@@ -328,12 +323,12 @@ function display2() {
     parent12.appendChild(laptop2Text5);
 
     // adds relevant link
-    const link2 = document.querySelector('#laptop2link');
-    link2.setAttribute('href', laptop2Link);
-};
+    const link2 = document.querySelector("#laptop2link");
+    link2.setAttribute("href", laptop2Link);
+}
 
 // function to move from page 2 to page 3
-$(".button2").on('click', function () {
+$(".button2").on("click", function () {
     $(".page2").hide();
     $(".page3").show();
     // call the display2 function
@@ -344,10 +339,10 @@ $(".button2").on('click', function () {
 let chosenLaptop = "";
 
 function recordLaptop() {
-    if (document.getElementById('choice1').checked) {
+    if (document.getElementById("choice1").checked) {
         chosenLaptop = laptopType1;
         return 1;
-    } else if (document.getElementById('choice2').checked) {
+    } else if (document.getElementById("choice2").checked) {
         chosenLaptop = laptopType2;
         return 2;
     } else {
@@ -376,11 +371,10 @@ function display3() {
     } else {
         laptopScreenSize = "13 inch";
     }
-    console.log("You need a " + laptopScreenSize + " bag");
 }
 
 // function to move from page 3 to page 4 as long as choice has been made
-$(".button3").on('click', function () {
+$(".button3").on("click", function () {
     if (recordLaptop()) {
         //if user has selected something
         //call the display3 function and show the next page
@@ -391,7 +385,7 @@ $(".button3").on('click', function () {
         let bagIntroText = document.createElement("p");
         bagIntroText.textContent = `As you chose a ${laptopScreenSize} laptop, please choose one of these two options. 
         We find this purely a matter of preference so just choose away!`;
-        let parent13 = document.querySelector('#laptopintro');
+        let parent13 = document.querySelector("#laptopintro");
         parent13.textContent = "";
         parent13.appendChild(bagIntroText);
     }
@@ -402,12 +396,10 @@ $(".button3").on('click', function () {
 let bagChosen;
 
 function recordBag() {
-    if (document.getElementById('bagchoice1').checked) {
-        console.log('Bag choice 1 was selected');
+    if (document.getElementById("bagchoice1").checked) {
         bagChosen = "soft bag";
         return 1;
-    } else if (document.getElementById('bagchoice2').checked) {
-        console.log('Bag choice 2 was selected');
+    } else if (document.getElementById("bagchoice2").checked) {
         bagChosen = "hard bag";
         return 2;
     } else {
@@ -417,7 +409,7 @@ function recordBag() {
 }
 
 // function to move from page 4 to page 5
-$(".button4").on('click', function () {
+$(".button4").on("click", function () {
     if (recordBag()) {
         // user has selected something
         $(".page4").hide();
@@ -434,12 +426,10 @@ $(".button4").on('click', function () {
 // function to record screen chosen, recorded as screenchoice1 or screenchoice2, alerts if no choice made
 let screenChosen;
 function recordScreen() {
-    if (document.getElementById('screenchoice1').checked) {
-        console.log('Screen choice 1 was selected');
+    if (document.getElementById("screenchoice1").checked) {
         screenChosen = "27 inch";
         return 1;
-    } else if (document.getElementById('screenchoice2').checked) {
-        console.log('Screen choice 2 was selected');
+    } else if (document.getElementById("screenchoice2").checked) {
         screenChosen = "30 inch";
         return 2;
     } else {
@@ -449,7 +439,7 @@ function recordScreen() {
 }
 
 // function to move from page 5 to page 6
-$(".button5").on('click', function () {
+$(".button5").on("click", function () {
     if (recordScreen()) {
         // user has selected something
         $(".page5").hide();
@@ -466,7 +456,3 @@ $(".button5").on('click', function () {
     }
 });
 
-// function to move from finish. Goes to google but in live version would go to company website
-$(".button7").on('click', function () {
-    window.location.replace("http://www.google.com");
-});
