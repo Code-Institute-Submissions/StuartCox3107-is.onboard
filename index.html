@@ -17,7 +17,7 @@
     <body>
         <!--This section is for the company logo, relevant cartoon image and department logo-->
         <!--Logos links to Google only as the company is fictional-->
-        <main class="container" id="topofpage"> 
+        <main class="container" id="topofpage">
             <div class="row">
                 <!--the below div was generated and styled in CSS by using the shapedivider app site-->
                 <div class="custom-shape-divider-top-1593866364">
@@ -50,59 +50,58 @@
             <!--introduction section text-->
             <div class="secondarytext font-weight-bold">
                 Welcome to our company, Metatis. This site will guide you through the processes and decisions you need to
-                            make in order
-                            to onboard as a new employee with
-                            us in terms of the information solutions (IS) department. You will walk away from here knowing what we do
-                            for you, who your specific contact person is, what equipment choices you have, and what will
-                            happen next in terms of your technology onboarding. This will take around 5 to 10 minutes of your time on
-                            average.
+                                            make in order
+                                            to onboard as a new employee with
+                                            us in terms of the information solutions (IS) department. You will walk away from here knowing what we do
+                                            for you, who your specific contact person is, what equipment choices you have, and what will
+                                            happen next in terms of your technology onboarding. This will take around 5 to 10 minutes of your time on
+                                            average.
             </div>
 
-            <!--page 1 form-->
+            <!--page 1 information entry-->
             <div class="form-inline text-center" id="p1form">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12 page1questions">
-                            <input class="form-control form-control-lg" id="txtFirstName" type="text" placeholder="What is your first name?" required>
+                    <form>
+                        <div class="row">
+                            <div class="col-12 page1questions">
+                                <input class="form-control form-control-lg" id="txtFirstName" name="firstname" type="text" placeholder="What is your first name?" required>
+                            </div>
+                            <div class="col-12 page1questions">
+                                <input class="form-control form-control-lg" id="txtFamilyName" name="familyname" type="text" placeholder="Your family name?" required>
+                            </div>
+                            <div class="col-12 employeenumbermain">
+                                <p>How about your four digit employee number?</p>
+                                <small class="text-danger">
+                                    <strong>(Metatis staff numbers are all digits between 1 and 5)</strong>
+                                </small>
+                            </div>
                         </div>
-                        <div class="col-12 page1questions">
-                            <input class="form-control form-control-lg" id="txtFamilyName" type="text" placeholder="Your family name?" required>
+                        <div class="row">
+                            <div class="col-3 justify-content-center page1questions">
+                                <label for="txtFirstDigit">1st digit</label>
+                                <input class="form-control form-control-lg" id="txtFirstDigit" type="number" min="1" max="5" aria-label="First digit of employee number" name="label1">
+                            </div>
+                            <div class="col-3 justify-content-center page1questions">
+                                <label for="txtSecondDigit">2nd digit</label>
+                                <input class="form-control form-control-lg" id="txtSecondDigit" type="number" min="1" max="5" aria-label="Second digit of employee number" name="label2">
+                            </div>
+                            <div class="col-3 justify-content-center page1questions">
+                                <label for="txtThirdDigit">3rd digit</label>
+                                <input class="form-control form-control-lg" id="txtThirdDigit" type="number" min="1" max="5" aria-label="Third digit of employee number" name="label3">
+                            </div>
+                            <div class="col-3 justify-content-center page1questions">
+                                <label for="txtFourthDigit">4th digit</label>
+                                <input class="form-control form-control-lg" id="txtFourthDigit" type="number" min="1" max="5" aria-label="Fourth digit of employee number" name="label4"><br>
+                            </div>
                         </div>
-                        <div class="col-12 employeenumbermain">
-                            <p>How about your four digit employee number?</p>
-                            <small
-                                class="text-danger">
-                                <strong>(Metatis staff numbers are all digits between 1 and 5)</strong>
-                            </small>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3 justify-content-center page1questions">
-                            <label for="txtFirstDigit">1st digit</label>
-                            <input class="form-control form-control-lg" id="txtFirstDigit" type="number" min="1" max="5" aria-label="First digit of employee number" name="label1">
-                        </div>
-                        <div class="col-3 justify-content-center page1questions">
-                            <label for="txtSecondDigit">2nd digit</label>
-                            <input class="form-control form-control-lg" id="txtSecondDigit" type="number" min="1" max="5" aria-label="Second digit of employee number" name="label2">
-                        </div>
-                        <div class="col-3 justify-content-center page1questions">
-                            <label for="txtThirdDigit">3rd digit</label>
-                            <input class="form-control form-control-lg" id="txtThirdDigit" type="number" min="1" max="5" aria-label="Third digit of employee number" name="label3">
-                        </div>
-                        <div class="col-3 justify-content-center page1questions">
-                            <label for="txtFourthDigit">4th digit</label>
-                            <input class="form-control form-control-lg" id="txtFourthDigit" type="number" min="1" max="5" aria-label="Fourth digit of employee number" name="label4"><br>
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-12 contactnumbertesting">
                             <small class="form-text text-muted text-center">
-                                <strong>You will find this on your welcome
-                                                                    email.
-                                                                    Call 0207 159 2598 or email enhelp@metatis.com if you don't have this
-                                                                    number</strong>
+                                <strong>You will find this on your welcome email.
+                                 Call 0207 159 2598 or email enhelp@metatis.com if you don't have this number</strong>
                             </small><br>
                         </div>
                     </div>
@@ -133,10 +132,10 @@
         </div>
         <!--page 2-->
         <!--bootstrap cards for generic management structure relevant to all joiners-->
-        <div class="page2">
+        <div class="page2" id="topofpage">
             <div class="introtext">
                 You need to know who to go to for help, the three people below are the leaders of the IS Team, and your personal
-                            contact is listed below these guys
+                                            contact is listed below these guys
             </div>
             <div class="container genericstructure">
                 <div class="row">
@@ -201,7 +200,7 @@
 
         <!--page 3-->
         <div
-            class="page3">
+            class="page3" id="topofpage">
             <!--bootstrap cards for laptop choice relating to employees department-->
             <div class="introtext">
                 Now choose your laptop
@@ -428,7 +427,7 @@
                             </ul>
                             <div class="card-body">
                                 <a href="https://www.dell.com/en-uk/shop/dell-ultrasharp-30-monitor-with-premiercolor-up3017/apd/210-ajlu/monitors-monitor-accessories" target="_blank" class="card-link">Want to
-                                                                    know more?</a>
+                                                                                                        know more?</a>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">
