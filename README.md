@@ -41,42 +41,42 @@ that meet the needs of their role, their own personal preferences, and also with
 
 ## Site features & wireframes
 
-### View 1
+### View 1: Welcome, name & staff number page
 
 This will give a basic introduction of what the site will achieve, ask for their name and employee number. A next button only will also be present.
 
 - [View 1 desktop & tablet](wireframes/p1desktoptablet.png) opens in same tab, press back to return
 - [View 1 mobile](wireframes/p1mobile.png) opens in same tab, press back to return
 
-### View 2
+### View 2: Introduction to IS contacts page
 
 This will tell them the generic structure of the IS management team and also the IS contact specific to their department. A next button will also be present.
 
 - [View 2 desktop & tablet](wireframes/p2desktoptablet.png) opens in same tab, press back to return
 - [View 2 mobile](wireframes/p2mobile.png) opens in same tab, press back to return
 
-### View 3
+### View 3: Choose a laptop page
 
 This will give them a choice of laptops to choose from, specific to their new role. A next button will also be present.
 
 - [View 3 desktop & tablet](wireframes/p3desktoptablet.png) opens in same tab, press back to return
 - [View 3 mobile](wireframes/p3mobile.png) opens in same tab, press back to return
 
-### View 4
+### View 4: Choose a bag page
 
 This will take their laptop choice and present the relevant choices for a case. A next button will also be present.
 
 - [View 4 desktop & tablet](wireframes/p4desktoptablet.png) opens in same tab, press back to return
 - [View 4 mobile](wireframes/p4mobile.png) opens in same tab, press back to return
 
-### View 5
+### View 5: Choose a screen page
 
 This will take their department and laptop choices and give options for a screen. A next button will also be present.
 
 - [View 5 desktop & tablet](wireframes/p5desktoptablet.png) opens in same tab, press back to return
 - [View 5 mobile](wireframes/p5mobile.png) opens in same tab, press back to return
 
-### View 6
+### View 6L Next steps page
 
 This will tell them what the next steps are and confirm the information entered.
 
@@ -92,7 +92,8 @@ views following this will change according to which department the employee will
 marketing department they will be presented with the option of laptop A or laptop B, if they choose laptop B then they will be presented with the relevant sized laptop case options.
 Navigation will purely be through NEXT buttons. 
 
-Given the target users are new employees, the site needs to be professional in terms of style & look to convey the feeling of professionalism.
+Given the target users are new employees, the site needs to be professional in terms of style & look to convey the feeling of professionalism. At the same time
+though the company wants to present a playful side and as such the colours and images should reflect this also.
 The company would want to present itself as slick and professional, and the site should convey this. It should be very simple to use and need few instructions for use.
 
 - Linear navigation, one step at a time using only "NEXT" to progress
@@ -147,38 +148,55 @@ Live site tested on Chrome, IE, Firefox, Edge
 
 ### Javascript
 
-### Page 1
+### View 1: Welcome, name & staff number page
 
-- Manually tested number inputs to check that letters and only whole numbers between 1 and 5 are accepted
-- Console log prints the staff number digits, and that the length is 4 digits long 
+- Tested to check that staff numbers will not accept letters or non-decimal characters, alert if incorrect
+- Tested to check that only whole numbers from 1-5 are accepted through the scroll arrows
+- Tested to check that manual entry of numbers outside 1-5 can be entered, alert if incorrect
+- Tested to check that only whole numbers are accepted on manual input, alert if incorrect
+- Tested to check that progress bar moves as expected
+- Chrome debugger tool used to check that the variables are given values for the user first name, family name, all 4 digits of the employee number,
+and that the first digit of the employee number stores the correct department variable
 
-### Page 2
+### View 2: Introduction to IS contacts page
 
-- Manually tested to check that all variations of the first digit of the staff number display the correct contact person, number and emails
+- All possible 1st digit entries from 1-5 tested to ensure that page 2 individual contact text populated correctly (name, number & email)
+- Tested to check that progress bar moves as expected
 
-### Page 3
+### View 3: Choose a laptop page
 
-- Manually tested to check that each of the 5 possible employee departments display the correct introduction text
-- Manually tested to check that each of the 5 possible employee departments display the correct laptop choices and features
-- Manually checked to ensure that one (not zero or 2) laptops can be chosen in order to move to the next view
-- Console log prints the laptop choice selected
-- Manually tested to check that all laptop links work
+- Tested to check that each of the 5 possible employee departments entered on page 1 display the correct introduction text including the department and features needed
+- Tested to check that each of the 5 possible employee departments entered on page 1 display the correct laptop choices, and related laptop features in the cards
+- Tested to ensure that one (not zero or 2) laptops can be chosen in order to move to the next view. Alert present if user tries to choose none
+- Tested to check that all laptop links work for all scenarios (5 possible outcomes, 10 links)
+- Tested to check that progress bar moves as expected
+- Chrome debugger tool used to check that the variable is assigned the correct value for storing the laptop chosen (laptop model and size of screen)
 
-### Page 4 
 
-- Manually tested with all latop possibilities that the correct text is displayed
-- Console log prints the bag choice selected
+### View 4: Choose a bag page
 
-### Page 5
+- Tested to check that all previous laptop choices display the correct text in terms of reminding the user of the laptop size chosen
+- Tested to ensure that one (not zero or 2) bag can be chosen in order to move to the next view. Alert present if user tries to choose none
+- Tested to check that progress bar moves as expected
+- Chrome debugger tool used to check that the bag type variable is assigned the correct value for storing the bag chosen 
 
-- Manually tested screen "Want to know more" links
-- Manually tested all department, laptop and bag previous choices display the correct text
-- Console log prints bag choice made
+### View 5: Choose a screen page
 
-### Page 6
+- Tested all "Want to know more" links
+- Tested all previous bag choices display correct text
+- Tested all all relevant department 1st digit entries display correct department in text
+- Tested all relevant department 1st digit entries display correct screen features in text
+- Tested to check that progress bar moves as expected
+- Chrome debugger tool used to check that the screen size variable is assigned the correct value for storing the bag chosen 
 
-- Console log prints all choices made to ensure that the appropriate variables are still stored
-- Manually tested to ensure that all previous choices display the correct final page text
+### View 6: Next steps page
+
+- Chrome debugger tool used to check that all variables are assigned the correct values for the inputs and choices made
+- All department choices tested to populate relevant text
+- All laptop choices tested to populate relevant text
+- All department choice tested to populate relevant text
+- Tested to check that progress bar moves as expected
+- Finish button tested to ensure alert appears
 
 
 ---
