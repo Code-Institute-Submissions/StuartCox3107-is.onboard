@@ -198,12 +198,16 @@ and that the first digit of the employee number stores the correct department va
 - Tested to check that progress bar moves as expected
 - Finish button tested to ensure alert appears
 
+### Issues
+
+
+
 
 ---
 
 ## Deployment
 
-To deploy this page to GitHub Pages from its [GitHub repository]<!--(xxxxxxxxxxxxxxxxxxxxxxxxxxxxx)-->, the following steps were taken: 
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/StuartCox3107/is.onboard), the following steps were taken: 
 
 1. From the menu items near the top of the page, select **Settings**.
 2. Scroll down to the **GitHub Pages** section.
@@ -216,7 +220,7 @@ To deploy this page to GitHub Pages from its [GitHub repository]<!--(xxxxxxxxxxx
 
 To clone this project from GitHub:
 
-1. Under the repository name, click "Clone or download".
+1. Under the repository name, click "Code".
 2. In the Clone with HTTPs section, copy the clone URL for the repository. 
 3. In your local IDE open Git Bash.
 4. Change the current working directory to the location where you want the cloned directory to be made.
