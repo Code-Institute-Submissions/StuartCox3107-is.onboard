@@ -127,22 +127,23 @@ function displayContactPage() {
 
 // function for the submit button to allow for transition 
 //to page 2 and display page 2 relevant information
-//next button moves to page 3
-$(".button1").on("click", function () {
+$(".button1").on("click", function () {  
     // onclick to store the names
     userfirstname = txtFirstName.value;
     userlastname = txtFamilyName.value;
-    // if input passes test
-    if (checkStaffNumber() === true) {
+    // if number input passes test
+    if (checkStaffNumber() === true && userfirstname !== "" && userlastname !== "") {
         $(".page1").hide();
         $(".page2").show();
         // call the display function
         displayContactPage();
         // or if input doesn't pass test
     } else {
-        alert(`Please enter a valid employee number. Employee 
-        numbers are four digits long and all numbers are between 
-        1 and 5. you will have received this on your welcome email`);
+        alert
+            (`Please make sure you have entered a name and
+        valid employee number. Employee numbers are four 
+        digits long and all numbers are between 1 and 5. 
+        You will have received this on your welcome email`);
     }
 });
 
