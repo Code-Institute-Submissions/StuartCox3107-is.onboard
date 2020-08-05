@@ -109,6 +109,7 @@ The company would want to present itself as slick and professional, and the site
 - Not in the scope of this project, but future plans would be to automate follow up emails on progress
 - Not in the scope of this project, but future plans would be to link this to inductions of all divisions of the company
 - All relevant choices will be stored at the final page in variables. On a live site these would be sent as an email to the IS team, but in this case are console logged
+- If I were doing this project again I would look at using JSON to store more of the strings
 
 ---
 
@@ -148,12 +149,16 @@ Live site tested on Chrome, IE, Firefox, Edge
 
 ### Javascript
 
+- Code ran through [JS lInt.com](https://jslint.com/) opens in same tab, press back to return. Only issue of the laptop link lines being over 80 characters
+
 ### View 1: Welcome, name & staff number page
 
 - Tested to check that staff numbers will not accept letters or non-decimal characters, alert if incorrect
 - Tested to check that only whole numbers from 1-5 are accepted through the scroll arrows
 - Tested to check that manual entry of numbers outside 1-5 can be entered, alert if incorrect
 - Tested to check that only whole numbers are accepted on manual input, alert if incorrect
+- Tested to check that the first name input is required before moving to the next page
+- Tested to check that the first family input is required before moving to the next page
 - Tested to check that progress bar moves as expected
 - Chrome debugger tool used to check that the variables are given values for the user first name, family name, all 4 digits of the employee number,
 and that the first digit of the employee number stores the correct department variable
@@ -198,9 +203,9 @@ and that the first digit of the employee number stores the correct department va
 - Tested to check that progress bar moves as expected
 - Finish button tested to ensure alert appears
 
-### Issues
+### Issues arising
 
-
+-
 
 
 ---
