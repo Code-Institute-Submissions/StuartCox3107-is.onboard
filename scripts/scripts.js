@@ -128,12 +128,14 @@ ${contactLname}@metatis.com`;
 
 /*function for the submit button to allow for transition
 to page 2 and display page 2 relevant information*/
-$(".button1").on("click", function () {  
+$(".button1").on("click", function () {
     // onclick to store the names
     userfirstname = txtFirstName.value;
     userlastname = txtFamilyName.value;
     // if number input passes test
-    if (checkStaffNumber() === true && userfirstname !== "" && userlastname !== "") {
+    if (checkStaffNumber() === true &&
+    userfirstname !== "" &&
+    userlastname !== "") {
         $(".page1").hide();
         $(".page2").show();
         // call the display function
@@ -142,8 +144,8 @@ $(".button1").on("click", function () {
     } else {
         alert
             (`Please make sure you have entered a name and
-valid employee number. Employee numbers are four 
-digits long and all numbers are between 1 and 5. 
+valid employee number. Employee numbers are four
+digits long and all numbers are between 1 and 5.
 You will have received this on your welcome email`);
     }
 });
@@ -362,7 +364,7 @@ function recordLaptop() {
         chosenLaptop = laptopType2;
         return 2;
     } else {
-        alert(`You REALLY REALLY REALLY want to choose a laptop 
+        alert(`You REALLY REALLY REALLY want to choose a laptop
 in this job, pen & paper just wont cut it!`);
         return 0;
     }
@@ -378,7 +380,7 @@ let fifteenInchModels = [
     "Asus ZenBook Pro 15",
     "Lenovo ThinkPad P1"
 ];
-let seventeenInchModels = ["HP ZBook 9850", "Dell XPS 17", 
+let seventeenInchModels = ["HP ZBook 9850", "Dell XPS 17",
 "Dell Precision 7740"];
 
 function displayBagPage() {
@@ -423,7 +425,7 @@ function recordBag() {
         bagChosen = "hard bag";
         return 2;
     } else {
-        alert(`Please make a choice, unless 
+        alert(`Please make a choice, unless
 you want to use a carrier bag!`);
         return 0;
     }
@@ -459,7 +461,7 @@ function recordScreen() {
         screenChosen = "30 inch";
         return 2;
     } else {
-        alert(`Please make a choice, or you will have your insy 
+        alert(`Please make a choice, or you will have your insy
 winsy laptop screen only!`);
         return 0;
     }
@@ -484,8 +486,8 @@ $(".button5").on("click", function () {
         parent15.textContent = "";
         parent15.appendChild(finalIntroText);
 
-        console.log(`Name: ${userfirstname} ${userlastname}, Employee number: 
-        ${staffnumber}, Department: ${dep}, Laptop chosen: ${chosenLaptop}, 
+        console.log(`Name: ${userfirstname} ${userlastname}, Employee number:
+        ${staffnumber}, Department: ${dep}, Laptop chosen: ${chosenLaptop},
         Bag chosen: ${bagChosen}, Screen chosen: ${screenChosen}`);
     }
 });
