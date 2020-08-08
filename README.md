@@ -137,7 +137,7 @@ The company would want to present itself as slick and professional, and the site
 
 All views tested for various devices using Chrome Developer tools: Moto G4, Galaxy S5, Pixel 2, Pixel 2XL, iPhone 5 SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro, Galaxy Fold, Surface Duo
 
-Live site tested on Chrome, IE, Firefox, Edge
+Live site tested on Chrome, Firefox, Edge
 
 ### HTML
 
@@ -205,7 +205,7 @@ and that the first digit of the employee number stores the correct department va
 
 ### Issues arising
 
--
+- 
 
 
 ---
