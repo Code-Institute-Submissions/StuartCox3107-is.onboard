@@ -239,7 +239,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ### issues
 
-- JS Lint gives an error of unexpected 'let' on line 62, this issue has not been resolved
+- JS Lint gives an error of unexpected 'let' on line 62, this issue has not been resolved but the code is working
 
 ### Credits & acknowledgements
 
