@@ -1,5 +1,5 @@
-// this makes the opening page show view 1 only and hides 
-//all other views once the page loads, until needed
+/* this makes the opening page show view 1 only and hides
+all other views once the page loads, until needed*/
 $(document).ready(function () {
     $(".page2").hide();
     $(".page3").hide();
@@ -8,13 +8,14 @@ $(document).ready(function () {
     $(".page6").hide();
 });
 
-// global variables declared of staff number entered & names etc
+/* global variables declared of staff
+number entered & names etc*/
 let staffnumber = [];
 let userfirstname = "";
 let userlastname = "";
 
-// jquery mouse over/leave to change the 
-//background color of the next button
+/* jquery mouse over/leave to change the
+background color of the next button*/
 $(".btn").on("mouseover", function () {
     $(this).css("background-color", "#52796f");
 });
@@ -23,8 +24,8 @@ $(".btn").on("mouseleave", function () {
     $(this).css("background-color", "#566573");
 });
 
-// jquery mouse over/leave to change the background 
-//color of the progress bar
+/* jquery mouse over/leave to change the background
+color of the progress bar*/
 $(".progress-bar").on("mouseover", function () {
     $(this).css("background-color", "#52796f");
 });
@@ -33,8 +34,8 @@ $(".progress-bar").on("mouseleave", function () {
     $(this).css("background-color", "#566573");
 });
 
-// the below pushes the number entered into the 
-//staffnumber variable on place 0-3 positions
+/* the below pushes the number entered into the
+staffnumber variable on place 0-3 positions*/
 $("#txtFirstDigit").on("input", function () {
     staffnumber[0] = parseFloat(this.value, 10);
 });
@@ -48,9 +49,9 @@ $("#txtFourthDigit").on("input", function () {
     staffnumber[3] = parseFloat(this.value, 10);
 });
 
-// function to check that the entered staff numbers are 
-//only from 1 to 5 in all 4 entries, makes sure nothing 
-//else is entered
+/*function to check that the entered staff numbers are
+only from 1 to 5 in all 4 entries, makes sure nothing
+else is entered*/
 function checkStaffNumber() {
     const validNumbers = [
         1,
@@ -68,9 +69,9 @@ function checkStaffNumber() {
     return true;
 }
 
-// function to change the contact details on page 2 to 
-//the relevant IS contact according to the 1st digit 
-//of the staff number
+/*function to change the contact details on page 2 to
+the relevant IS contact according to the 1st digit
+of the staff number*/
 let dep;
 let contactFname;
 function displayContactPage() {
@@ -113,10 +114,10 @@ function displayContactPage() {
 
     // details & contact of the relevant contact person
     let pDetails = document.createElement("p");
-    pDetails.textContent = `As you will be in the ${dep} department, 
-    ${contactFname} will be your contact. You can call ${contactFname} 
-  on 020 7581 100${contactPhone}, or email ${contactFname}.
-  ${contactLname}@metatis.com`;
+    pDetails.textContent = `As you will be in the ${dep} department,
+${contactFname} will be your contact. You can call ${contactFname}
+on 020 7581 100${contactPhone}, or email ${contactFname}.
+${contactLname}@metatis.com`;
 
     let parent = document.querySelector("#employeecode1");
     parent.textContent = "";
@@ -125,8 +126,8 @@ function displayContactPage() {
     parent.appendChild(pDetails);
 }
 
-// function for the submit button to allow for transition 
-//to page 2 and display page 2 relevant information
+/*function for the submit button to allow for transition
+to page 2 and display page 2 relevant information*/
 $(".button1").on("click", function () {  
     // onclick to store the names
     userfirstname = txtFirstName.value;
@@ -141,14 +142,14 @@ $(".button1").on("click", function () {
     } else {
         alert
             (`Please make sure you have entered a name and
-        valid employee number. Employee numbers are four 
-        digits long and all numbers are between 1 and 5. 
-        You will have received this on your welcome email`);
+valid employee number. Employee numbers are four 
+digits long and all numbers are between 1 and 5. 
+You will have received this on your welcome email`);
     }
 });
 
-// the below will take the first digit of the staff number and use 
-//it to populate page 3 with the correct introduction and laptop choices
+/*the below will take the first digit of the staff number and use
+it to populate page 3 with the correct introduction and laptop choices*/
 let departmentName;
 let departmentSpec;
 let departmentScreenSpec;
@@ -254,9 +255,9 @@ function displayLaptopPage() {
 
     // adds department name and department requirements spec to into text
     let introText = document.createElement("p");
-    introText.textContent = `As you will work in 
-    the ${departmentName} department, 
-    you will want a machine that ${departmentSpec}, 
+    introText.textContent = `As you will work in
+    the ${departmentName} department,
+    you will want a machine that ${departmentSpec},
     either of these options
     will be fantastic for you.`;
     let parent2 = document.querySelector("#p3intro");
@@ -362,7 +363,7 @@ function recordLaptop() {
         return 2;
     } else {
         alert(`You REALLY REALLY REALLY want to choose a laptop 
-        in this job, pen & paper just wont cut it!`);
+in this job, pen & paper just wont cut it!`);
         return 0;
     }
 }
@@ -393,15 +394,15 @@ function displayBagPage() {
 // function to move from page 3 to page 4 as long as choice has been made
 $(".button3").on("click", function () {
     if (recordLaptop()) {
-        //if user has selected something
-        //call the display3 function and show the next page
+        /*if user has selected something
+        call the display3 function and show the next page*/
         $(".page3").hide();
         $(".page4").show();
         displayBagPage();
 
         let bagIntroText = document.createElement("p");
-        bagIntroText.textContent = `As you chose a ${laptopScreenSize} laptop, 
-        please choose one of these two options. 
+        bagIntroText.textContent = `As you chose a ${laptopScreenSize} laptop,
+        please choose one of these two options.
         We find this purely a matter of preference so just choose away!`;
         let parent13 = document.querySelector("#laptopintro");
         parent13.textContent = "";
@@ -410,8 +411,8 @@ $(".button3").on("click", function () {
 });
 
 
-// function to record bag chosen, recorded as bagchoice1 or 
-//bagchoice2, alerts if no choice made
+/*function to record bag chosen, recorded as bagchoice1 or
+bagchoice2, alerts if no choice made*/
 let bagChosen;
 
 function recordBag() {
@@ -423,7 +424,7 @@ function recordBag() {
         return 2;
     } else {
         alert(`Please make a choice, unless 
-        you want to use a carrier bag!`);
+you want to use a carrier bag!`);
         return 0;
     }
 }
@@ -435,10 +436,10 @@ $(".button4").on("click", function () {
         $(".page4").hide();
         $(".page5").show();
         let screenIntroText = document.createElement("p");
-        screenIntroText.textContent = `Great, you chose a ${bagChosen} 
-        and we will get that ordered. As you will work in 
-        the ${dep} department, 
-        you will want a screen ${departmentScreenSpec}, we can 
+        screenIntroText.textContent = `Great, you chose a ${bagChosen}
+        and we will get that ordered. As you will work in
+        the ${dep} department,
+        you will want a screen ${departmentScreenSpec}, we can
         recommend either of these.`;
         let parent14 = document.querySelector("#screenintro");
         parent14.textContent = "";
@@ -447,8 +448,8 @@ $(".button4").on("click", function () {
 });
 
 
-// function to record screen chosen, recorded as screenchoice1 
-//or screenchoice2, alerts if no choice made
+/*function to record screen chosen, recorded as screenchoice1
+or screenchoice2, alerts if no choice made*/
 let screenChosen;
 function recordScreen() {
     if (document.getElementById("screenchoice1").checked) {
@@ -459,7 +460,7 @@ function recordScreen() {
         return 2;
     } else {
         alert(`Please make a choice, or you will have your insy 
-        winsy laptop screen only!`);
+winsy laptop screen only!`);
         return 0;
     }
 }
@@ -471,13 +472,13 @@ $(".button5").on("click", function () {
         $(".page5").hide();
         $(".page6").show();
         let finalIntroText = document.createElement("p");
-        finalIntroText.textContent = `You have made all the choices 
-        you need to make to integrate smoothly into the ${dep} department, 
-        by the time you start, your ${laptopType1} will be onsite, and 
-        your IS contact, ${contactFname} will walk through the setup with 
-        you, and make sure you are comfortable. ${contactFname} will 
-        also be the person to speak to with any IS issues moving forward. 
-        Again, welcome to Metatis and we trust that your career 
+        finalIntroText.textContent = `You have made all the choices
+        you need to make to integrate smoothly into the ${dep} department,
+        by the time you start, your ${laptopType1} will be onsite, and
+        your IS contact, ${contactFname} will walk through the setup with
+        you, and make sure you are comfortable. ${contactFname} will
+        also be the person to speak to with any IS issues moving forward.
+        Again, welcome to Metatis and we trust that your career
         with us will be fruitful!`;
         let parent15 = document.querySelector(".secondarytextfinal");
         parent15.textContent = "";
@@ -489,11 +490,11 @@ $(".button5").on("click", function () {
     }
 });
 
-// function to alert that on a real 
-//site it would display the company site
+/*function to alert that on a real
+site it would display the company site*/
 $(".button7").on("click", function () {
-    alert(`On a live site for a real company at this point, 
-    the page would have the company website 
-    open in the same window`);
+    alert(`On a live site for a real company at this point,
+the page would have the company website
+open in the same window`);
 });
 
