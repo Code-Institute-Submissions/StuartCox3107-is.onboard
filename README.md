@@ -15,7 +15,8 @@
 ## Aim of the site
 
 This is a site that is used to on-board new employees of a (fictional) company. It is specifically focussed on the Information Systems (IS) department, and the new employee's 
-relationship and induction with the IS function. It allows them to walk away from the experience with an understanding of how IS works for **them**, and what equipment choices they have to make that are relevant to their role. 
+relationship and induction with the IS function. It allows them to walk away from the experience with an understanding of **who** in IS works for **them**, and what equipment choices they have to make that are relevant to their role. 
+The information and/or choices given to the user wil be relevant to their role.
 
 **Link to live site:** https://stuartcox3107.github.io/is.onboard/ (opens in same tab, click back if needed)
 
@@ -149,7 +150,8 @@ Live site tested on Chrome, Firefox, Edge
 
 ### Javascript
 
-- Code ran through [JS lInt.com](https://jslint.com/) opens in same tab, press back to return. Only issue of the laptop link lines being over 80 characters
+- Code ran through [JS lint.com](https://jslint.com/) opens in same tab, press back to return. One issue is the laptop link lines are over 80 characters, breaking these over multiple lines
+breaks the links. See **issues** below for one unresolved issue
 
 ### View 1: Welcome, name & staff number page
 
@@ -203,11 +205,6 @@ and that the first digit of the employee number stores the correct department va
 - Tested to check that progress bar moves as expected
 - Finish button tested to ensure alert appears
 
-### Issues arising
-
-- 
-
-
 ---
 
 ## Deployment
@@ -234,10 +231,15 @@ To clone this project from GitHub:
 git clone https://github.com/StuartCox3107/is.onboard.git
 ```
 6. Press Enter. Your local clone will be created.
+7. Go to the cloned folder and run index.html
 
 Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/articles/cloning-a-repository).
 
 ---
+
+### issues
+
+- JS Lint gives an error of unexpected 'let' on line 62, this issue has not been resolved
 
 ### Credits & acknowledgements
 
